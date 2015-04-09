@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0438DD8F1AD094140049AB66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438DD8E1AD094140049AB66 /* main.m */; };
+		0438DD921AD094140049AB66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438DD911AD094140049AB66 /* AppDelegate.m */; };
+		0438DD9B1AD094140049AB66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0438DD991AD094140049AB66 /* Main.storyboard */; };
+		0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0438DD9C1AD094140049AB66 /* Images.xcassets */; };
+		0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0438DD9E1AD094140049AB66 /* LaunchScreen.xib */; };
+		0438DDAC1AD094140049AB66 /* TransientHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438DDAB1AD094140049AB66 /* TransientHubTests.m */; };
+		04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */; };
+		04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */; };
+		04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */; };
+		04D3FC131AD61E3C00036F70 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC0B1AD61E3C00036F70 /* ECSlidingSegue.m */; };
+		04D3FC141AD61E3C00036F70 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC0D1AD61E3C00036F70 /* ECSlidingViewController.m */; };
+		04D3FC151AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC0F1AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m */; };
+		04D3FC1D1AD61EEA00036F70 /* TWSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC191AD61EEA00036F70 /* TWSlidingViewController.m */; };
+		04D3FC1E1AD61EEA00036F70 /* TWSplitMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC1B1AD61EEA00036F70 /* TWSplitMenuViewController.m */; };
+		04D3FC291AD6258D00036F70 /* TWWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC281AD6258D00036F70 /* TWWatchListViewController.m */; };
+		04D3FC2C1AD627C400036F70 /* TWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC2B1AD627C400036F70 /* TWHomeViewController.m */; };
+		04D3FC2F1AD6296500036F70 /* TWFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC2E1AD6296500036F70 /* TWFeedViewController.m */; };
+		04D3FC321AD62A6100036F70 /* TWAddFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC311AD62A6100036F70 /* TWAddFeedViewController.m */; };
+		04D3FC351AD62B2C00036F70 /* TWGlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC341AD62B2C00036F70 /* TWGlossaryViewController.m */; };
+		04D3FC3A1AD62CB900036F70 /* TWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC391AD62CB900036F70 /* TWSettingsViewController.m */; };
+		04D3FC3D1AD62CCB00036F70 /* TWAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC3C1AD62CCB00036F70 /* TWAboutViewController.m */; };
+		04D3FC401AD62CF600036F70 /* TWFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC3F1AD62CF600036F70 /* TWFeedbackViewController.m */; };
+		04D3FC431AD62D1000036F70 /* TWTermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC421AD62D1000036F70 /* TWTermsViewController.m */; };
+		04D3FC491AD6347E00036F70 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC471AD6347E00036F70 /* Model.xcdatamodeld */; };
+		04D3FC4D1AD6357500036F70 /* TWDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC4C1AD6357500036F70 /* TWDataManager.m */; };
+		04D3FC511AD6CB7400036F70 /* TWEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC501AD6CB7400036F70 /* TWEventFeed.m */; };
+		04D3FC551AD6CBB000036F70 /* TWVOEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC541AD6CBB000036F70 /* TWVOEvent.m */; };
+		04D3FC581AD6CBE300036F70 /* TWBaseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC571AD6CBE300036F70 /* TWBaseEvent.m */; };
+		04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5A1AD6CC2800036F70 /* TWBaseEventViewController.m */; };
+		04D3FC601AD6CC2800036F70 /* TWBaseFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5C1AD6CC2800036F70 /* TWBaseFeedViewController.m */; };
+		04D3FC611AD6CC2800036F70 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5E1AD6CC2800036F70 /* TWBaseViewController.m */; };
+		04D3FC631AD7012800036F70 /* Raptor.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC621AD7012800036F70 /* Raptor.xml */; };
+		04D3FC661AD7065000036F70 /* CRTSsample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC641AD7065000036F70 /* CRTSsample.xml */; };
+		04D3FC671AD7065000036F70 /* SWIFT.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC651AD7065000036F70 /* SWIFT.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0438DDA61AD094140049AB66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0438DD811AD094140049AB66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0438DD881AD094140049AB66;
+			remoteInfo = TransientHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0438DD891AD094140049AB66 /* TransientHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransientHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0438DD8D1AD094140049AB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0438DD8E1AD094140049AB66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0438DD901AD094140049AB66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0438DD911AD094140049AB66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0438DD9A1AD094140049AB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0438DD9C1AD094140049AB66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0438DD9F1AD094140049AB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0438DDA51AD094140049AB66 /* TransientHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransientHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0438DDAA1AD094140049AB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0438DDAB1AD094140049AB66 /* TransientHubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransientHubTests.m; sourceTree = "<group>"; };
+		04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
+		04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingAnimationController.m; sourceTree = "<group>"; };
+		04D3FC071AD61E3C00036F70 /* ECSlidingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingConstants.h; sourceTree = "<group>"; };
+		04D3FC081AD61E3C00036F70 /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingInteractiveTransition.h; sourceTree = "<group>"; };
+		04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingInteractiveTransition.m; sourceTree = "<group>"; };
+		04D3FC0A1AD61E3C00036F70 /* ECSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingSegue.h; sourceTree = "<group>"; };
+		04D3FC0B1AD61E3C00036F70 /* ECSlidingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingSegue.m; sourceTree = "<group>"; };
+		04D3FC0C1AD61E3C00036F70 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		04D3FC0D1AD61E3C00036F70 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		04D3FC0E1AD61E3C00036F70 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
+		04D3FC0F1AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
+		04D3FC181AD61EEA00036F70 /* TWSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSlidingViewController.h; sourceTree = "<group>"; };
+		04D3FC191AD61EEA00036F70 /* TWSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSlidingViewController.m; sourceTree = "<group>"; };
+		04D3FC1A1AD61EEA00036F70 /* TWSplitMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSplitMenuViewController.h; sourceTree = "<group>"; };
+		04D3FC1B1AD61EEA00036F70 /* TWSplitMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSplitMenuViewController.m; sourceTree = "<group>"; };
+		04D3FC271AD6258D00036F70 /* TWWatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWWatchListViewController.h; path = Views/TWWatchListViewController.h; sourceTree = "<group>"; };
+		04D3FC281AD6258D00036F70 /* TWWatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWWatchListViewController.m; path = Views/TWWatchListViewController.m; sourceTree = "<group>"; };
+		04D3FC2A1AD627C400036F70 /* TWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWHomeViewController.h; path = Views/TWHomeViewController.h; sourceTree = "<group>"; };
+		04D3FC2B1AD627C400036F70 /* TWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWHomeViewController.m; path = Views/TWHomeViewController.m; sourceTree = "<group>"; };
+		04D3FC2D1AD6296500036F70 /* TWFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWFeedViewController.h; path = Views/TWFeedViewController.h; sourceTree = "<group>"; };
+		04D3FC2E1AD6296500036F70 /* TWFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWFeedViewController.m; path = Views/TWFeedViewController.m; sourceTree = "<group>"; };
+		04D3FC301AD62A6100036F70 /* TWAddFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWAddFeedViewController.h; path = Views/TWAddFeedViewController.h; sourceTree = "<group>"; };
+		04D3FC311AD62A6100036F70 /* TWAddFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWAddFeedViewController.m; path = Views/TWAddFeedViewController.m; sourceTree = "<group>"; };
+		04D3FC331AD62B2C00036F70 /* TWGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWGlossaryViewController.h; path = SecondaryViews/TWGlossaryViewController.h; sourceTree = "<group>"; };
+		04D3FC341AD62B2C00036F70 /* TWGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWGlossaryViewController.m; path = SecondaryViews/TWGlossaryViewController.m; sourceTree = "<group>"; };
+		04D3FC381AD62CB900036F70 /* TWSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWSettingsViewController.h; path = SecondaryViews/TWSettingsViewController.h; sourceTree = "<group>"; };
+		04D3FC391AD62CB900036F70 /* TWSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWSettingsViewController.m; path = SecondaryViews/TWSettingsViewController.m; sourceTree = "<group>"; };
+		04D3FC3B1AD62CCB00036F70 /* TWAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWAboutViewController.h; path = SecondaryViews/TWAboutViewController.h; sourceTree = "<group>"; };
+		04D3FC3C1AD62CCB00036F70 /* TWAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWAboutViewController.m; path = SecondaryViews/TWAboutViewController.m; sourceTree = "<group>"; };
+		04D3FC3E1AD62CF600036F70 /* TWFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWFeedbackViewController.h; path = SecondaryViews/TWFeedbackViewController.h; sourceTree = "<group>"; };
+		04D3FC3F1AD62CF600036F70 /* TWFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWFeedbackViewController.m; path = SecondaryViews/TWFeedbackViewController.m; sourceTree = "<group>"; };
+		04D3FC411AD62D1000036F70 /* TWTermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTermsViewController.h; path = SecondaryViews/TWTermsViewController.h; sourceTree = "<group>"; };
+		04D3FC421AD62D1000036F70 /* TWTermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTermsViewController.m; path = SecondaryViews/TWTermsViewController.m; sourceTree = "<group>"; };
+		04D3FC481AD6347E00036F70 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		04D3FC4B1AD6357500036F70 /* TWDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWDataManager.h; path = DataModel/TWDataManager.h; sourceTree = "<group>"; };
+		04D3FC4C1AD6357500036F70 /* TWDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWDataManager.m; path = DataModel/TWDataManager.m; sourceTree = "<group>"; };
+		04D3FC4F1AD6CB7400036F70 /* TWEventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWEventFeed.h; path = EventObjects/TWEventFeed.h; sourceTree = "<group>"; };
+		04D3FC501AD6CB7400036F70 /* TWEventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWEventFeed.m; path = EventObjects/TWEventFeed.m; sourceTree = "<group>"; };
+		04D3FC531AD6CBB000036F70 /* TWVOEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWVOEvent.h; path = EventObjects/TWVOEvent.h; sourceTree = "<group>"; };
+		04D3FC541AD6CBB000036F70 /* TWVOEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWVOEvent.m; path = EventObjects/TWVOEvent.m; sourceTree = "<group>"; };
+		04D3FC561AD6CBE300036F70 /* TWBaseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseEvent.h; path = Base/TWBaseEvent.h; sourceTree = "<group>"; };
+		04D3FC571AD6CBE300036F70 /* TWBaseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseEvent.m; path = Base/TWBaseEvent.m; sourceTree = "<group>"; };
+		04D3FC591AD6CC2800036F70 /* TWBaseEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseEventViewController.h; path = Base/TWBaseEventViewController.h; sourceTree = "<group>"; };
+		04D3FC5A1AD6CC2800036F70 /* TWBaseEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseEventViewController.m; path = Base/TWBaseEventViewController.m; sourceTree = "<group>"; };
+		04D3FC5B1AD6CC2800036F70 /* TWBaseFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseFeedViewController.h; path = Base/TWBaseFeedViewController.h; sourceTree = "<group>"; };
+		04D3FC5C1AD6CC2800036F70 /* TWBaseFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseFeedViewController.m; path = Base/TWBaseFeedViewController.m; sourceTree = "<group>"; };
+		04D3FC5D1AD6CC2800036F70 /* TWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseViewController.h; path = Base/TWBaseViewController.h; sourceTree = "<group>"; };
+		04D3FC5E1AD6CC2800036F70 /* TWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseViewController.m; path = Base/TWBaseViewController.m; sourceTree = "<group>"; };
+		04D3FC621AD7012800036F70 /* Raptor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Raptor.xml; path = TransientHub/SampleData/Raptor.xml; sourceTree = "<group>"; };
+		04D3FC641AD7065000036F70 /* CRTSsample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CRTSsample.xml; path = TransientHub/SampleData/CRTSsample.xml; sourceTree = "<group>"; };
+		04D3FC651AD7065000036F70 /* SWIFT.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = SWIFT.xml; path = TransientHub/SampleData/SWIFT.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0438DD861AD094140049AB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0438DDA21AD094140049AB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0438DD801AD094140049AB66 = {
+			isa = PBXGroup;
+			children = (
+				0438DD8B1AD094140049AB66 /* TransientHub */,
+				0438DDA81AD094140049AB66 /* TransientHubTests */,
+				0438DD8A1AD094140049AB66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0438DD8A1AD094140049AB66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0438DD891AD094140049AB66 /* TransientHub.app */,
+				0438DDA51AD094140049AB66 /* TransientHubTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0438DD8B1AD094140049AB66 /* TransientHub */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC021AD61E3C00036F70 /* ECSlidingViewController */,
+				0438DD901AD094140049AB66 /* AppDelegate.h */,
+				0438DD911AD094140049AB66 /* AppDelegate.m */,
+				04D3FC181AD61EEA00036F70 /* TWSlidingViewController.h */,
+				04D3FC191AD61EEA00036F70 /* TWSlidingViewController.m */,
+				04D3FC1A1AD61EEA00036F70 /* TWSplitMenuViewController.h */,
+				04D3FC1B1AD61EEA00036F70 /* TWSplitMenuViewController.m */,
+				04D3FC4A1AD6348300036F70 /* Data Model */,
+				04D3FC231AD6237500036F70 /* Base */,
+				04D3FC521AD6CB8500036F70 /* Event Objects */,
+				04D3FC361AD62C7300036F70 /* Feeds */,
+				04D3FC371AD62C9900036F70 /* Secondary Views */,
+				0438DD991AD094140049AB66 /* Main.storyboard */,
+				0438DD9C1AD094140049AB66 /* Images.xcassets */,
+				0438DD9E1AD094140049AB66 /* LaunchScreen.xib */,
+				04D3FC441AD6325200036F70 /* Sample Data */,
+				0438DD8C1AD094140049AB66 /* Supporting Files */,
+			);
+			path = TransientHub;
+			sourceTree = "<group>";
+		};
+		0438DD8C1AD094140049AB66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0438DD8D1AD094140049AB66 /* Info.plist */,
+				0438DD8E1AD094140049AB66 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0438DDA81AD094140049AB66 /* TransientHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				0438DDAB1AD094140049AB66 /* TransientHubTests.m */,
+				0438DDA91AD094140049AB66 /* Supporting Files */,
+			);
+			path = TransientHubTests;
+			sourceTree = "<group>";
+		};
+		0438DDA91AD094140049AB66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0438DDAA1AD094140049AB66 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04D3FC021AD61E3C00036F70 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */,
+				04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */,
+				04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */,
+				04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */,
+				04D3FC071AD61E3C00036F70 /* ECSlidingConstants.h */,
+				04D3FC081AD61E3C00036F70 /* ECSlidingInteractiveTransition.h */,
+				04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */,
+				04D3FC0A1AD61E3C00036F70 /* ECSlidingSegue.h */,
+				04D3FC0B1AD61E3C00036F70 /* ECSlidingSegue.m */,
+				04D3FC0C1AD61E3C00036F70 /* ECSlidingViewController.h */,
+				04D3FC0D1AD61E3C00036F70 /* ECSlidingViewController.m */,
+				04D3FC0E1AD61E3C00036F70 /* UIViewController+ECSlidingViewController.h */,
+				04D3FC0F1AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m */,
+			);
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		04D3FC231AD6237500036F70 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC5D1AD6CC2800036F70 /* TWBaseViewController.h */,
+				04D3FC5E1AD6CC2800036F70 /* TWBaseViewController.m */,
+				04D3FC591AD6CC2800036F70 /* TWBaseEventViewController.h */,
+				04D3FC5A1AD6CC2800036F70 /* TWBaseEventViewController.m */,
+				04D3FC5B1AD6CC2800036F70 /* TWBaseFeedViewController.h */,
+				04D3FC5C1AD6CC2800036F70 /* TWBaseFeedViewController.m */,
+				04D3FC561AD6CBE300036F70 /* TWBaseEvent.h */,
+				04D3FC571AD6CBE300036F70 /* TWBaseEvent.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		04D3FC361AD62C7300036F70 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC2A1AD627C400036F70 /* TWHomeViewController.h */,
+				04D3FC2B1AD627C400036F70 /* TWHomeViewController.m */,
+				04D3FC271AD6258D00036F70 /* TWWatchListViewController.h */,
+				04D3FC281AD6258D00036F70 /* TWWatchListViewController.m */,
+				04D3FC2D1AD6296500036F70 /* TWFeedViewController.h */,
+				04D3FC2E1AD6296500036F70 /* TWFeedViewController.m */,
+				04D3FC301AD62A6100036F70 /* TWAddFeedViewController.h */,
+				04D3FC311AD62A6100036F70 /* TWAddFeedViewController.m */,
+			);
+			name = Feeds;
+			sourceTree = "<group>";
+		};
+		04D3FC371AD62C9900036F70 /* Secondary Views */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC331AD62B2C00036F70 /* TWGlossaryViewController.h */,
+				04D3FC341AD62B2C00036F70 /* TWGlossaryViewController.m */,
+				04D3FC381AD62CB900036F70 /* TWSettingsViewController.h */,
+				04D3FC391AD62CB900036F70 /* TWSettingsViewController.m */,
+				04D3FC3E1AD62CF600036F70 /* TWFeedbackViewController.h */,
+				04D3FC3F1AD62CF600036F70 /* TWFeedbackViewController.m */,
+				04D3FC3B1AD62CCB00036F70 /* TWAboutViewController.h */,
+				04D3FC3C1AD62CCB00036F70 /* TWAboutViewController.m */,
+				04D3FC411AD62D1000036F70 /* TWTermsViewController.h */,
+				04D3FC421AD62D1000036F70 /* TWTermsViewController.m */,
+			);
+			name = "Secondary Views";
+			sourceTree = "<group>";
+		};
+		04D3FC441AD6325200036F70 /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC641AD7065000036F70 /* CRTSsample.xml */,
+				04D3FC651AD7065000036F70 /* SWIFT.xml */,
+				04D3FC621AD7012800036F70 /* Raptor.xml */,
+			);
+			name = "Sample Data";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		04D3FC4A1AD6348300036F70 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC4B1AD6357500036F70 /* TWDataManager.h */,
+				04D3FC4C1AD6357500036F70 /* TWDataManager.m */,
+				04D3FC471AD6347E00036F70 /* Model.xcdatamodeld */,
+				04D3FC4E1AD636AA00036F70 /* Managed Objects */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		04D3FC4E1AD636AA00036F70 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		04D3FC521AD6CB8500036F70 /* Event Objects */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC4F1AD6CB7400036F70 /* TWEventFeed.h */,
+				04D3FC501AD6CB7400036F70 /* TWEventFeed.m */,
+				04D3FC531AD6CBB000036F70 /* TWVOEvent.h */,
+				04D3FC541AD6CBB000036F70 /* TWVOEvent.m */,
+			);
+			name = "Event Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0438DD881AD094140049AB66 /* TransientHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0438DDAF1AD094140049AB66 /* Build configuration list for PBXNativeTarget "TransientHub" */;
+			buildPhases = (
+				0438DD851AD094140049AB66 /* Sources */,
+				0438DD861AD094140049AB66 /* Frameworks */,
+				0438DD871AD094140049AB66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransientHub;
+			productName = TransientHub;
+			productReference = 0438DD891AD094140049AB66 /* TransientHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0438DDA41AD094140049AB66 /* TransientHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0438DDB21AD094140049AB66 /* Build configuration list for PBXNativeTarget "TransientHubTests" */;
+			buildPhases = (
+				0438DDA11AD094140049AB66 /* Sources */,
+				0438DDA21AD094140049AB66 /* Frameworks */,
+				0438DDA31AD094140049AB66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0438DDA71AD094140049AB66 /* PBXTargetDependency */,
+			);
+			name = TransientHubTests;
+			productName = TransientHubTests;
+			productReference = 0438DDA51AD094140049AB66 /* TransientHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0438DD811AD094140049AB66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = ProphetStudios;
+				TargetAttributes = {
+					0438DD881AD094140049AB66 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					0438DDA41AD094140049AB66 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 0438DD881AD094140049AB66;
+					};
+				};
+			};
+			buildConfigurationList = 0438DD841AD094140049AB66 /* Build configuration list for PBXProject "TransientHub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0438DD801AD094140049AB66;
+			productRefGroup = 0438DD8A1AD094140049AB66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0438DD881AD094140049AB66 /* TransientHub */,
+				0438DDA41AD094140049AB66 /* TransientHubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0438DD871AD094140049AB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438DD9B1AD094140049AB66 /* Main.storyboard in Resources */,
+				0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */,
+				04D3FC631AD7012800036F70 /* Raptor.xml in Resources */,
+				04D3FC671AD7065000036F70 /* SWIFT.xml in Resources */,
+				0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */,
+				04D3FC661AD7065000036F70 /* CRTSsample.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0438DDA31AD094140049AB66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0438DD851AD094140049AB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438DD921AD094140049AB66 /* AppDelegate.m in Sources */,
+				04D3FC491AD6347E00036F70 /* Model.xcdatamodeld in Sources */,
+				04D3FC611AD6CC2800036F70 /* TWBaseViewController.m in Sources */,
+				04D3FC4D1AD6357500036F70 /* TWDataManager.m in Sources */,
+				04D3FC351AD62B2C00036F70 /* TWGlossaryViewController.m in Sources */,
+				04D3FC3A1AD62CB900036F70 /* TWSettingsViewController.m in Sources */,
+				04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */,
+				04D3FC601AD6CC2800036F70 /* TWBaseFeedViewController.m in Sources */,
+				04D3FC551AD6CBB000036F70 /* TWVOEvent.m in Sources */,
+				04D3FC1E1AD61EEA00036F70 /* TWSplitMenuViewController.m in Sources */,
+				04D3FC151AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m in Sources */,
+				04D3FC141AD61E3C00036F70 /* ECSlidingViewController.m in Sources */,
+				04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */,
+				0438DD8F1AD094140049AB66 /* main.m in Sources */,
+				04D3FC1D1AD61EEA00036F70 /* TWSlidingViewController.m in Sources */,
+				04D3FC2C1AD627C400036F70 /* TWHomeViewController.m in Sources */,
+				04D3FC321AD62A6100036F70 /* TWAddFeedViewController.m in Sources */,
+				04D3FC291AD6258D00036F70 /* TWWatchListViewController.m in Sources */,
+				04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */,
+				04D3FC511AD6CB7400036F70 /* TWEventFeed.m in Sources */,
+				04D3FC131AD61E3C00036F70 /* ECSlidingSegue.m in Sources */,
+				04D3FC581AD6CBE300036F70 /* TWBaseEvent.m in Sources */,
+				04D3FC431AD62D1000036F70 /* TWTermsViewController.m in Sources */,
+				04D3FC401AD62CF600036F70 /* TWFeedbackViewController.m in Sources */,
+				04D3FC2F1AD6296500036F70 /* TWFeedViewController.m in Sources */,
+				04D3FC3D1AD62CCB00036F70 /* TWAboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0438DDA11AD094140049AB66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438DDAC1AD094140049AB66 /* TransientHubTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0438DDA71AD094140049AB66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0438DD881AD094140049AB66 /* TransientHub */;
+			targetProxy = 0438DDA61AD094140049AB66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0438DD991AD094140049AB66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0438DD9A1AD094140049AB66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0438DD9E1AD094140049AB66 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0438DD9F1AD094140049AB66 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0438DDAD1AD094140049AB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0438DDAE1AD094140049AB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0438DDB01AD094140049AB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TransientHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0438DDB11AD094140049AB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TransientHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0438DDB31AD094140049AB66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TransientHubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransientHub.app/TransientHub";
+			};
+			name = Debug;
+		};
+		0438DDB41AD094140049AB66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TransientHubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransientHub.app/TransientHub";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0438DD841AD094140049AB66 /* Build configuration list for PBXProject "TransientHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0438DDAD1AD094140049AB66 /* Debug */,
+				0438DDAE1AD094140049AB66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0438DDAF1AD094140049AB66 /* Build configuration list for PBXNativeTarget "TransientHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0438DDB01AD094140049AB66 /* Debug */,
+				0438DDB11AD094140049AB66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0438DDB21AD094140049AB66 /* Build configuration list for PBXNativeTarget "TransientHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0438DDB31AD094140049AB66 /* Debug */,
+				0438DDB41AD094140049AB66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04D3FC471AD6347E00036F70 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04D3FC481AD6347E00036F70 /* Model.xcdatamodel */,
+			);
+			currentVersion = 04D3FC481AD6347E00036F70 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = DataModel/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0438DD811AD094140049AB66 /* Project object */;
+}

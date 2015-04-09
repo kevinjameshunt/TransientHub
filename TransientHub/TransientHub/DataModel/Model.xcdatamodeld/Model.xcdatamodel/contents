@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CDEvent" syncable="YES">
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEventFeed" inverseName="relationship" inverseEntity="CDEventFeed" syncable="YES"/>
+    </entity>
+    <entity name="CDEventFeed" syncable="YES">
+        <attribute name="feedName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEvent" inverseName="relationship" inverseEntity="CDEvent" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDEventFeed" positionX="-198" positionY="-270" width="128" height="73"/>
+        <element name="CDEvent" positionX="-54" positionY="0" width="128" height="58"/>
+    </elements>
+</model>

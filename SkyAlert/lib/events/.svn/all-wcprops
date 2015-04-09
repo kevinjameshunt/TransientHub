@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/VOEventLib/!svn/ver/2/lib/events
+END
+galex.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/VOEventLib/!svn/ver/1/lib/events/galex.xml
+END
+SWIFTCircular.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/VOEventLib/!svn/ver/1/lib/events/SWIFTCircular.xml
+END
+LOFAR.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/VOEventLib/!svn/ver/1/lib/events/LOFAR.xml
+END
+event4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/VOEventLib/!svn/ver/1/lib/events/event4.xml
+END
+CSS_NEO.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/VOEventLib/!svn/ver/1/lib/events/CSS_NEO.xml
+END
+LIGO-LOFAR.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/VOEventLib/!svn/ver/1/lib/events/LIGO-LOFAR.xml
+END
+SWIFT.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/VOEventLib/!svn/ver/1/lib/events/SWIFT.xml
+END
+CRTSsample.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/VOEventLib/!svn/ver/1/lib/events/CRTSsample.xml
+END

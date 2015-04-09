@@ -1,0 +1,16 @@
+This directory contains sample code that uses the VOEvent.py
+library and Vutil.py.
+
+- format_to_html.py -- Formats an event to HTML
+
+  1. Has options (a) to write to stdout, (b) write to file, and (c)
+     capture as string.  To see help message, type:
+
+         $ python format_to_html.py --help
+
+  2. Packages this functionality in a way that it can be imported
+     and used in other code.
+
+- modify.py -- Reads a VOEvent file and does some modifications, then
+  writes the modified event XML output.
+

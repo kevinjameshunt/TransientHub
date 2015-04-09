@@ -1,0 +1,1946 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>IVOA Sky Transient Metadata</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta content="IVOA, International, Virtual, Observatory, Alliance" name="Keywords">
+<meta content="Rob Seaman, seaman@noao.edu" name="author">
+<meta content="Roy Williams, roy@cacr.caltech.edu" name="author">
+<meta content="Alasdair Allan" name="author">
+<meta content="Scott Barthelmy" name="author">
+<meta content="Joshua S. Bloom" name="author">
+<meta content="John M. Brewer" name="author">
+<meta content="Matthew Graham" name="author">
+<meta content="Frederic Hessman" name="author">
+<meta content="Szabolcs Marka" name="author">
+<meta content="Arnold Rots" name="author">
+<meta content="Tom Vestrand" name="author">
+<meta content="Przemyslaw Wozniak" name="author">
+<meta content="Rob Seaman, seaman@noao.edu" name="maintainedBy">
+
+
+<!--
+<script type="text/javascript" src="/misc/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="/misc/generated-toc.js"></script>
+
+<link href="/misc/ivoa_rec.css" type="text/css" rel="stylesheet"></head>
+
+<script type="text/javascript" src="http://www.ivoa.net/misc/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="http://www.ivoa.net/misc/generated-toc.js"></script>
+-->
+
+<link href="http://www.ivoa.net/misc/ivoa_rec.css" type="text/css" rel="stylesheet"></head>
+
+<body>
+
+<table style="width: 337.5pt;" border="0" cellpadding="0" cellspacing="0" width="563">
+ <tbody><tr>
+  <td style="padding: 0cm;">
+<!--
+  <p class="MsoNormal"><span style="color: black;"><img src="/pub/images/IVOA_wb_300.jpg" height="169" width="300"></span></p>
+-->
+  <p class="MsoNormal"><span style="color: black;"><img src="http://www.ivoa.net/pub/images/IVOA_wb_300.jpg" height="169" width="300"></span></p>
+  </td>
+  <td style="padding: 0cm;">
+  <p><b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">&nbsp;I</span></i></b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">nternational</span></i></p>
+  <p><b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">&nbsp;&nbsp;&nbsp; V</span></i></b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">irtual</span></i></p>
+
+  <p><b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">&nbsp; &nbsp;&nbsp;O</span></i></b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">bservatory</span></i></p>
+  <p><b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">A</span></i></b><i><span style="font-size: 14pt; color: rgb(0, 90, 156);">lliance</span><span style="color: black;">
+  </span></i></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p><span>&nbsp;</span></p>
+
+  <h1>Sky Event Reporting Metadata (<i>VOEvent</i>)<br>
+    Version 2.00 DRAFT</h1>
+  
+<!--
+<h2>IVOA Recommendation 1 November 2006</h2>
+-->
+
+<!--
+  <b>Status of This Document:</b>
+  This is an Proposed Recommendation. The first release of this document was 2006-06-29. 
+  This document has been produced by the IVOA VOEvent Working Group. This is an IVOA Proposed Recommendation 
+  made available for public review. It is appropriate to reference this document only as a recommended standard 
+  that is under review and which may be changed before it is accepted as a full recommendation.
+ 
+  <i>Latest version of this document:
+<a href="http://www.ivoa.net/Documents/latest/VOEvent.html">
+http://www.ivoa.net/Documents/latest/VOEvent.html</a></i> 
+-->
+
+<!--
+ <p></p><dt><b>This version</b>:</dt>
+<dd> <a href="http://www.ivoa.net/Documents/PR/VOE/VOEvent-20060810.html">http://www.ivoa.net/Documents/PR/VOE/VOEvent-20061101.html</a> 
+  <p></p></dd><dt><b>Latest version</b>:</dt><dd>     <a href="http://www.ivoa.net/Documents/latest/VOEvent.html">http://www.ivoa.net/Documents/latest/VOEvent.html</a>
+ <p></p></dd><dt><b>Previous version(s)</b>:</dt><dd>     <a href="http://www.ivoa.net/Documents/PR/VOE/VOEvent-20060629.html">http://www.ivoa.net/Documents/PR/VOE/VOEvent-20060629.html</a>
+ </dd><dt></dt><dd>   <a href="http://www.ivoa.net/Documents/WD/VOEvent/VOEvent-20050714.html">http://www.ivoa.net/Documents/WD/VOEvent/VOEvent-20050714.html</a>
+-->
+
+  <dl>
+    <dt>Editors:</dt>
+    <dd>Roy Williams, <a href="mailto:roy@caltech.edu"><i>roy@caltech.edu</i></a></dd>
+    <dd>Rob Seaman, <a href="mailto:seaman@noao.edu"><i>seaman@noao.edu</i></a></dd>
+    <br>
+    <dt>Authors:</dt>
+    <dd>Rob <b>Seaman</b>, <i>National Optical Astronomy Observatory, USA</i></dd>
+    <dd>Roy <b>Williams</b>, <i>California Institute of Technology, USA</i></dd>
+    <dd>Alasdair <b>Allan</b>, <i>University of Exeter, UK</i></dd>
+    <dd>Scott <b>Barthelmy</b>, <i>NASA Goddard Spaceflight Center, USA</i></dd>
+    <dd>Joshua S. <b>Bloom</b>, <i>University of California, Berkeley, USA</i></dd>
+    <dd>John M. <b>Brewer</b>, <i>Yale University, USA</i></dd>
+    <dd>Matthew <b>Graham</b>, <i>California Institute of Technology, USA</i></dd>
+    <dd>Frederic <b>Hessman</b>, <i>University of Gottingen, Germany</i></dd>
+    <dd>Szabolcs <b>Marka</b>, <i>Columbia University, USA</i></dd>
+    <dd>Arnold <b>Rots</b>, <i>Harvard-Smithsonian Center for Astrophysics, USA</i></dd>
+    <dd>Tom <b>Vestrand</b>, <i>Los Alamos National Laboratory, USA</i></dd>
+    <dd>Przemyslaw <b>Wozniak</b>, <i>Los Alamos National Laboratory, USA</i></dd>
+  </dl>
+  <hr>
+
+<h2><a id="abstract" name="abstract">Abstract</a></h2>
+<p>
+VOEvent [<a href="#voevent">21</a>]
+defines the content and meaning of a standard information
+packet for representing, transmitting, publishing and archiving 
+information about a transient celestial event, with the implication that
+timely follow-up is of interest.  The objective is to motivate
+the observation of targets-of-opportunity, to drive robotic telescopes,
+to trigger archive searches, and to alert the community.  VOEvent is
+focused on the reporting of photon events, but events mediated by
+disparate phenomena such as neutrinos, gravitational waves, and
+solar or atmospheric particle bursts may also be reported.
+</p>
+<p>
+Structured data is used, rather than natural language, so that
+automated systems can effectively interpret VOEvent packets. Each
+packet may contain one or more of the "who, what, where, when &amp; how"
+of a detected event, but in addition, may contain a hypothesis (a "why")
+regarding the nature of the underlying physical cause of the event.
+Citations to previous VOEvents may be used to place each event in its
+correct context. Proper curation is encouraged throughout each event's
+life cycle from discovery through successive follow-ups.
+</p>
+<p>
+VOEvent packets gain persistent identifiers and are typically stored
+in databases reached via registries. VOEvent packets may therefore
+reference other packets in various ways. Subscribers, human or
+machine, receive immediate notification of events, based on previously
+defined criteria. Packets are encouraged to be small and to be processed
+quickly. This standard does not define a transport layer or the
+design of clients, repositories, publishers or brokers; it does not
+cover policy issues such as who can publish, who can build a registry
+of events, who can subscribe to a particular registry, nor the
+intellectual property issues.
+</p>
+<h2>1. <a id="intro" name="intro">Introduction</a></h2>
+<p>
+Throughout human history, unexpected events in the sky have been
+interpreted as portents and revelations. Modern curiosity seeks to
+use such transient events to probe the fundamental nature of the
+universe. In decades to come the scientific study of such events
+will be greatly extended, with new survey telescopes making wide-area
+systematic searches for time-varying astronomical events, and with a
+large number of robotic facilities standing ready to respond. These
+events may reflect purely local solar system phenomena such as
+comets, solar flares, asteroids and Kuiper Belt Objects, or those
+more distant such as gravitational microlensing, supernovae and
+Gamma-Ray Bursts (GRBs). Most exciting of all may be new and unknown
+types of event, heralding new horizons for astrophysics.  Searches
+for astrophysical events are taking place at all electromagnetic
+wavelengths from gamma-rays to radio, as well as quests for more
+exotic events conveyed by such means as neutrinos, gravitational
+waves or high-energy cosmic rays.
+</p>
+<p>
+For many types of events, astrophysical knowledge is gained through
+fast, comprehensive follow-up observation &#8212; perhaps the immediate
+acquisition of the spectrum of a suspected optical counterpart, for
+example &#8212; and in general, by observations made with instruments
+in different wavelength regimes or at different times. To satisfy
+these needs, several projects are commissioning robotic telescopes
+to respond to digital alerts by pointing the telescope and triggering
+observations in near real-time and without human intervention. These 
+include, for instance, 
+Skyalert[<a href="#skyalert">6</a>] in the USA, and
+RoboNet-1.0 [<a href="#robonet">13</a>] and eStar[<a href="#estar">3</a>] in the United Kingdom.
+Automated systems
+may also query archives and initiate pipelines in response to such alerts.
+</p>
+<p>
+Many projects have been conceived &#8212; some now in operation &#8212;
+that will discover such time-critical celestial events. These include
+a large number of robotic survey and monitoring telescopes with apertures
+from tens of centimeters to tens of meters, large-field survey projects
+like CRTS [<a href="#crts">9</a>], PTF [<a href="#ptf">##</a>], Pan-STARRS
+[<a href="#panstarrs">10</a>] and LSST [<a href="#lsst">8</a>], satellites 
+like Swift and Fermi [<a href="#swift">12</a>], and more singular experiments like
+LIGO [<a href="#ligo">7</a>]. 
+The community
+has demonstrated that robotic telescopes [<a href="#robot">14</a>] can
+quickly follow-up events using the standard outlined in this document.
+In the past, human-centric event alert systems have been very successful,
+including the Central Bureau for Astronomical Telegrams (CBAT)
+[<a href="#cbat">2</a>] and the Astronomer's Telegram (ATEL)
+[<a href="#atel">1</a>], but these systems use predominantly
+natural-language text to describe each event, and do 
+not have sophisticated selection criteria for subscribers.
+The GRB Coordinates Network (GCN)
+[<a href="#gcn">4</a>] reports one of the most fruitful event streams
+of current times, and its events are transmitted very successfully for
+follow-up within seconds or minutes. With VOEvent, we would like to
+leverage the success of GCN by making it interoperable with other
+producers of events, and by generalizing its transport mechanisms. 
+</p>
+<p>
+A much larger rate of events can be expected as new facilities are
+commissioned or more fully automated. These rates indicate events
+that must be handled by machines, not humans. Subscribing agents
+must be able to automatically filter a tractable number of events
+without missing any that may be key to achieving their goals. In
+general, the number of pending events from a large-scale survey 
+telescope (such as LSST) that are above the horizon at a given
+observatory during a given observing session may be orders of
+magnitude larger than a human can sift through productively.
+Selection criteria will need to be quite precise to usefully
+throttle the incoming event stream(s) &#8212; say &#8212; <i>"give 
+me all events in which a point source R-band magnitude increase of
+at least -2.0 was seen to occur in less than four hours, that are
+located within specified molecular column density contours of a
+prioritized list of galactic star forming regions"</i>. In practice
+the result of complex queries such as these will be transmitted
+through intermediary "brokers" &#8212; which will subscribe to
+VOEvent-producing systems and provide filter services to client
+groups ("subscribers") via specialized VOEvents. Filtering will often
+be based on coincidence between multiple events.  A gravitational
+wave detector may produce a large number of candidate events, but the
+interesting ones may be only those that register with multiple instruments. 
+</p>
+<p>
+Handling the anticipated event rates quickly and accurately will
+require alert packets to be issued in a structured data format, not
+natural language. Such a structured discovery alert &#8212; and any
+follow-up packets &#8212; will be referred to as a VOEvent.  VOEvent
+will rely on XML schemata [<a href="#xml">30</a>] to provide the
+appropriate structured syntax and semantics. These schemata may be
+specific to VOEvent or may reference external libraries such as the
+IVOA's Space-Time Coordinate (STC) metadata specification
+[<a href="#stc">18</a>], the Remote Telescope Markup Language (RTML)
+[<a href="#rtml">15</a>], 
+or the simpleTimeSeries specification from the dotAstro project [**]
+</p>
+<p> VOEvent is a pragmatic effort that crosses the boundary between
+the Virtual Observatory and the larger astronomical community. The
+results of astronomical observations using real telescopes must be
+expressed using the IVOA VOEvent standard, be recorded and transmitted
+via registries and aggregators within and outside the VO, and then be
+captured and filtered by subscribing VO clients.  Each event that
+survives rigorous filtering can then be passed to other real (or
+possibly virtual) telescopes, for instance via RTML, to acquire real
+follow-up observations that will confirm (or deny) the original hypothesis
+as to the classification of the object(s) or processes that generated
+that particular VOEvent in the first place. This must happen quickly
+(often within seconds of the original VOEvent) and must minimize
+unnecessary expenditures of either real or virtual resources.
+</p>
+<p>
+VOEvent is a mechanism for broadcasting discoveries that others may
+wish to follow-up, and this purpose defines its scope. An astronomical
+discovery that cannot benefit from immediate follow-up is not a good
+candidate for expression as a VOEvent.
+</p>
+<p>
+Following the <a href="#abstract">Abstract</a> and
+<a href="#intro">Introduction</a>, this document contains a discussion
+of appropriate VOEvent usage in <a href="#usage">§2</a>.  Section
+<a href="#semantics">3</a> is the heart of the document, conveying the 
+semantics of a VOEvent packet. Explicit examples of VOEvent packets are
+in <a href="#examples">§4</a>, and linked references in
+<a href="#refer">§5</a>.
+</p>
+<h3>1.1 Changes from VOEvent 1.1</h3>
+<ul>
+<li>The concept of event stream in introduced in section 2.2, this in new in VOEvent 2.0.
+The stream metadata acts as a template for the events in the stream, and is registered with the VO registry.
+
+<li>The section on transport of VOEvents has been removed, so it can be handled in its own 
+standards process.
+
+<li>The section on Registry enhancements to support VOEvent has been expanded and clarified.
+
+<li> The &lt;Param&gt; elements can now have &lt;Description&gt; and &lt;Reference&gt; elements
+<li> The value of a &lt;Param&gt; element can now be expressed as an element in 
+addition to an attribute.
+<li> The &lt;Param&gt; element now has an attribute "dataType" to express the meaning of the parameter value (int, float, string).
+<li> There is a new &lt;Table&gt; element to express simple tables, see section 3.3.3.
+<li> There is a new &lt;SimpleTimeSeries&gt; element to express time series, 
+with particular application for light curves. See section 3.3.4.
+<li> The VOEvent packet structure still conforms to the IVOA <i>Space-Time Coordinates </i>
+standard, but there is a new, simplified schema for these elements that is completely within
+the VOEvent schema.
+<li> The semantic implication of a &lt;Citation&gt; element is clarified: section 3.7
+<li> The &lt;Reference&gt; element has a more sophisticated notion of <i>type</i>
+as a general URI rather than enumeration of a few.
+</ul>
+
+<h2>2. <a id="usage" name="usage">Usage</a></h2>
+<p>
+This document defines the semantics of an alert packet known as
+VOEvent [<a href="#voevent">21</a>]. In this document, the word
+<i>packet</i> will refer to a
+single, syntactically complete, VOEvent alert or message, however
+transmitted or stored. The transmission of such a packet announces
+that an astronomical "event" has occurred, or provides information
+contingent on a previous VOEvent through a citation mechanism. The 
+packet may include information regarding the "who, what, where, when &amp; how" 
+of the event, and may express one or more "why" hypotheses regarding
+the physical cause of the observed event and the likelihood of each
+of these hypotheses. 
+</p>
+<h3>2.1 Publishing VOEvent Packets</h3>
+<p>
+VOEvent packets express sky transient alerts.  VOEvent users subscribe
+to the types of alerts pertinent to their science goals.  In addition to Publisher
+and Subscriber, the following roles define the interchange of VOEvent semantics:
+</p>
+<ul>
+<li>
+An <i><b>Author</b></i> is anyone (or any organization) creating scientific
+content suitable for representation as a sky transient alert.  An author
+will typically register with the IVOA registry, so that the <b>&lt;Who&gt;</b>
+element of VOEvent packets can be small and reusable, expressing only the
+IVOA identifier needed to retrieve the contact information for the author.
+</li>
+<p></p>
+<li>
+A <i><b>Publisher</b></i> receives alerts from one-or-more authors, and
+assigns a unique identifier to each resulting packet.  Either the author or
+the publisher generates the actual XML syntax of the event, but the publisher
+is responsible for the validity of the packet relative to the VOEvent schema.
+Publishers will register with the IVOA registry as described below.
+</li>
+<p></p>
+<li>
+A <i><b>Repository</b></i> subscribes to one or more VOEvent streams, persists
+packets either permanently or temporarily, and runs a service that allows clients
+to resolve identifiers and apply complex queries to its holdings.  A given packet
+had one Publisher but may be held in more than one Repository.  Public repositories
+will register with the IVOA registry.
+</li>
+<p></p>
+<li>
+A <i><b>Subscriber</b></i> is any entity that receives VOEvent packets for
+whatever purpose.  Subscribers can find out how to get certain types of events
+by consulting the lists of publishers and repositories in the IVOA registry.
+A subscription is a filter on the stream of events from a publisher: the
+subscriber is notified whenever certain criteria are met.  For example, the
+filter may involve the curation part of the event (<i>e.g.</i>, <i>"all events
+published by the Swift spacecraft"</i>), its location (<i>"anything in M31"</i>),
+or it may reference the detailed metadata of the event itself (<i>"whenever the
+cosmic ray energy is greater than 3 TeV"</i>).
+<p></p>
+</li>
+<p></p>
+<li>
+A <i><b>Broker</b></i> or <b><i>Relay</i></b>, also sometimes known as
+a <i>Filter</i>, is any combination of the atomic roles of Publisher,
+Repository, or Subscriber that also offers arbitrary application-level
+functionality.  See the IVOA VOEvent Transport Note [<a href="#voevent">21</a>]
+for further discussion.
+</li>
+</ul>
+<h3>2.2 VO Identifiers (IVORNs) and Publishers</h3>
+<p>
+VOEvent benefits from the IVOA identifiers developed for the VO registry.
+Such an identifier is called an <i>IVORN</i>, that is, an <i>International Virtual
+Observatory Resource Name</i>.  It is required to begin with <b><i>"ivo://"</i></b>,
+and will stand in for a particular packet. A <i>registered</i> VOEvent packet is
+one that has a valid identifier &#8212; meaning that a registry exists that can
+resolve that identifier to the full VOEvent packet.
+VOEvent identifiers thus provide a citation mechanism &#8212; a way to express
+that one VOEvent packet is a <i>follow-up</i> in some fashion of a previous
+packet.  For these reasons, VOEvent packets will often contain VO identifiers
+[<a href="#id">16</a>].  These take the general form
+<b><i>ivo://authorityID/resourceKey#local_ID</i></b>, and are references
+to metadata packets that may be found at a VO registry or VOEvent repository.
+There are several types of metadata schema that the registry
+can hold.  For the purposes of VOEvent, the principal schemata are:
+</p>
+<ul>
+<li>
+<b>VOEvent</b>: the metadata packet for an alert resulting from the observation
+of a transient celestial event.  This schema is defined in this document.
+</li>
+<p></p>
+<li>
+<b>VOEventStream</b>: the metadata packet for a stream 
+of VOEvents, including information about who is running it, 
+the parameters that may be included and their meaning.
+The VOEventStream may also be shortened to just 'stream', they mean the same thing.
+</li>
+<p></p>
+<li>
+<b>VOEventServer</b>: the metadata packet to describe a
+service that provides VOEvents, which may be past events from a repository query service,
+or may be events sent in near real-time from a subscription service.
+The server definition includes the list of streams whose events
+are kept, the service endpoint to query the repository, or the endpoint to
+resolve a VOEvent identifier.
+</li>
+<p></p>
+<li>
+<b>Author Organization</b>: this metadata describes an author, including
+contact information and a description of the project.  The VOEvent
+<b>&lt;Who&gt;</b> element contains either a reference to an author's
+IVORN or explicit contact information sufficient to describe the author.
+</li>
+</ul>
+<p>
+When such an identifier is <i>resolved</i>, it means that the VOEvent
+metadata packet is obtained in exchange for the identifier. Such resolution
+happens through the global, distributed IVOA registry in stages.  The registry
+is queried to locate a repository holding the relevant packet, and then the
+repository is queried for the packet itself.
+The part of the IVORN before the "#" symbol points to the <i>VOEventStream</i> of which the
+event is a member; the whole IVORN (that includes the local_ID) points to the event itself.
+Thus VOEvent identifiers are overloaded; they contain a stream
+identifier, then the "#" sign, then the local reference within that stream.
+</p>
+<p>
+This is a key point in understanding VOEvent identifiers: 
+<b>The Event identifier also expresses the Stream identifier.</b>
+For example:
+</p>
+<ul>
+<li>
+<em>ivo://nvo.caltech/voeventnet/catot#1004071150784109051</em><br>
+<p>
+This identifier points to a specific VOEvent (number <em>1004071150784109051</em>) that is an 
+instance of the stream called <em>ivo://nvo.caltech/voeventnet/catot</em>.
+However, this IVORN will not resolve from the global
+VO registry, but only from a repository that has this stream of events.
+</p>
+</li>
+<li>
+<em>ivo://nvo.caltech/voeventnet/catot</em><br>
+<p>
+This Stream identifier can be looked up in any VO registry, returning a description, who runs it, 
+the names, semantics, and descriptions of the parameters used in the events, 
+how to subscribe, etc.  In this case, the stream represents optical transients 
+from the CRTS survey. For resolving the event itself, we want a repository 
+that will have the event, so a query would be used like this: 
+<em>"Find repositories that keep the events from this Stream"</em>
+</p>
+</li>
+</ul>
+<p>
+<p>
+The nature of a standard service to query VOEvent server records and
+the metadata necessary to describe a Stream remain under debate in the VOEvent Working Group.
+</p>
+<h3>2.3 Authentication and Authorization</h3>
+<p>
+VOEvents provide a mechanism for alerting members of the astronomical
+community to time-critical celestial phenomena. As a result of such
+an alert, significant hardware, software and personnel assets of the
+community may be retargeted to investigate those phenomena. The
+scientific and financial costs of such retargeting may be large, but
+the potential scientific gains are larger. The success of VOEvent &#8212;
+and of observations of astronomical transients in general &#8212; depends
+on minimizing both intentional and unintentional noise/spam associated 
+with this communications channel. All of the familiar internet security
+worries apply to VOEvents. These questions are addressed elsewhere.
+</p>
+<h3>2.4 Vocabulary usage in VOEvent</h3>
+
+<font color="red">
+Describe how vocabularies fit into various niches in VOEvent elements.
+</font>
+
+<h3>2.5 Registry Enhancements</h3>
+<p>
+The registry enhancements (proposed elsewhere) will make it easier to work with VOEvents. 
+These consist of metadata records called VOEventStream and VOEventServer, as described below.
+<ul>
+</p>
+<h4>2.5.1 VOEventStreams in the VO Registry</h4>
+The stream metadata defines the meanings of the parameters and table columns that are used in a homogeneous
+collection of events from a specific project, instrument, or observatory. 
+The VO Registry will hold these definitions, and will have the following purposes and capabilities.
+<ul>
+<li>Resolving an event: the unique identifier for an event is a concatenation of a stream identifier 
+and an event number within that stream. A question to the Registry finds which VOEventServer 
+has query capability for that stream, and then that server can be probed to get the full event metadata.</li>
+
+<li>What is this event: the event identifier contains the VOEventStream identifier, 
+from which the Registry can produce the descriptive text, contact information for the responsible people, 
+and so on.</li>
+
+<li>Subscription to a stream: VOEventServers are being built to push events to those who want them 
+by a variety of messaging protocols; in order for an astronomer to set this up, the Registry is 
+asked which servers provide the "subscription capability" for the given stream, so that the 
+astronomer can work with that server to set up future delivery of events.</li>
+
+<li>Creating a Stream: A survey or project may wish to publish am event stream. The Registry will 
+provide a way to define the nature of the coming events (VOEventStream) and where to get 
+them (VOEventServer), and thus allow others to find and subscribe to those events. </li>
+
+<li>What does this Parameter mean: Each event has a set of keyword parameters; the Registry can be 
+used to find out their meanings.</li>
+</ul>
+<h4>2.5.2 VOEventServer in the VO Registry</h4>
+<p>
+Once the stream is defined in the registry, the question is how to find it, with the kinds of 
+services that might be wanted. These are known as Capabilities in the VO registry model. Three kinds of 
+capability that we can mention are subscription, formal query, and informal query. If a server supports a 
+subscription capability, it means that a client can submit a criterion 
+(for example "R magnitude brighter than 17"), and events will be sent by the server in the future which 
+satisfy that criterion. A formal query capability implies the existence of a formal request-response 
+protocol by which queries can be made and results returned; this will be the "Simple Event Access Protocol" 
+when it becomes an IVOA recommendation. An informal query capability means a web page with forms by 
+which a collection of events can be browsed in some way. 
+</p><p>
+The capability of a server is split further into Interfaces, which express precisely how the 
+capability can be accessed by a client. For example, subscription capability could be achieved by 
+having email, instant messaging, or text message sent; these are three different interfaces to the 
+subscription capability, and there is different metadata associated with each (email address vs 
+phone number for example).
+</p>
+</ul>
+
+<h2>3. <a id="semantics" name="semantics">VOEvent Semantics</a></h2>
+<p>
+A VOEvent packet provides a general purpose mechanism for representing information about
+transient astronomical events. However, not all VO data are suitable
+for expression using VOEvent. The VOEvent schema [<a href="#schema">6</a>]
+is as simple as practical to allow the minimal representation of
+scientifically meaningful, time critical, events. VOEvent also borrows
+other standard VO and astronomical schema, specifically STC for
+space-time coordinates and simpleTimeSeries to represent light curves and 
+other time series.
+The usual IVOA standards such as registries and UCD identifiers are
+used. VOEvent has a strong interest in the development of complete and
+robust astronomical ontologies, but must rely on pragmatic and immediately
+useful prototypes of planned facilities.
+</p>
+<p>
+By definition, a VOEvent packet contains a single XML <b>&lt;VOEvent&gt;</b> 
+element. Multiple <b>&lt;VOEvent&gt;</b> elements may be jointly contained
+within a larger XML document, but these should be handled as separate
+alert packets.  A <b>&lt;VOEvent&gt;</b> element may contain at most one
+of each of the following optional sub-elements: 
+</p><ol>
+  <ol>
+    <table>
+      <tbody>
+        <tr> 
+          <td><b>&lt;<a href="#who">Who</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>Identification of scientifically responsibel Author</i></td>
+        </tr>
+        <tr> 
+          <td><b>&lt;<a href="#what">What</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>Event Characterization modeled by the Author</i></td>
+        </tr>
+        <tr> 
+          <td><b>&lt;<a href="#wherewhen">WhereWhen</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>Space-Time Coordinates of the event</i></td>
+        </tr>
+        <tr> 
+          <td><b>&lt;<a href="#how">How</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>Instrument Configuration</i></td>
+        </tr>
+        <tr> 
+          <td><b>&lt;<a href="#why">Why</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>Initial Scientific Assessment</i></td>
+        </tr>
+        <tr> 
+          <td><small>&nbsp;</small></td>
+        </tr>
+        <tr> 
+          <td><b>&lt;<a href="#citations">Citations</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>Follow-up Observations</i></td>
+        </tr>
+        <tr> 
+          <td><b>&lt;<a href="#description">Description</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>Human Oriented Content</i></td>
+        </tr>
+        <tr> 
+          <td><b>&lt;<a href="#reference">Reference</a>&gt;</b></td>
+          <td>&nbsp;&nbsp;&nbsp;</td>
+          <td><i>External Content</i></td>
+        </tr>
+      </tbody>
+    </table>
+  </ol>
+</ol>
+
+<p>
+Only those elements required to convey the event being described need
+be present; the ordering of elements is immaterial to interpretation,
+but may be important for efficient processing in demanding applications.
+The intent of VOEvent is to describe a single astronomical transient
+event per packet. Multiple events should be expressed using multiple
+packets. On the other hand, complex observations may best be expressed
+using multiple follow-up packets or via embedded <b>&lt;References&gt;</b> 
+to external resources such as VOTables or RTML documents. XML structures
+other than those listed in this document should be used with care within
+a <b>&lt;VOEvent&gt;</b> element, but some applications may require
+the freedom to reference schema outside the scope of this specification.
+Section 4 contains examples of complete VOEvent packets.
+</p>
+<h3>3.1 <a id="voevent" name="voevent"><b>&lt;VOEvent&gt;</b></a> &#8212;
+identifiers, roles and versions</h3>
+<p>
+A <b>&lt;VOEvent&gt;</b> expresses the discovery of a sky transient event, 
+located in a region of space and time, observed by an instrument, and
+published by a person or institution who may have developed a hypothesis
+about the underlying classification of the event.
+</p>
+<p>
+The <b>&lt;VOEvent&gt;</b> element has three attributes:
+</p>
+<ul>
+<p>
+<b>3.1.1 <i>ivorn</i></b> &#8212; Each VOEvent packet is required to have 
+one-and-only-one identifier, expressed with the <b><i>ivorn</i></b>
+attribute.  VOEvent identifiers are URIs [<a href="#id">16</a>]. As the
+issuance of duplicate identifiers would diminish the trust placed in
+systems exchanging VOEvents, it is anticipated that a number of VOEvent
+publishers will be founded to issue unique IVORNs from a variety of
+useful and appropriate namespaces. The identifier actually contains
+TWO IDENTIFIERS: the first part is the identifier for the publisher,
+and the event identifier is built from this, then a # symbol, then a
+local string that is meaningful only in the context of that publisher.
+</p>
+<p>
+<b>3.1.2 <i>role</i></b> &#8212; The optional <b><i>role</i></b> attribute 
+accepts several possible values, including these:</p>
+<li>
+The value <i>"observation"</i> is the default if the <i><b>role</b></i> 
+is missing; this means that the packet describes an observation of the
+actual universe.
+</li>
+<p></p>
+<li>
+The value <i>"prediction"</i> indicates that the VOEvent describes an
+event of whatever description that has yet to occur when the packet
+is created. 
+</li>
+<p></p>
+<li>
+The value <i>"utility"</i> means that the packet expresses nothing
+about astrophysics, but rather information about the observing system.
+This could be used, for example, for a satellite to express that it
+has changed its configuration.
+</li>
+<p></p>
+<li>
+A <i>"test"</i> means that the packet does not describe actual
+astronomical events, but rather is part of a testing procedure
+of some kind.
+</li>
+<p>
+<b>It is the responsibility of all who receive VOEvent packets to pay
+attention to the <b><i>role</i></b>, and to be quite sure of the
+difference between an actual event and a test of the system or a
+prediction of an event that has yet to happen.</b>
+</p>
+<p>
+<b>3.1.3 <i>version</i></b> &#8212; The <b><i>version</i></b> attribute
+is required to be present and to equal "2.0" for all VOEvent packets
+governed by this version of the standard. There is no default value.
+</p>
+</ul>
+<p>
+For example, a <b>&lt;VOEvent&gt;</b> packet resulting from Tycho
+Brahe's discovery of a "Stella Nova" in Cassiopeia on 11 November 1572
+[<a href="#tycho">25</a>] might start:
+</p>
+<pre>  &lt;VOEvent ivorn="ivo://uraniborg.hven#1572-11-11/0001" 
+        role="observation" version="2.0" xmlns:... &gt;
+</pre>
+<p>
+The <b><i>xmlns</i></b> attribute refers to one-or-more standard XML
+namespace declarations that may optionally help define the contents
+of a packet.
+</p>
+<h3>3.2 <a id="who" name="who"><b>&lt;Who&gt;</b></a> &#8212;
+Curation Metadata</h3>
+<p>
+This element of a VOEvent packet is devoted to curation metadata:
+who is responsible for the information content of the packet. Usage
+should be compatible with section 3.2 of the IVOA Resource Metadata
+specification [<a href="#rm">17</a>].
+</p>
+<p>
+Typical curation content would include:
+</p>
+<ul>
+<h4>3.2.1&lt;Author&gt;</h4>
+<p>
+Author information follows the IVOA curation information schema:
+the organization responsible for the packet can have a title, short
+name or acronym, and a logo. A contact person has a name, email, and
+phone number. Other contributors can also be noted.
+</p>
+<p>
+An example of Author information might be:
+</p>
+<pre>&lt;Author&gt;
+    &lt;title&gt;Rapid Telescope for Optical Response&lt;/title&gt;
+    &lt;shortName&gt;Raptor&lt;/shortName&gt;
+    &lt;logoURL&gt;http://www.raptor.lanl.gov/images/RAPTOR_patchLarge.jpg&lt;/logoURL&gt;
+    &lt;contactName&gt;Robert White&lt;/contactName&gt;
+    &lt;contactEmail&gt;rwhite@lanl.gov&lt;/contactEmail&gt;
+    &lt;contactPhone&gt;+1 800 555 1212&lt;/contactPhone&gt;
+&lt;/Author&gt;
+</pre>
+<h4>3.2.2&lt;AuthorIVORN&gt;</h4>
+<p>
+As an alternative to quoting Author information over and over, this
+information can be published to the VO registry, then referenced
+through an IVORN. The <b>&lt;AuthorIVORN&gt;</b> element contains
+the identifier of the organization responsible for making the VOEvent
+available. Event subscribers will often use this as their primary
+filtering criterion. Many subscribers will only want events from a
+particular publisher, or more precisely, from a specific content
+creator. In general, <b>&lt;AuthorIVORN&gt;</b> should be a VOResource
+identifier that resolves to an organization in the sense of
+[<a href="#rm">17</a>].  Publishers and subscribers may use this
+VOResource to exchange curation metadata directly.
+</p>
+<h4>3.2.3 &lt;Date&gt;</h4>
+<p>
+The <b>&lt;Date&gt;</b> contains the date and time of the creation
+of the VOEvent packet. The required format is ISO-8601 (<i>e.g.</i>,
+<i>yyyy-mm-dd<b>T</b>hh:mm:ss.s</i>, see [<a href="#iso8601">29</a>]).
+The timescale &#8212; for curation purposes only &#8212; is assumed
+to be Coordinated Universal Time (UTC). Discussion of date and time
+for the expression of meaningful scientific coordinates may be found
+in [<a href="#stc">18</a>] and [<a href="#utc">27</a>].
+</p>
+</ul>
+<p>
+Minimal <b>&lt;Who&gt;</b> usage might resemble:
+</p>
+<pre>&lt;Who&gt;
+    &lt;AuthorIVORN&gt;ivo://uraniborg.hven/Tycho&lt;/AuthorIVORN&gt;
+    &lt;Date&gt;1573-05-05T01:23:45Z&lt;/Date&gt;
+&lt;/Who&gt;
+</pre>
+<p>
+Tycho first noted SN 1572 on 11 November of that year. The event was
+published in Tycho's pamphlet <i>De Stella Nova</i> by 5 May 1573,
+thus this later date is placed in the curation metadata. More detailed
+curation metadata can be retrieved directly from the publisher.
+</p>
+<h3>3.3 <a id="what" name="what"><b>&lt;What&gt;</b></a> &#8212;
+Event Characterization</h3>
+<p>
+The <b>&lt;What&gt;</b> and <b>&lt;Why&gt;</b> elements work together
+to characterize the nature of a VOEvent. That is: <b>&lt;What&gt;</b>
+has author-defined parameters about what was measured directly,  or other relevant information about the event, 
+versus <b>&lt;Why&gt;</b> is a data model of fixed schema about the 
+hypothesized underlying cause or causes of the astrophysical event.
+</p>
+<p>
+In general, an observation is the association of one or more dependent
+variables with zero or more independent variables. The
+<b>&lt;WhereWhen&gt;</b> element, for example, is often used to
+express the independent variables in an observation &#8212; where was
+the telescope pointed and when was the camera shutter opened. 
+The <b>&lt;What&gt;</b> element, on the other hand, is typically used
+to express the dependent variables &#8212; what was seen at that
+location at that time.
+</p>
+<p>
+A <b>&lt;What&gt;</b> element contains a list of <b>&lt;Param&gt;</b>
+elements which may be associated and labeled using <b>&lt;Group&gt;</b>
+elements. 
+It may also contain <b>&lt;Table&gt;</b> elements, 
+and <b>&lt;simpleTimeSeries&gt;</b> elements.
+See <a href="#examples">§4.1</a> for an example of usage.
+</p>
+<h4>3.3.1 &lt;Param&gt; &#8212; Numbers and strings with semantics</h4>
+<p>
+<b>&lt;Param&gt;</b> elements may be used to represent the values
+of arbitrarily named quantities. Thus a publisher need not establish
+a fixed schema for all events they issue. Unified Content Descriptors
+(UCDs) [<a href="#ucd">19</a>] may be used to clarify meaning. Usage
+of <b>&lt;Param&gt;</b> and <b>&lt;Group&gt;</b> is similar to the
+VOTable specification, see §4.1 of [<a href="#votable">22</a>].
+</p><p>
+A <b>&lt;Param&gt;</b> may contain elements <b>&lt;Description&gt;</b> and <b>&lt;Reference&gt;</b>. Like
+most VOEvent elements, these can be used 
+to give further descriptive documentation about what this parameter means. 
+The <b>&lt;Param&gt;</b> may also contain an element <b>&lt;Value&gt;</b> 
+for the value of the parameter, as an alternate to the 'value' attribute defined below: if both
+are present, the attribute takes precedence ofv the element.
+This allows parameter values to include a richer variety of text strings, to avoid strings being
+changed by Attribute-Value normalization [<a href="#avn">**</a>]
+that is part of the XML specification.
+</p><p>
+The following attributes are supported for <b>&lt;Param&gt;</b>:
+</p>
+<ul>
+<p>
+3.3.1.1 <i><b>name</b></i> &#8212; A simple utilitarian name that may be 
+used elsewhere in the packet. This name may or may not have significance 
+to subscribing clients.
+</p>
+<p>
+3.3.1.2 <i><b>value</b></i> &#8212; A string representing the value in 
+question. No range or type checking of implied numbers is performed.
+</p>
+<p>
+3.3.1.3 <i><b>unit</b></i> &#8212; The unit for interpreting
+<b><i>value</i></b>.  See §4.3 of [<a href="#votable">22</a>]
+which relies on [<a href="#units">26</a>]. 
+</p>
+<p>
+3.3.1.4 <i><b>ucd</b></i> &#8212; A UCD [<a href="#ucd">19</a>]
+expression characterizing the nature of the <b>&lt;Param&gt;</b>.
+</p>
+<p>
+3.3.1.5 <i><b>dataType</b></i> &#8212; A string specifying
+the data type of the <b>&lt;Param&gt;</b>.  Allowed values are "string", "int", or "float", 
+with the default being "string".
+</p>
+</ul>
+<p>
+For example, here are three values from a GCN [<a href="#gcn">4</a>] notice: 
+</p>
+<pre>TRIGGER_NUM = 114299
+RATE_SIGNIF = 20.49
+GRB_INTEN = 73288
+</pre>
+<p>
+In VOEvent, these can be represented as:
+</p>
+<pre>&lt;Param name="TRIGGER_NUM" value="114299" ucd="meta.id" /&gt;
+&lt;Param name="RATE_SIGNIF" value="20.49"  ucd="stat.snr" &gt;
+    &lt;Description&gt;Best significance after trying all algorithms&lt;/Description&gt;
+    &lt;Reference uri="http://gcn.gsfc.nasa.gov/swift.html"/&gt; 
+&lt;/Param&gt;
+&lt;Param name="GRB_INTEN  " value="73288"  ucd="phot.count" /&gt;
+</pre>
+<h4>3.3.2 &lt;Group&gt; &#8212; collection of related Params</h4>
+<p>
+<b>&lt;Group&gt;</b> provides a simple mechanism for associating several 
+<b>&lt;Param&gt;</b> (and/or <b>&lt;Reference&gt;</b>) elements, for
+instance, an error with a measurement. <b>&lt;Groups&gt;</b> may NOT
+be nested. <b>&lt;Group&gt;</b> elements may have a <i><b>name</b></i>
+attribute, and unlike VOTable usage, may also have a <i><b>type</b></i>
+attribute:
+</p>
+<ul>
+<p>
+3.3.2.1 <i><b>name</b></i> &#8212; A simple name such as in
+<a href="#what">§3.3.1.1</a>. 
+</p>
+<p>
+3.3.2.2 <i><b>type</b></i> &#8212; A string that can be used to specify 
+the "datatype" of simple application dependent data structures.
+</p>
+</ul>
+<p>
+In a GCN notice, for example, we might see this line:
+</p>
+<pre>GRB_INTEN:       73288 [cnts]    Peak=1310 [cnts/sec]
+</pre>
+<p> which could be expressed with one Param with a Value element, and the other with a Value attribute: </p>
+<pre>&lt;Group type="GRB_INTEN"&gt;
+    &lt;Param name="cnts" ucd="phot.count" &gt; 
+        &lt;Value&gt;73288&lt;/Value&gt; &lt;/Param&gt;
+    &lt;Param name="peak" value="1310"  ucd="arith.rate;phot.count" /&gt;
+&lt;/Group&gt;
+</pre>
+<p>
+Note that the UCDs above carry the semantics of photon counts and counts 
+per second.
+</p>
+<h4>3.3.3 <b>&lt;Table&gt;</b> &#8212; simple tabular data</h4>
+<p>
+This element is intended for a short and simple table.
+It should be noted that longer tables, or any table, can be linked using a <b>&lt;Reference&gt; </b>
+element. There are five elements defined in this subsection: Table, Field, Data, TR, TD.
+</p>
+A <b>&lt;Table&gt;</b> element can contain a sequence of <b>&lt;Field&gt;</b> elements, 
+one for each column of the table,
+then a single <b>&lt;Data&gt;</b> element that contains the data of the table, which is represented as a sequence
+of table rows, which are <b>&lt;TR&gt;</b> elements, each containing a sequence of <b>&lt;TD&gt;</b> elements for the table cells.
+For a full table, where every cell has a value, the number of <b>&lt;TD&gt;</b> elements in each row should be the 
+same as the number of <b>&lt;Field&gt;</b> elements. There is then a 1-to-1 correspondence between them for each row.
+</p><p>
+The Table can contain <b>&lt;Description&gt;</b> and <b>&lt;Reference&gt;</b> elements 
+to add documentation; the <b>&lt;Field&gt;</b> elements can also contain these.
+Thus the <b>&lt;Table&gt;</b> can contain, in order, an optional <b>&lt;Description&gt;</b> and 
+<b>&lt;Reference&gt;</b>, then a sequence 
+of one or more <b>&lt;Field&gt;</b> elements, then a <b>&lt;Data&gt;</b> element. 
+The <b>&lt;Field&gt;</b> element can also contain 
+optional <b>&lt;Description&gt;</b> and <b>&lt;Reference&gt;</b> and nothing else. 
+The <b>&lt;Data&gt;</b> element can contain only 
+<b>&lt;TR&gt;</b> elements, each of which can contain only <b>&lt;TD&gt;</b> elements. 
+The following explains the attributes that are allowed for these five elements.
+</p>
+<p>
+The following attributes are supported for <b>&lt;Table&gt;</b>:
+</p>
+<ul>
+<p>
+3.3.3.1 <i><b>name</b></i> &#8212; A simple utilitarian name that may be 
+used for identification or presentation purposes. This name may or may not have significance 
+to subscribing clients.
+</p>
+<p>
+3.3.3.2 <i><b>type</b></i> &#8212; A string representing the type of the Table, that consumers
+can use for presentation or parsing. For example, a table of type "spectralLines" could mean to
+some community to expect columns (i.e. the <b>&lt;Field&gt;</b>s) named "wavelength", "width", "name" to define 
+spectral lines.
+</p>
+</ul>
+The <b>&lt;Field&gt;</b> element defines the semantic nature of a Table column, and is structured similarly to
+the <b>&lt;Param&gt;</b> element of section 3.3.1. 
+The following attributes are supported for <b>&lt;Field&gt;</b>:
+</p>
+<ul>
+<p>
+3.3.3.3 <i><b>name</b></i> &#8212; A simple utilitarian name that may be 
+used elsewhere in the packet. This name may or may not have significance 
+to subscribing clients.
+</p>
+<p>
+<p>
+3.3.3.4 <i><b>unit</b></i> &#8212; The unit for interpreting
+the values as given in the <b>&lt;TD&gt;</b> table cells  See §4.3 of [<a href="#votable">22</a>]
+which relies on [<a href="#units">26</a>]. 
+</p>
+<p>
+3.3.3.5 <i><b>ucd</b></i> &#8212; A UCD [<a href="#ucd">19</a>]
+expression characterizing the nature of the data in this table column.
+</p>
+<p>
+3.3.1.6 <i><b>dataType</b></i> &#8212; A string specifying
+the data type of the table column.  Allowed values are "string", "int", or "float", 
+with the default being "string".
+</p>
+</ul>
+The following is an example of a Table element. Note the <b>dataType</b> attribute that is used
+to interpret the values in the table cells.
+<pre>
+ &lt;Table&gt;
+      &lt;Description&gt;Individually Referenced Moduli and Distances for NGC 0931 from NED&lt;/Description&gt;
+      &lt;Field name="(m-M)"    unit="mag" ucd="phot.mag.distMod"/&gt;
+      &lt;Field name="err(m-M)" unit="mag" ucd="phot.mag.distMod;stat.err"/&gt;
+      &lt;Field name="D"        unit="Mpc" ucd="pos.distance"/&gt;
+      &lt;Field name="REFCODE"             ucd="meta.bib.bibcode"/&gt;
+      &lt;Data&gt;  	
+        &lt;TR&gt;&lt;TD&gt;33.16&lt;/TD&gt;&lt;TD&gt;0.38&lt;/TD&gt;&lt;TD&gt;42.9&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;33.32&lt;/TD&gt;&lt;TD&gt;0.38&lt;/TD&gt;&lt;TD&gt;46.1&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;33.51&lt;/TD&gt;&lt;TD&gt;0.48&lt;/TD&gt;&lt;TD&gt;50.4&lt;/TD&gt;&lt;TD&gt;2009ApJS..182..474S&lt;/TD&gt;&lt;/TR&gt;	
+        &lt;TR&gt;&lt;TD&gt;33.55&lt;/TD&gt;&lt;TD&gt;0.38&lt;/TD&gt;&lt;TD&gt;51.3&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;33.71&lt;/TD&gt;&lt;TD&gt;0.43&lt;/TD&gt;&lt;TD&gt;55.2&lt;/TD&gt;&lt;TD&gt;2009ApJS..182..474S&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;34.01&lt;/TD&gt;&lt;TD&gt;0.80&lt;/TD&gt;&lt;TD&gt;63.3&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+      &lt;/Data&gt;
+    &lt;/Table&gt;
+</pre>
+
+<h4>3.3.4 &lt;SimpleTimeSeries&gt; for Time Series data</h4>
+<font color=red>Need some input here from Brewer and Bloom.</font>
+
+
+
+<h3>3.4 <a id="wherewhen" name="wherewhen"><b>&lt;WhereWhen&gt;</b></a> &#8212; 
+  Space-Time Coordinates</h3>
+<font color="red">
+Is the WhereWhen time the time of the event, or is it thr reference time for the light curves?
+</font>
+<p>
+A VOEvent packet will typically include information about where in the sky
+and when in time an event was detected, and from what location, along with spatial
+and temporal coordinate systems and errors.  If either the spatial or temporal
+locators are absent, it is to be assumed that the information is either unknown
+or irrelevant.  VOEvent v2.0 uses the syntax of the IVOA Space-Time Coordinate (STC)
+specification version 1.30 or later; the <b>&lt;WhereWhen&gt;</b> element may
+reference an STC [<a href="#stc">18</a>]
+<b>&lt;ObsDataLocation&gt;</b> element to provide a sky location and time for the event.  
+VOEvent publishers should
+construct expressions that concisely provide all information that is
+scientifically significant to the event, and no more than that.
+See <a href="#examples">§4.1</a> for an example of usage.
+</p>
+<p>
+STC expressions are used to locate the physical phenomena associated with a
+VOEvent alert in both time and space as described below. The
+<b>&lt;ObsDataLocation&gt;</b> element is a combination of information
+describing the location of an observation in the sky along with information
+describing the location of the observatory from which that observation was made.
+Both the sky and the observatory are in constant motion, and STC inextricably
+relates spatial and temporal information.
+</p>
+<p>
+<pre>&lt;WhereWhen&gt;
+    &lt;ObsDataLocation&gt;
+        &lt;ObservatoryLocation/&gt;
+        &lt;ObservationLocation/&gt;
+    &lt;/ObsDataLocation&gt;
+&lt;/WhereWhen&gt;</pre>
+<h4>3.4.1 ObservationLocation</h4>
+<p>
+The <b>&lt;ObservationLocation&gt;</b> should contain a link to a coordinate
+system, <b>&lt;AstroCoordSystem&gt;</b>, as well as the actual coordinates,
+<b>&lt;AstroCoords&gt;</b>, containing a reference back to the coordinate system
+specification.  For example: 
+</p>
+<pre>&lt;ObservationLocation&gt;
+
+    &lt;AstroCoordSystem id="<font color="#9a0301"><i>UTC-FK5-GEO</i></font>" /&gt;
+
+    &lt;AstroCoords coord_system_id="<font color="#9a0301"><i>UTC-FK5-GEO</i></font>"&gt;
+        &lt;Time unit="s"&gt;
+            &lt;TimeInstant&gt;
+                &lt;ISOTime&gt;2004-07-15T08:23:56&lt;/ISOTime&gt;
+            &lt;/TimeInstant&gt;
+            &lt;Error&gt;2&lt;/Error&gt;
+        &lt;/Time&gt;
+        &lt;Position2D unit="deg"&gt;
+            &lt;Value2&gt;
+                &lt;C1&gt;148.88821&lt;/C1&gt;
+                &lt;C2&gt;69.06529&lt;/C2&gt;
+            &lt;/Value2&gt;
+            &lt;Error2Radius&gt;0.03&lt;/Error2Radius&gt;
+        &lt;/Position2D&gt;
+    &lt;/AstroCoords&gt;
+&lt;/ObservationLocation&gt;
+</pre>
+<p>
+Specifying errors is optional but recommended for both time and space components.
+</p>
+<p>
+The <b>&lt;AstroCoords&gt;</b> element has a <b><i>coord_system_id</i></b>
+attribute and the <b>&lt;AstroCoordSystem&gt;</b> has a <b><i>id</i></b> attribute.
+The value of both of these should be identical, and represent the space-time 
+coordinate system that will be used for the event position and time.
+</p>
+<p>
+A <b><i>coord_system_id</i></b> and <b><i>id</i></b> are built from a time part, a space part,
+and a "center" specification, concatenated in that order and separated by hyphens.
+Astronomical coordinate systems are extremely varied, but all
+VOEvent subscribers should be prepared to handle coordinates expressed as
+combinations of these basic defaults:
+</p>
+<ul>
+<li>
+The time part can be <i>UTC</i> (Coordinated Universal Time [<a href="#stc">27</a>]),
+<i>TT</i> (Terrestrial Time, currently 65.184 seconds ahead of UTC), or <i>TDB</i>
+(Barycentric Dynamical Time).
+</li>
+<p></p>
+<li>
+The space part can be equatorial coordinates (right ascension and declination)
+expressed in either the <i>ICRS</i> or <i>FK5</i> coordinate systems.
+</li>
+<p></p>
+<li>
+The center specification can be <i>TOPO</i> (<i>i.e.</i>, the location of the
+observatory), <i>GEO</i> (geocentric coordinates), or <i>BARY</i> (relative
+to the barycenter of the solar system).
+</li>
+</ul>
+<p>
+It is assumed that the center reference position (origin) is the same for
+both space and time coordinates. That means, for instance, that <i>BARY</i>
+should only be paired with <i>TDB</i> (and vice-versa).  See the STC
+specification [<a href="#stc">18</a>] for further discussion.  The list of
+<b>&lt;AstroCoordSystem&gt;</b> defaults that VOEvent brokers and clients
+may be called upon to understand is:
+</p>
+<i>
+<ul>
+<p>
+</p><li>TT-ICRS-TOPO</li>
+<li>UTC-ICRS-TOPO</li>
+<li>TT-FK5-TOPO</li>
+<li>UTC-FK5-TOPO</li>
+<p></p><p>
+</p><li>TT-ICRS-GEO</li>
+<li>UTC-ICRS-GEO</li>
+<li>TT-FK5-GEO</li>
+<li>UTC-FK5-GEO</li>
+<p></p><p>
+</p><li>TDB-ICRS-BARY</li>
+<li>TDB-FK5-BARY</li>
+<p></p>
+</ul>
+</i>
+<p>
+The STC specification, in particular <b>&lt;ObsDataLocation&gt;</b> and its
+contained elements, allows more exotic coordinate systems (for example, describing
+planetary surfaces).  Further description of how VOEvent packets might be
+constructed to convey such information to subscribers is outside the scope of
+this document.  As with other elements of an alert packet, subscribers must be
+prepared to understand coordinates expressing the science and experimental
+design pertinent to the particular classes of sky transients that are of interest.
+</p><p>
+</p>
+In short, subscribers are responsible for choosing what VOEvent packets and
+thus <b><i>coord_system_id</i></b> values they will accept.  Further, subscribers
+may choose not to distinguish between coordinate systems that are only subtly
+different for their purposes &#8212; for instance between <i>ICRS</i> or <i>FK5</i>,
+or between <i>TOPO</i> or <i>GEO</i>.  As software determines whether a packet's
+<b><i>coord_system_id</i></b> describes a supported coordinate system, the question
+is also what accuracy is required and what coordinate transformations may be
+implicitly or explicitly performed to that level of accuracy.
+<p></p>
+<p>
+A similar question faces the authors of VOEvent packets, who must make a
+judicious choice between the available coordinate system options to meet the
+expected scientific needs of consumers of those packets.  If a detailed or high
+accuracy coordinate system selection is not needed, <b><i>UTC-ICRS-TOPO</i></b>
+would be a good choice as an interoperability standard.
+</p>
+<h4>3.4.2 ObservatoryLocation</h4>
+<p>
+The <b>&lt;ObservatoryLocation&gt;</b> element is used to express the
+location from which the observation being described was made.  It is a required
+element for expressing topocentric coordinate systems.  An instance of
+<b>&lt;ObservatoryLocation&gt;</b> may take two forms.  In the first, an
+observatory location may be taken from a library, for example: 
+</p>
+<pre>&lt;ObservatoryLocation id="<font color="#9a0301"><i>Palomar</i></font>" /&gt;
+</pre>
+<p>
+The name of the id attribute is in <font color="#9a0301"><i>red italics</i></font>,
+indicating a specific registered observatory, other examples being: Keck, KPNO,
+JCMT, MMTO, VLA, <i>etc.</i> , or it may indicate one of the following generic
+observatory locations:
+</p>
+<ul>
+  <li><i>GEOSURFACE</i> - any location on the surface of the earth</li>
+  <li><i>GEOLEO</i> - any location in Low Earth Orbit (altitude&lt;700 km)</li>
+  <li><i>GEOGSO</i> - any location within Geostationary orbit altitude</li>
+  <li><i>GEONBH</i> - any location within 50,000 km of the geocenter</li>
+  <li><i>GEOLUN</i> - any location within the Moon's orbit</li>
+</ul>
+<p>
+For example, a packet might contain the following <b>&lt;ObservatoryLocation&gt;</b>
+to indicate that the coordinates expressed in the <b>&lt;WhereWhen&gt;</b> element
+are located with an accuracy comprising the Earth's surface:
+</p>
+<pre>&lt;ObservatoryLocation id="<font color="#9a0301"><i>GEOSURFACE</i></font>" /&gt;
+</pre>
+<p>
+VOEvent Brokers are designed to comprise a high reliability, low latency, network.
+These qualities can be used, as with mirroring the STC schema, to provide robust
+access for VOEvent Subscribers by serving the library of observatory information.
+</p>
+<p>
+The second option for <b>&lt;ObservatoryLocation&gt;</b> is that an observatory
+can be located by specifying the actual coordinate values of longitude, latitude
+and altitude on the surface of the Earth. Note the use of a coordinate system 
+for the surface of the Earth (UTC-GEOD-TOPO) is natural for an observatory location, 
+whereas coordinate systems in the previous section are for astronomical events.
+</p><pre>&lt;ObservatoryLocation id="KPNO"&gt;
+
+    &lt;AstroCoordSystem id="<font color="#9a0301"><i>UTC-GEOD-TOPO</i></font>" /&gt;
+
+    &lt;AstroCoords coord_system_id="<font color="#9a0301"><i>UTC-GEOD-TOPO</i></font>"&gt;
+        &lt;Position3D&gt;
+            &lt;Value3&gt;
+                &lt;C1 pos_unit="deg"&gt;248.4056&lt;/C1&gt;
+                &lt;C2 pos_unit="deg"&gt;31.9586&lt;/C2&gt;
+                &lt;C3 pos_unit="m"&gt;2158&lt;/C3&gt;
+            &lt;/Value3&gt;
+        &lt;/Position3D&gt;
+    &lt;/AstroCoords&gt;
+&lt;/ObservatoryLocation&gt;
+</pre>
+<h4>3.4.3 Parsing the WhereWhen Element</h4>
+<p>
+When parsing a VOEvent packet, the following pseudocode may be of
+use to provide the time, the right ascension and the declination,
+if the author used <i>ICRS</i> spatial coordinates and <i>UTC</i> time.
+</p>
+<pre>  Let  x =/voe:VOEvent/WhereWhen/ObsDataLocation/ObservationLocation/AstroCoords
+  If x[@coord_system_id=&#8216;UTC-ICRS-TOPO&#8217;] then
+     Let Time = x/Time/TimeInstant/ISOTime
+     Let RA = x/Position2D/Value2/C1
+     Let Dec = x/Position2D/Value2/C2
+</pre>
+<p>
+The coordinate system is first checked to verify that it is set
+to a specific value(s), <i>UTC-ICRS-TOPO</i>.  In practice, a subscriber may
+not care about the difference between <i>ICRS</i> and <i>FK5</i>
+(of the order of 0.01") or between <i>TOPO</i> and <i>GEO</i> (in terms of timing,
+this is of the order of 25 ms for ground-based and low-earth-orbit observatories).
+Software may be written to simply accept anything that contains <i>ICRS</i> or
+<i>FK5</i>, <i>TOPO</i> or <i>GEO</i>.
+</p>
+<h4>3.4.4 Solar Events</h4>
+<p>
+The following coordinate systems are recognized for solar event data:
+</p>
+<ul>
+  <li><i>UTC-HPC-TOPO</i> - Cartesian helio-projective coordinates (solar disk)</li>
+  <li><i>UTC-HPR-TOPO</i> - Polar helio-projective coordinates (coronal events)</li>
+  <li><i>UTC-HGS-TOPO</i> - Stonyhurst heliographic coordinates</li>
+  <li><i>UTC-HGC-TOPO</i> - Carrington heliographic coordinates</li>
+</ul>
+<p>
+What this means is that these coordinate combinations will be
+supported in the library and that, hence, use of VOEvent by the solar
+research community is supported.  It does not imply, of course, that
+all VOEvent participants are expected to recognize and handle these
+solar coordinates - nor, for that matter, that solar subscribers be able
+to handle equatorial coordinates.
+</p>
+<h4>3.4.5 Events Observed from Spacecraft</h4>
+<p>
+Transient event alerts resulting from observations made on distant spacecraft may
+reference coordinates that require correction for ground-based follow-up.  The
+precise definition of "distant" will depend on the objects observed, the
+instrumentation and the science program.  For remote objects such as gamma-ray
+bursts or supernovae, it is likely that spatial coordinates measured from 
+spacecraft in Earth orbit will be immediately useful &#8212; indeed, the error box
+of the reported coordinates may be much larger than than the pointing accuracy of
+the follow-up telescope.  On the other hand, the field of view of the instrument
+on that telescope may be many times larger than the error box.  Subscribers must
+always balance such concerns &#8212; this is just one facet of matching
+"scientific impedance" between discovery and follow-up observations.
+</p>
+<p>
+Even if the spatial targeting coordinates require no correction, the light travel
+time may be quite significant between a spacecraft and any follow-up telescopes on
+the Earth.  Subscribers may need to adjust wavefront arrival times to suit.
+</p>
+<p>
+Authors of such events may choose to handle reporting the location of the
+spacecraft in different ways.  First, they may simply construct the complex
+<b>&lt;ObservatoryLocation&gt;</b> element that correctly represents the
+rapidly moving location of an orbiting observatory.  Further discussion of
+this topic is outside the scope of the present document, see the STC
+specification [<a href="#stc">18</a>].  Of course, any subscribers to such an
+event stream would have to understand such an <b>&lt;ObservatoryLocation&gt;</b>
+in detail and be able to calculate appropriate time-varying adjustments to the
+coordinates in support of their particular science program.
+</p>
+<p>
+Alternately, an author of event alert packets resulting from spacecraft observations
+might simply choose to correct their observations themselves into geocentric or
+barycentric coordinates.  Finally, for spacecraft in Earth orbit, authors might
+choose to report an <b>&lt;ObservatoryLocation&gt;</b> such as <i>GEOLUN</i>,
+indicating a rough position precise to the width of the Moon's orbit.  These two
+options might be combined by both making a geocentric correction &#8212; for instance,
+to simplify the handling of timing information &#8212; with the reporting of a
+<i>GEOLEO</i> location, for example.
+</p>
+<h3>3.5 <a id="how" name="how"><b>&lt;How&gt;</b></a> &#8212;
+Instrument Configuration</h3>
+<p>
+The <b>&lt;How&gt;</b> element supplies instrument specific information.
+A VOEvent describes events in the sky, not events in the focal plane of
+a telescope.  Only specialized classes of event will benefit from
+providing detailed information about instrumental or experimental design.
+A <b>&lt;How&gt;</b> contains zero or more <b>&lt;Reference&gt;</b> elements
+(see <a href="#reference">§3.9</a>) 
+and <b>&lt;Description&gt;</b> elements, that together characterize 
+the instrument(s) that produced the observation(s) that resulted in issuing the VOEvent packet.
+A URI pointing to a previous VOEvent asserts that an identical
+instrumental configuration was used:
+</p>
+<pre>&lt;How&gt;
+    &lt;Description&gt; The Echelle spectrograph &lt;/Description&gt;
+    &lt;Reference uri="http://nsa.noao.edu/kp012345.rtml" type="rtml" /&gt;
+&lt;/How&gt;
+</pre>
+<h3>3.6 <a id="why" name="why"><b>&lt;Why&gt;</b></a> &#8212;
+Initial Scientific Assessment</h3>
+<font color="red">
+<p>
+Ask Norman for comment on this section.  How to merge in vocabularies?
+How to accommodate new projects with alternate ideas for probability, etc?
+How to avoid going all wacky with ontologies?
+</p>
+</font>
+<p>
+<b>&lt;Why&gt;</b> seeks to capture the emerging concept of the nature
+of the astronomical objects and processes that generated the observations
+noted in the <b>&lt;What&gt;</b> element. Natural language words and
+phrases are used to express the hypothesized astrophysics, pending a
+standard VO ontology or formal UCD-like vocabulary of astronomical
+concepts (see [<a href="#ucd">19</a>] and [<a href="#voconcepts">20</a>],
+for example). The <b>&lt;Why&gt;</b> element has two optional attributes,
+<i><b>importance</b></i> and <i><b>expires</b></i>, providing ratings
+of the relative noteworthiness and urgency of each VOEvent, respectively.
+Subscribers should consider the <i><b>importance</b></i> and
+<i><b>expires</b></i> ratings from a particular publisher in combination
+with other VOEvent metadata in interpreting an alert for their purposes.
+The publishers of each category of event are encouraged to develop a
+self-consistent rating scheme for these values.
+</p>
+<ul>
+<p>
+<b>3.6.1 <i>importance</i></b> &#8212; The <i><b>importance</b></i>
+provides a rating of the noteworthiness of the VOEvent, expressed as
+a floating point number bounded between 0.0 and 1.0 (inclusive). The
+meaning of <i><b>importance</b></i> is unspecified other than that
+larger values are considered of generally greater importance.
+</p>
+<p>
+<b>3.6.2 <i>expires</i></b> &#8212; The <i><b>expires</b></i>
+attribute provides a rating of the urgency or time-criticality of
+the VOEvent, expressed as an ISO-8601 [<a href="#iso8601">29</a>]
+representation of some date and time in the future. The meaning
+of <i><b>expires</b></i> is application dependent but will often
+represent the date and time after which a follow-up observation 
+might be belated.
+</p>
+</ul>
+<p>
+A <b>&lt;Why&gt;</b> element contains one or more <b>&lt;Concept&gt;</b>
+and <b>&lt;Name&gt;</b> sub-elements. These may be used to assert
+concepts that specify a scientific classification of the nature of
+the event, or rather to attach the name of some specific astronomical
+object or feature. These may be organized using the
+<b>&lt;Inference&gt;</b> element, which permits expressing the nature
+of the <b><i>relation</i></b> of the contained elements to the event 
+in question as well as an estimate of its likelihood via its
+<i><b>probability</b></i> attribute.
+</p>
+<h4>3.6.3 &lt;Concept&gt; &#8212; classification</h4>
+<p>
+The value of a <b>&lt;Concept&gt;</b> element uses a controlled
+vocabulary to express the hypothesized astrophysics. This standard
+VO ontology or formal UCD-like vocabulary of astronomical concepts
+vocabulary is still in development (see [<a href="#ucd">19</a>] and
+[<a href="#voconcepts">20</a>], for example). 
+</p>
+<h4>3.6.4&lt;Description&gt; &#8212; natural language</h4>
+<p>
+This element provides a natural language description of the concept,
+either as a replaement for the &lt;Concept&gt; element, or as an
+elaboration.
+</p>
+<h4>3.6.5&lt;Name&gt; &#8212; identification</h4>
+<p>
+<b>&lt;Name&gt;</b> provides the name of a specific astronomical
+object.  It is preferred, but not required, to use standard astronomical
+nomenclature, <i>e.g.</i>, as recognized by NED [<a href="#ned">23</a>]
+or SIMBAD [<a href="#simbad">24</a>]. 
+</p>
+<h4>3.6.6&lt;Inference&gt; &#8212; hypotheses inferred</h4>
+<p>
+An <b>&lt;Inference&gt;</b> may be used to group or associate one
+or more <b>&lt;Name&gt;</b> or <b>&lt;Concept&gt;</b> elements.
+<b>&lt;Inference&gt;</b> has two optional attributes,
+<i><b>probability</b></i> and <i><b>relation</b></i>: 
+</p>
+<ul>
+<p>
+3.6.6.1 <b><i>probability</i></b> &#8212; The <i><b>probability</b></i> 
+attribute is an estimate of the likelihood of the <b>&lt;Inference&gt;</b> 
+accurately describing the event in question. It is expressed as a floating 
+point number bounded between 0.0 and 1.0 (inclusive). In particular, note 
+that a <b><i>probability</i></b> of 0.0 can be used to eliminate
+<b>&lt;Inferences&gt;</b> from further consideration.
+</p>
+<p>
+3.6.6.2 <i><b>relation</b></i> &#8212; The <b><i>relation</i></b> attribute 
+is a natural language string that expresses the degree of connection
+between the <b>&lt;Inference&gt;</b> and the event described by the
+packet. Typical values might be "associated" - a SN is associated with
+a particular galaxy - or "identified" - a SN is identified as corresponding
+to a particular precursor star. Such a one-to-one identification is
+considered to be the default <b><i>relation</i></b> in the absence of
+the attribute.
+</p>
+</ul>
+<p>
+This example asserts that the creator of the packet is 100% certain that
+the event being described is equivalent to <i>Tycho's Star</i>, which
+has been identified as a <i>Type Ia Supernova</i>, and is "associated"
+with the <i>SN remnant</i> known as <i>3C 10</i>. This was an important
+discovery, but is no longer a very urgent one:
+</p>
+<pre>&lt;Why importance="1.0" expires="1574-05-11T12:00:00"&gt;
+    &lt;Inference probability="1.0"&gt;
+        &lt;Name&gt;Tycho's Stella Nova&lt;/Name&gt;
+        &lt;Concept&gt;stars.supernova.Ia&lt;/Concept&gt;
+    &lt;/Inference&gt;
+    &lt;Inference probability="1.0" relation="associated"&gt;
+        &lt;Name&gt;3C 10&lt;/Name&gt;
+        &lt;Concept&gt;ISM.SNRemnant&lt;/Concept&gt;
+        &lt;Description&gt;Supernova remnant&lt;/Description&gt;
+    &lt;/Inference&gt;
+&lt;/Why&gt;
+</pre>
+<h3>3.7 <a id="citations" name="citations"></a><b>&lt;Citations&gt;</b> &#8212; 
+Follow-up Observations</h3>
+<p>
+A VOEvent packet without a <b>&lt;Citations&gt;</b> element can be
+assumed to be asserting information about a new celestial discovery.
+Citations reference previous events to do one of three things: 
+</p>
+<ul>
+  <li>follow-up an event alert with more observations or other relevant data, or</li>
+  <li>supersede a prior event with better, equivalent information, or</li>
+  <li>issue a complete retraction of a previous event.</li>
+</ul>
+<p></p>
+Citations form the edges of a directed graph whose nodes are VOEvent instances;
+they allow merging multiple events into a single related thread, a way to collect multi-sourced
+data into a coherent whole.
+Projects that implement VOEvent handling may decide to implement for different conditions of 
+citation -- perhaps assuming a sparse or structured citation graph, or a small or large arity for each event.
+
+We recommend that the meaning of 'citation' should be a strong one:
+<i>if a reader is to understand an event, then the reader should understand the cited event.</i>
+This is the relation between a comment and a post, between one observation of a transient and another 
+relevant observation. However, not everything should be cited: while the papers of Einstein may be relevant,
+they need not be always cited!
+A different notion is that of association of sources:
+as in a radio source being near an optical source.
+If an author wishes to express this notion, 
+the <b>&lt;Inference&gt;</b> element can carry this information
+(see section 3.6.6).
+</p>
+<p>
+A <b>&lt;Citations&gt;</b> element contains one or more
+<b>&lt;EventIVORN&gt;</b> elements. The standard does not attempt
+to enforce references to be logically consistent; this is the
+responsibility of publishers and subscribers.
+</p>
+<h4>3.7.1 &lt;EventIVORN&gt; &#8212; Cited event and relationship</h4>
+<p>
+An <b>&lt;EventIVORN&gt;</b> element contains the IVORN of a previously 
+published VOEvent packet. Each <b>&lt;EventIVORN&gt;</b> describes the
+relationship of the current packet to that previous VOEvent.
+</p>
+<p>
+An <b>&lt;EventIVORN&gt;</b> element has one required attribute:
+</p>
+<ul>
+3.7.1.1 <i><b>cite</b></i> &#8212; The <b><i>cite</i></b> attribute
+accepts three possible enumerated values, <i>"followup"</i>,
+<i>"supersedes"</i> or <i>"retraction"</i>. There is no default value. 
+</ul>
+<p>
+The value of the <b><i>cite</i></b> attribute modifies the VOEvent
+semantics.  In contrast to a VOEvent announcing a discovery (<i>i.e.</i>,
+a packet with no citations), a VOEvent may be explicitly a
+<i>"followup"</i>, citing one or more earlier packets &#8212; meaning
+that the described real or virtual observation was done as a response
+to those cited packet(s). In this case, the supplied information is
+assumed to be a new, independent measurement.
+</p>
+<p>
+The <b><i>cite</i></b> may be <i>"supersedes"</i>, which can be used
+to express a variety of possible event contingencies. A prior VOEvent
+may be superseded, for example, if reprocessing of the original
+observation has resulted in different values for quantities expressed
+by <b>&lt;What&gt;</b> or <b>&lt;WhereWhen&gt;</b> or if the
+investigators have formed a new <b>&lt;Why&gt;</b> regarding the 
+event. On the other hand, if a later observation has simply resulted
+in different measurements to report, this would typically be issued
+as a <i>"followup"</i>. 
+</p>
+When a citation is made with a "supersede" or "retraction" attribute, it is assumed that 
+*all* of the previous information is superseded: and so the cited event is no longer needed. 
+If there is datum X and datum Y in the original, and X gets improved calibration, then Y must also be 
+copied to the new event, or else its value will no longer be seen.
+<p>
+A <i>"supersedes"</i> <b><i>cite</i></b> can also be used to merge
+two or more earlier VOEvent threads that are later determined to be
+related in some fashion. The VOEvents to be merged are indicated with
+separate <b>&lt;EventIVORN&gt;</b> elements. The proper interpretation
+of such a merger would depend on a VOEvent client having received all
+intervening packets from all relevant threads.  Finally,
+<i>"supersedes"</i> can be used in combination with a <i>"followup"</i>
+to divide a single VOEvent into two or more new threads. First, follow-up 
+the event in one packet and then supersede the original event, rather than 
+the follow-up, in a second packet (with a second identifier that can start 
+a second thread).
+</p>
+<p>
+The <i>"retraction"</i> <b><i>cite</i></b> indicates that the initial
+discovery event is being completely retracted for some reason. The
+publisher of a retraction may be other than the publisher of the
+original VOEvent &#8212; subscribers are free to interpret such a situation
+as they see fit.
+</p>
+<p> Splitting, merging or retracting a VOEvent should typically be
+accompanied by a <b>&lt;Description&gt;</b> element discussing why
+such actions are being taken.
+</p>
+<p>
+An attempt is made to retract the sighting of Tycho's supernova:
+</p>
+<pre>&lt;Citations&gt;
+    &lt;EventIVORN cite="retraction"&gt;ivo://uraniborg.hven#572-11-11/0001&lt;/EventIVORN&gt;
+    &lt;Description&gt;Oops!&lt;/Description&gt; 
+&lt;/Citations&gt;
+</pre>
+<h3>3.8 <a id="description" name="description"><b>&lt;Description&gt;</b></a> 
+&#8212; Human Oriented Content</h3>
+<p>
+A <b>&lt;Description&gt;</b> may be included within any element or
+sub-element of a VOEvent to add human readable content.
+<b>&lt;Descriptions&gt;</b> may NOT contain <b>&lt;References&gt;</b>.
+Users may wish to embellish Description sections with HTML tags such
+as images and URL links, and these should not be seen by the XML parser,
+as they will cause the VOEvent XML to be invalid against the schema.
+However, it is possible to use the CDATA mechanism of XML to quote text
+at length, so this may be used for complicated tagged Descriptions. See
+the example in section 4 for usage.
+</p>
+<h3>3.9 <a id="reference" name="reference"><b>&lt;Reference&gt;</b></a>
+&#8212; External Content</h3>
+<p>
+A <b>&lt;Reference&gt;</b> may be included in any element or sub-element
+of a VOEvent packet to describe an association with external content
+via a Uniform Resource Identifier [<a href="#id">16</a>]. 
+
+In addition to the locator for the content, there is also a locator for the meaning of the content,
+which is another URI, specified by the 'type' attribute. This can be as simple as a format (eg "fits", "html"),
+or something like this: <pre>
+type="http://me.edu/myScheme#Eccentricity_Inclination_Covariance"
+</pre> where the link leads to a machine-readable description 
+of the meaning of the content.
+
+In addition, a local name may be attached to the global resource, so that meaning can be used as a namespace 
+in other elements.
+
+A <b>&lt;Reference&gt;</b> must be expressed as an empty element,
+with attributes only.
+</p>
+<p>
+It is anticipated that VOEvent packets will often include
+<b>&lt;References&gt;</b> to such content as finding charts,
+cut-out images, light-curves, object catalogs, SQL queries and
+instrumental configurations &#8212; to list only a few. This content
+will be expressed in various graphics and image formats such as FITS, 
+as VOTables [<a href="#votable">22</a>], as RTML
+[<a href="#rtml">15</a>] documents, as MIME-typed web content in
+general, or as native VOEvents.  </p>
+
+The 'type' of a Reference may also be of higher semantic content, it can be a link to an explanation
+of how to read the content and what it means; an explanation that may be targetted to either 
+a human or a machine. In this way the semantic web can be connected to the VOEventNet.
+
+<p> A <b>&lt;Reference&gt;</b>
+element has three attributes:
+</p>
+<ul>
+<p>
+<b>3.9.1 <i>uri</i></b> &#8212; The identifier of another document. Should follow URI syntax.
+</p>
+<p>
+<b>3.9.2 <i>type</i></b> &#8212; The type of the document.  Should follow URI syntax.
+The default value is <em>"url"</em>. 
+</p>
+<p>
+<b>3.9.3 <i>name</i></b> &#8212; A short, optional name to be used in
+descriptive text.
+</p>
+</ul>
+<p>
+A <b>&lt;Reference&gt;</b> used to provide general purpose ancillary
+data with well-defined meaning. 
+Here a fits image is presented (h.fits), and also a link to the data model that is needed for
+a machine to understand the meaning.
+</p>
+<pre>&lt;Group type="MyFilterWithImage"&gt;
+    &lt;Reference uri="http://.../data/h.fits" 
+              type="http://.../data-models/#h-filter-image/&gt;
+&lt;/Group&gt;
+</pre>
+<p>
+An example of the indirection of a VOEvent packet using
+<b>&lt;Reference&gt;</b> 
+</p>
+<pre>&lt;VOEvent ivorn="ivo://raptor.lanl#235649409/sn2005k" role="observation" version="2.0"&gt;
+    &lt;Reference uri="http://raptor.lanl.gov/documents/event233.xml" type="voevent:"&gt;
+&lt;/VOEvent&gt;
+</pre>
+<h2>4: <a id="examples" name="examples">VOEvent Example</a></h2>
+<font color="red">
+<p>
+This example validates against the v2.0 schema draft.
+</p>
+</font>
+<p>
+This imaginary event is a brightness measurement of a past supernova
+from the RAPTOR [<a href="#raptor">11</a>] telescope.
+The <b>&lt;What&gt;</b> section reports a <b>&lt;Description&gt;</b> 
+and <b>&lt;Reference&gt;</b> followed by a 
+<b>&lt;Param&gt;</b> about seeing and a <b>&lt;Group&gt;</b> with the actual report: the 
+magnitude is 19.5, measured 278.02 days after the reference time,
+which is reported in the <b>&lt;Wherewhen&gt;</b> section. 
+There is a <b>&lt;Table&gt;</b> of measured distances to the presumed host galaxy,
+and a <b>&lt;SimpleTimeSeries&gt;</b> of previous magnitude measurements, 
+also referred to the reference time.
+The packet represents a follow-up observation
+of an earlier event, as defined in the <b>&lt;Citations&gt;</b> element.
+</p>
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;voe:VOEvent 
+  ivorn="ivo://raptor.lanl/VOEvent#235649409" 
+  role="observation" 
+  version="2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0"
+  xmlns:sts="http://dotastro.org/simpletimeseries"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 VOEvent-v2.0_sts.xsd"&gt;
+
+  
+  &lt;Who&gt;
+    &lt;AuthorIVORN&gt;ivo://raptor.lanl/organization&lt;/AuthorIVORN&gt;
+    &lt;Date&gt;2005-04-15T14:34:16&lt;/Date&gt;
+  &lt;/Who&gt;
+
+  &lt;What&gt;
+    &lt;Description&gt;An imaginary event report about SN 2009lw.&lt;/Description&gt;
+    &lt;Reference uri="http://raptor.lanl.gov/data/lightcurves/235649409"/&gt;
+    
+    &lt;Param name="seeing" value="2" unit="arcsec" ucd="instr.obsty.site.seeing"/&gt;
+    &lt;Group name="magnitude"&gt;
+      &lt;Description&gt;The time is days since the refernce time in the WhereWhen section&lt;/Description&gt;
+      &lt;Param name="time"   value="278.02" unit="day" ucd="time.epoch" /&gt;
+      &lt;Param name="mag"    value="19.5"   unit="mag" ucd="phot.mag"/&gt;
+      &lt;Param name="magerr" value="0.14"   unit="mag" ucd="phot.mag; stat.err"/&gt;
+    &lt;/Group&gt;
+    
+    &lt;Table&gt;
+      &lt;Description&gt;Individually Referenced Moduli and Distances for NGC 0931 from NED&lt;/Description&gt;
+      &lt;Field name="(m-M)"    unit="mag" ucd="phot.mag.distMod"/&gt;
+      &lt;Field name="err(m-M)" unit="mag" ucd="phot.mag.distMod;stat.err"/&gt;
+      &lt;Field name="D"        unit="Mpc" ucd="pos.distance"/&gt;
+      &lt;Field name="REFCODE"             ucd="meta.bib.bibcode"/&gt;
+      &lt;Data&gt;  	
+        &lt;TR&gt;&lt;TD&gt;33.16&lt;/TD&gt;&lt;TD&gt;0.38&lt;/TD&gt;&lt;TD&gt;42.9&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;33.32&lt;/TD&gt;&lt;TD&gt;0.38&lt;/TD&gt;&lt;TD&gt;46.1&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;33.51&lt;/TD&gt;&lt;TD&gt;0.48&lt;/TD&gt;&lt;TD&gt;50.4&lt;/TD&gt;&lt;TD&gt;2009ApJS..182..474S&lt;/TD&gt;&lt;/TR&gt;	
+        &lt;TR&gt;&lt;TD&gt;33.55&lt;/TD&gt;&lt;TD&gt;0.38&lt;/TD&gt;&lt;TD&gt;51.3&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;33.71&lt;/TD&gt;&lt;TD&gt;0.43&lt;/TD&gt;&lt;TD&gt;55.2&lt;/TD&gt;&lt;TD&gt;2009ApJS..182..474S&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;&lt;TD&gt;34.01&lt;/TD&gt;&lt;TD&gt;0.80&lt;/TD&gt;&lt;TD&gt;63.3&lt;/TD&gt;&lt;TD&gt;1997ApJS..109..333W&lt;/TD&gt;&lt;/TR&gt;
+      &lt;/Data&gt;
+    &lt;/Table&gt;
+
+    &lt;SimpleTimeseries xmlns="http://dotastro.org/simpletimeseries"&gt;
+      &lt;DESCRIPTION&gt;
+        Images of Supernova 2009lw by various groups in the month following discovery.
+        Times are in days since the refererence epoch in the WhereWhen.
+      &lt;/DESCRIPTION&gt;
+      
+      &lt;SPACETIMESYS&gt;
+        &lt;WhereWhenRef WhereWhenID="Raptor-2455100"/&gt;
+      &lt;/SPACETIMESYS&gt;
+      
+      &lt;!-- this is a brief description of the bandpass --&gt;
+      &lt;BAND ucd="instr.filter;em.opt" bandid="clear"   description="Unfiltered"&gt;Clear/Unfiltered Optical&lt;/BAND&gt;
+      &lt;BAND ucd="instr.filter;em.opt" bandid="R"       description="Cousins R-Band"&gt;R Band&lt;/BAND&gt;
+      &lt;BAND ucd="instr.filter;em.opt" bandid="V"       description="Cousins V-Band"&gt;V Band&lt;/BAND&gt;
+      &lt;BAND ucd="instr.filter;em.opt" bandid="unknown" description="Unknown optical band"&gt;Unknown Optical&lt;/BAND&gt;
+      
+      &lt;FIELD bandid="R" fld="rMag" ucd="opt;phot;R" datatype="float" unit="mag"&gt;R-band photometry&lt;/FIELD&gt;
+      &lt;FIELD bandid="V" fld="vMag" ucd="opt;phot;V" datatype="float" unit="mag"&gt;V-band photometry&lt;/FIELD&gt;
+      &lt;FIELD bandid="clear" fld="clearMag" ucd="opt;phot;clear" datatype="float" unit="mag"&gt;Clear photometry&lt;/FIELD&gt;
+      &lt;FIELD bandid="unknown" fld="unknownMag" ucd="opt;phot;unknown" datatype="float" unit="mag"&gt;Unknown photometry&lt;/FIELD&gt;
+      
+      &lt;SERIES&gt;
+        &lt;ELEM row='1' uri="http://astro.berkeley.edu/~bait/2009/sn2009-n0931.gif"&gt;
+          &lt;TIME&gt;&lt;T&gt;59.5&lt;/T&gt;&lt;/TIME&gt;&lt;MAG fld="unknownMag"&gt;&lt;VAL&gt;18.4&lt;/VAL&gt;&lt;/MAG&gt;&lt;/ELEM&gt;
+        
+        &lt;ELEM row='2' uri="http://www.rochesterastronomy.org/sn2009/n931s1.jpg"&gt;
+          &lt;TIME&gt;&lt;T&gt;60.75&lt;/T&gt;&lt;/TIME&gt;&lt;MAG fld="clearMag"&gt;&lt;VAL&gt;18.6&lt;/VAL&gt;&lt;/MAG&gt;&lt;/ELEM&gt;
+        
+        &lt;ELEM row='3' uri="http://astrosurf.com/nazaret/images/supernovas/2009lwGMUL_CR20091202.jpg"&gt;
+          &lt;TIME&gt;&lt;T&gt;68.462&lt;/T&gt;&lt;/TIME&gt;&lt;MAG fld="rMag"&gt;   &lt;VAL&gt;18.26&lt;/VAL&gt;&lt;/MAG&gt;&lt;/ELEM&gt;
+        
+        &lt;ELEM row='4' uri="http://perso.wanadoo.es/d-rodrig/SN/SN09/SN2009lw-RZD.jpg"&gt;
+          &lt;TIME&gt;&lt;T&gt;70.5&lt;/T&gt;&lt;/TIME&gt;&lt;/ELEM&gt;
+        
+        &lt;ELEM row='5' uri="http://www.rochesterastronomy.org/sn2009/n931s2.png"&gt;
+          &lt;TIME&gt;&lt;T&gt;72.5&lt;/T&gt;&lt;/TIME&gt;&lt;/ELEM&gt;
+        
+        &lt;ELEM row='6' uri="http://www.rochesterastronomy.org/sn2009/n931s3.jpg"&gt;
+          &lt;TIME&gt;&lt;T&gt;79.272&lt;/T&gt;&lt;/TIME&gt;&lt;MAG fld="vMag"&gt;   &lt;VAL&gt;18.4&lt;/VAL&gt;&lt;/MAG&gt;&lt;/ELEM&gt;
+        
+        &lt;ELEM row='7' uri="http://www.astrosurf.com/matajur1976/ccdsky/ngc931_20100118_lrgb.jpg"&gt;
+          &lt;TIME&gt;&lt;T&gt;118.5&lt;/T&gt;&lt;/TIME&gt;&lt;/ELEM&gt;
+      &lt;/SERIES&gt;
+    &lt;/SimpleTimeseries&gt;
+  &lt;/What&gt;
+
+  &lt;WhereWhen id="Raptor-2455100"&gt;
+    &lt;ObsDataLocation&gt;
+      &lt;ObservatoryLocation id="RAPTOR"/&gt;
+      &lt;ObservationLocation&gt;
+        &lt;AstroCoordSystem id="UTC-ICRS-TOPO"/&gt;
+        &lt;AstroCoords coord_system_id="UTC-ICRS-TOPO"&gt;
+          &lt;Time&gt;
+            &lt;TimeInstant&gt;
+              &lt;ISOTime&gt;2009-09-25T12:00:00&lt;/ISOTime&gt;
+            &lt;/TimeInstant&gt;
+            &lt;Error&gt;0.0&lt;/Error&gt;
+          &lt;/Time&gt;
+          &lt;Position2D unit="deg"&gt;
+            &lt;Value2&gt;
+              &lt;C1&gt;37.0603169&lt;/C1&gt; &lt;!-- RA  --&gt;
+              &lt;C2&gt;31.3116578&lt;/C2&gt; &lt;!-- Dec --&gt;
+            &lt;/Value2&gt;
+            &lt;Error2Radius&gt;0.03&lt;/Error2Radius&gt;
+          &lt;/Position2D&gt;
+        &lt;/AstroCoords&gt;
+      &lt;/ObservationLocation&gt;
+    &lt;/ObsDataLocation&gt;
+  &lt;/WhereWhen&gt;
+
+  &lt;How&gt;
+    &lt;Description&gt;
+      &lt;![CDATA[This VOEvent packet resulted from observations 
+            made with &lt;a href=http://www.raptor.lanl.gov&gt;Raptor&lt;/a&gt; AB at Los Alamos. ]]&gt;
+    &lt;/Description&gt;
+  &lt;/How&gt;
+  
+  &lt;Citations&gt;
+    &lt;EventIVORN cite="followup"&gt;ivo://raptor.lanl/VOEvent#235649408&lt;/EventIVORN&gt;
+  &lt;/Citations&gt;
+
+  &lt;Why&gt;
+    &lt;Concept&gt;process.variation.burst;em.opt&lt;/Concept&gt;
+    &lt;Description&gt;Looks like a SN&lt;/Description&gt;
+    &lt;Inference relation="associated" probability="0.99"&gt;
+      &lt;Name&gt;NGC0931&lt;/Name&gt;
+    &lt;/Inference&gt;
+  &lt;/Why&gt;
+&lt;/voe:VOEvent&gt;
+</pre>
+
+
+
+
+<h2>5. <a id="refer" name="refer">References</a></h2>
+<ol>
+  <b>Some event alert networks:</b> 
+  <li><a name="atel">ATEL</a>: <i>The Astronomer's Telegram</i><br>
+    <ul>
+      <a href="http://www.astronomerstelegram.org/"> http://www.astronomerstelegram.org</a> 
+    </ul>
+  </li>
+  <li><a name="cbat">CBAT</a>: <i>Central Bureau for Astronomical Telegrams</i><br>
+    <ul>
+      <a href="http://cfa-www.harvard.edu/iau/cbat.html"> http://cfa-www.harvard.edu/iau/cbat.html</a>, 
+      or 
+    </ul>
+    <ul>
+      <a href="http://cfa-www.harvard.edu/iau/DiscoveryInfo.html"> http://cfa-www.harvard.edu/iau/DiscoveryInfo.html</a> 
+      (discovery schema) 
+    </ul>
+  </li>
+  <li><a name="estar">eSTAR</a>: <i>eScience Telescopes for Astronomical Research</i><br>
+    <ul>
+      <a href="http://www.estar.org.uk/"> http://www.estar.org.uk</a> 
+    </ul>
+  </li>
+  <li><a name="gcn">GCN</a>: <i>The Gamma-Ray Burst Coordinates Network</i><br>
+    <ul>
+      <a href="http://gcn.gsfc.nasa.gov/"> http://gcn.gsfc.nasa.gov</a> 
+    </ul>
+  </li>
+  <li><a name="schema">Skyalert</a>: <i>Event publisher and disseminator</i><br>
+    <ul>
+      <a href="http://skyalert.org"> http://skyalert.org/</a> 
+    </ul>
+  </li>
+  <p></p>
+  <b>Some surveys reporting events (or planning to):</b> 
+  <li><a name="ligo">LIGO</a>: <i>Laser Interferometer Gravitational Wave Observatory</i><br>
+    <ul>
+      <a href="http://www.ligo.caltech.edu/"> http://www.ligo.caltech.edu</a> 
+    </ul>
+  </li>
+  <li><a name="lsst">LSST</a>: <i>Large Synoptic Survey Telescope</i><br>
+    <ul>
+      <a href="http://www.lsst.org/"> http://www.lsst.org</a> 
+    </ul>
+  </li>
+  <li><a name="crts">CRTS</a>: <i>Catalina Realtime Transient Survey</i><br>
+    <ul>
+      <a href="http://crts.caltech.edu/"> http://crts.caltech.edu/</a> 
+    </ul>
+  </li>
+  <li><a name="panstarrs">Pan-STARRS</a>: <i>the Panoramic Survey Telescope &amp; 
+    Rapid Response System</i><br>
+    <ul>
+      <a href="http://pan-starrs.ifa.hawaii.edu/public/index.html"> http://pan-starrs.ifa.hawaii.edu/public/index.html</a> 
+    </ul>
+  </li>
+  <li><a name="raptor">RAPTOR</a>: <i>RAPid Telescopes for Optical Response</i><br>
+    <ul>
+      <a href="http://www.raptor.lanl.gov/"> http://www.raptor.lanl.gov</a>, and 
+    </ul>
+    <ul>
+      <a href="http://www.thinkingtelescopes.lanl.gov/"> http://www.thinkingtelescopes.lanl.gov</a> 
+      (<i>Thinking Telescopes Project</i>) 
+    </ul>
+  </li>
+  <li><a name="swift">Swift and Fermi</a>: <i>NASA Gamma-Ray observatories</i><br>
+    <ul>
+      <a href="http://swift.gsfc.nasa.gov/docs/swift/swiftsc.html"> http://swift.gsfc.nasa.gov/docs/swift/swiftsc.html</a> 
+     <a href="http://fermi.gsfc.nasa.gov/"> http://fermi.gsfc.nasa.gov/</a>
+    </ul>
+  </li>
+  <p></p>
+  <b>Robotic telescope infrastructure:</b> 
+  <li><a name="robonet">RoboNet</a>: <i>RoboNet-1.0</i><br>
+    <ul>
+      <a href="http://www.astro.livjm.ac.uk/RoboNet"> http://www.astro.livjm.ac.uk/RoboNet</a> 
+    </ul>
+  </li>
+  <li><a name="robot">ROBOT</a>: <i>A list of robotic telescope projects</i><br>
+    <ul>
+      <a href="http://www.astro.physik.uni-goettingen.de/%7Ehessman/MONET/links.html"> 
+      http://www.astro.physik.uni-goettingen.de/~hessman/MONET/links.html</a> 
+    </ul>
+  </li>
+  <li><a name="rtml">RTML</a>: <i>Remote Telescope Markup Language</i><br>
+    <ul>
+      <a href="http://www.uni-sw.gwdg.de/%7Ehessman/RTML"> http://www.uni-sw.gwdg.de/~hessman/RTML</a>, 
+      or 
+    </ul>
+    <ul>
+      <a href="http://monet.uni-goettingen.de/twiki/bin/view/RTML"> http://monet.uni-goettingen.de/twiki/bin/view/RTML</a> 
+      (twiki) 
+    </ul>
+  </li>
+  <p></p>
+  <b>VO standards:</b> 
+  <li> <a name="id">ID</a>: <i>IVOA Identifiers</i><br>
+    <ul>
+      <a href="http://www.ivoa.net/Documents/latest/IDs.html"> http://www.ivoa.net/Documents/latest/IDs.html</a> 
+    </ul>
+  </li>
+  <li><a name="rm">RM</a>: <i>Resource Metadata for the Virtual Observatory</i><br>
+    <ul>
+      <a href="http://www.ivoa.net/Documents/latest/RM.html"> http://www.ivoa.net/Documents/latest/RM.html</a> 
+    </ul>
+  </li>
+  <li><a name="stc">STC</a>: <i>Space-Time Coordinates Metadata for the Virtual 
+    Observatory</i><br>
+    <ul>
+      <a href="http://www.ivoa.net/Documents/latest/STC.html"> http://www.ivoa.net/Documents/latest/STC.html</a> 
+    </ul>
+  </li>
+  <li><a name="ucd">UCD</a>: <i>Unified Content Descriptor</i><br>
+    <ul>
+      <a href="http://www.ivoa.net/Documents/latest/UCD.html"> http://www.ivoa.net/Documents/latest/UCD.html</a>, 
+      or 
+    </ul>
+    <ul>
+      <a href="http://cdsweb.u-strasbg.fr/UCD"> http://cdsweb.u-strasbg.fr/UCD</a> 
+    </ul>
+  </li>
+  <li><a name="voconcepts">VOConcepts</a>: <i>a proposed UCD for Astronomical 
+    Objects, Events, and Processes</i><br>
+    <ul>
+      <a href="http://monet.uni-sw.gwdg.de/twiki/bin/view/VOEvent/UnifiedContentDescriptors"> 
+      http://monet.uni-sw.gwdg.de/twiki/bin/view/VOEvent/UnifiedContentDescriptors 
+      </a> 
+    </ul>
+  </li>
+  <li><a name="voevent">VOEvent</a>: <i>Sky Event Reporting Metadata</i><br>
+    <ul>
+      <a href="http://www.ivoa.net/Documents/latest/VOEvent.html"> 
+      http://www.ivoa.net/Documents/latest/VOEvent.html</a>
+    </ul><ul>
+      <a href="http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd"> 
+      http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd</a> (schema)
+    </ul><ul>
+      <a href="http://www.ivoa.net/Documents/latest/VOEvent_transport.html"> 
+      http://www.ivoa.net/Documents/latest/VOEvent_transport.html</a> (transport)
+    </ul><ul>
+      <a href="http://www.ivoa.net/twiki/bin/view/IVOA/IvoaVOEvent"> 
+      http://www.ivoa.net/twiki/bin/view/IVOA/IvoaVOEvent</a> (working group)
+    </ul>
+  </li>
+  <li><a name="votable">VOTable</a>: <i>Format Definition</i><br>
+    <ul>
+      <a href="http://www.ivoa.net/Documents/latest/VOT.html"> http://www.ivoa.net/Documents/latest/VOT.html</a> 
+    </ul>
+  </li>
+  <p></p>
+  <b>Astronomical resources:</b> 
+  <li><a name="ned">NED</a>: <i>NASA/IPAC Extragalactic Database</i><br>
+    <ul>
+      <a href="http://nedwww.ipac.caltech.edu/"> http://nedwww.ipac.caltech.edu/</a> 
+    </ul>
+  </li>
+  <li><a name="simbad">SIMBAD</a>: <i>Set of Identifications, Measurements and 
+    Bibliography for Astronomical Data</i><br>
+    <ul>
+      <a href="http://simbad.u-strasbg.fr/Simbad"> http://simbad.u-strasbg.fr/Simbad</a> 
+    </ul>
+  </li>
+  <li><a name="tycho">TYCHO</a>: <i>De Stella Nova</i><br>
+    <ul>
+      <a href="http://www.texts.dnlb.dk/DeNovaStella/Index.html"> http://www.texts.dnlb.dk/DeNovaStella/Index.html</a> 
+      (in Danish) 
+    </ul>
+  </li>
+  <li><a name="units">UNITS</a>: <i>Standards for Astronomical Catalogues: Units</i><br>
+    <ul>
+      <a href="http://vizier.u-strasbg.fr/doc/catstd-3.2.htx"> http://vizier.u-strasbg.fr/doc/catstd-3.2.htx</a> 
+    </ul>
+  </li>
+  <li><a name="utc">UTC</a>: <i>the future of Coordinated Universal Time</i><br>
+    <ul>
+      <a href="http://www.ucolick.org/%7Esla/leapsecs"> http://www.ucolick.org/~sla/leapsecs</a> 
+    </ul>
+  </li>
+  <p></p>
+  <b>Computing resources:</b> 
+  <li><a name="checksum">Checksum</a>: <i>FITS Checksum Proposal</i><br>
+    <ul>
+      <a href="http://heasarc.gsfc.nasa.gov/docs/heasarc/fits/checksum23may02"> 
+      http://heasarc.gsfc.nasa.gov/docs/heasarc/fits/checksum23may02</a> 
+    </ul>
+  </li>
+  <li><a name="iso8601">ISO 8601</a>: <i>standard representation of dates and 
+    times</i><br>
+    <ul>
+      <a href="http://www.cl.cam.ac.uk/%7Emgk25/iso-time.html"> http://www.cl.cam.ac.uk/~mgk25/iso-time.html</a> 
+    </ul>
+  </li>
+  <li><a name="xml">XML</a>: <i>Extensible Markup Language</i><br>
+    <ul>
+      <a href="http://xml.coverpages.org/xml.html"> http://xml.coverpages.org/xml.html</a>, 
+      and 
+    </ul>
+    <ul>
+      <a href="http://xml.coverpages.org/schemas.html"> http://xml.coverpages.org/schemas.html</a>, 
+      or 
+    </ul>
+    <ul>
+      <a href="http://www.ucc.ie/xml"> http://www.ucc.ie/xml</a> (FAQ) 
+    </ul>
+  </li>
+<li><a name="avn"><i>Attribute-Value Normalization</i></a>
+<ul>
+<a href="http://www.w3.org/TR/REC-xml/#AVNormalize">http://www.w3.org/TR/REC-xml/#AVNormalize</a>
+</ul>
+</li>
+</ol>
+<hr>
+</dd></body></html>

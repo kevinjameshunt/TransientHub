@@ -1,0 +1,298 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<voe:VOEvent
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 /Users/roywilliams/Documents/VOEventLib/schema/VOEvent-v2.0.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" version="2.0"
+  ivorn="ivo://nvo.caltech/voeventnet/catot#1" role="test">
+
+  <Description>Catalina Real-time Transient Survey</Description>
+
+  <Citations>
+    <EventIVORN cite="followup">ivo://test#123</EventIVORN>
+    <EventIVORN cite="followup">ivo://test#124</EventIVORN>
+  </Citations>
+
+  <Who>
+    <Author>
+      <contactName>Andrew Drake</contactName>
+
+      <contactPhone>626 395 2913</contactPhone>
+      <contactPhone>626 395 2913</contactPhone>
+      <contactEmail>ajd@cacr.caltech.edu</contactEmail>
+    </Author>
+  </Who>
+
+
+  <Reference name="hello" uri="http://ggg.com"/>
+
+  <What>
+    <Table/>
+    <Table/>
+    <Param name="sample param" dataType="float" value="1.234"/>
+    <Group name="First Detection params">
+
+      <Description/>
+      <Param name="average background" ucd="instr.background" unit="counts" dataType="float"
+        value="1.234">
+        <Description>This is the background on average</Description>
+        <Reference name="hello" uri="http://ggg.com"/>
+        <Reference name="hello" uri="http://ggg.com"/>
+      </Param>
+      <Param name="average seeing" ucd="instr.det.psf" unit="arcsec" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Dec" ucd="pos.eq.dec" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="ID" ucd="meta.id" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="img" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="JD" ucd="time.epoch" unit="day" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="magnitude" ucd="phot.mag;em.opt.R" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="mag_error" ucd="phot.mag;stat.error" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="RA" ucd="pos.eq.ra" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="X" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Y" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+    </Group>
+    <Group name="Fourth Detection params">
+
+      <Param name="average background4" ucd="instr.background" unit="counts" dataType="float"
+        value="1.234">
+        <Description/>
+      </Param>
+      <Param name="average seeing4" ucd="instr.det.psf" unit="arcsec" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Dec4" ucd="pos.eq.dec" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="ID4" ucd="meta.id" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="img4" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="JD4" ucd="time.epoch" unit="day" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="magnitude4" ucd="phot.mag;em.opt.R" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="mag_error4" ucd="phot.mag;stat.error" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="RA4" ucd="pos.eq.ra" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="X4" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Y4" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+    </Group>
+    <Group name="Asteroid params">
+
+      <Param name="Aperture reject" ucd="stat.probability" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Apparent motion" ucd="pos.pm" unit="arcsec" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Ecliptic Inclination" ucd="pos.posAng" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Ecliptic Latitude" ucd="pos.ecliptic.lat" unit="deg" dataType="float"
+        value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Ecliptic Longitude" ucd="pos.ecliptic.lon" unit="deg" dataType="float"
+        value="1.234">
+        <Description/>
+      </Param>
+      <Param name="imgmaster" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="Inner motion" ucd="pos.pm" unit="arcsec/min" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Known Asteroid" ucd="stat.probability" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Motion uncertainty Dec" ucd="stat.error.sys" unit="deg" dataType="float"
+        value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Motion uncertainty RA" ucd="stat.error.sys" unit="deg" dataType="float"
+        value="1.234">
+        <Description/>
+      </Param>
+      <Param name="New Asteroid" ucd="meta.cryptic" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Opposition angle" ucd="pos.posAng" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Outer motion" ucd="pos.pm" unit="arcsec/min" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Reject" ucd="meta.cryptic" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="SDSS match" ucd="stat.probability" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Timespan" ucd="time.interval" unit="min" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+    </Group>
+    <Reference name="hello" uri="http://ggg.com"/>
+    <Table/>
+    <Group name="Second Detection params">
+
+      <Param name="average background2" ucd="instr.background" unit="counts" dataType="float"
+        value="1.234">
+        <Description/>
+      </Param>
+      <Param name="average seeing2" ucd="instr.det.psf" unit="arcsec" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Dec2" ucd="pos.eq.dec" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="ID2" ucd="meta.id" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="img2" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="JD2" ucd="time.epoch" unit="day" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="magnitude2" ucd="phot.mag;em.opt.R" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="mag_error2" ucd="phot.mag;stat.error" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="RA2" ucd="pos.eq.ra" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="X2" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Y2" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+    </Group>
+    <Group name="Portfolio">
+
+      <Param name="finding_chart" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="lightcurve" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="other_imgs" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="past_imgs" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+    </Group>
+    <Group name="Third Detection params">
+
+      <Param name="average background3" ucd="instr.background" unit="counts" dataType="float"
+        value="1.234">
+        <Description/>
+      </Param>
+      <Param name="average seeing3" ucd="instr.det.psf" unit="arcsec" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Dec3" ucd="pos.eq.dec" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="ID3" ucd="meta.id" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="img3" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description/>
+      </Param>
+      <Param name="JD3" ucd="time.epoch" unit="day" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="magnitude3" ucd="phot.mag;em.opt.R" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="mag_error3" ucd="phot.mag;stat.error" unit="mag" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="RA3" ucd="pos.eq.ra" unit="deg" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="X3" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Y3" ucd="pos.frame" unit="pixels" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+    </Group>
+
+  </What>
+
+  <WhereWhen>
+    <ObsDataLocation>
+      <ObservatoryLocation id="Mt Bigelow, Arizona">
+
+        <AstroCoordSystem id="UTC-GEOD-TOPO"/>
+
+        <AstroCoords coord_system_id="UTC-GEOD-TOPO">
+          <Position3D>
+            <Value3>
+              <C1>248.4056</C1>
+              <C2>31.9586</C2>
+              <C3>2158</C3>
+            </Value3>
+          </Position3D>
+        </AstroCoords>
+      </ObservatoryLocation>
+
+      <ObservationLocation>
+        <AstroCoordSystem id="UTC-FK5-GEO"/>
+        <AstroCoords coord_system_id="UTC-FK5-GEO">
+          <Time unit="s">
+            <TimeInstant>
+              <ISOTime>1918-11-11T11:11:11</ISOTime>
+            </TimeInstant>
+          </Time>
+          <Position2D unit="deg">
+            <Name1>RA</Name1>
+            <Name2>Dec</Name2>
+            <Value2>
+              <C1>10.0</C1>
+              <C2>10.0</C2>
+            </Value2>
+            <Error2Radius>7</Error2Radius>
+          </Position2D>
+        </AstroCoords>
+      </ObservationLocation>
+    </ObsDataLocation>
+  </WhereWhen>
+
+
+</voe:VOEvent>

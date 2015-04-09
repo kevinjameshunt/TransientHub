@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<voe:VOEvent
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 /Users/roywilliams/Documents/VOEventLib/schema/VOEvent-v2.0.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" version="2.0"
+  ivorn="ivo://lofar/transients/events#1" role="test">
+
+  <Description>LOFAR radio telescope array</Description>
+
+  <Citations>
+    <EventIVORN cite="followup">ivo://test#123</EventIVORN>
+    <EventIVORN cite="followup">ivo://test#124</EventIVORN>
+  </Citations>
+
+  <Who>
+    <Author>
+      <contactName>TKP Staff</contactName>
+      <contactEmail>events@transientskp.org</contactEmail>
+      <contactPhone>not provided</contactPhone>
+    </Author>
+  </Who>
+
+  <What>
+
+
+    <Param name="Further Information" ucd="meta.ref.url" value="hello">
+      <Description/>
+    </Param>
+
+    <Group name="Band2">
+
+      <Param name="Max frequency" ucd="em.radio" unit="MHz" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Min frequency" ucd="em.radio" unit="MHz" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Peak" ucd="phot.flux.density" unit="Jy" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+    </Group>
+    <Group name="Band1">
+
+      <Param name="Max frequency" ucd="em.radio" unit="MHz" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Min frequency" ucd="em.radio" unit="MHz" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+      <Param name="Peak" ucd="phot.flux.density" unit="Jy" dataType="float" value="1.234">
+        <Description/>
+      </Param>
+    </Group>
+
+    <Table>
+      <Description>Individually Referenced Moduli and Distances for NGC 0931 from NED</Description>
+      <Field name="Min frequency" unit="MHz" ucd="em.radio" dataType="float"/>
+      <Field name="Max frequency" unit="MHz" ucd="em.radio" dataType="float"/>
+      <Field name="Peak" unit="Jy" ucd="phot.flux.density" dataType="float"/>
+      <Data>
+        <TR>
+          <TD>33.16</TD>
+          <TD>36.32</TD>
+          <TD>0.02342</TD>
+        </TR>
+        <TR>
+          <TD>37.16</TD>
+          <TD>38.32</TD>
+          <TD>0.05632</TD>
+        </TR>
+      </Data>
+    </Table>
+
+  </What>
+  <WhereWhen>
+    <ObsDataLocation>
+      <ObservatoryLocation id="Groningen"/>
+      <ObservationLocation>
+        <AstroCoordSystem id="UTC-FK5-GEO"/>
+        <AstroCoords coord_system_id="UTC-FK5-GEO">
+          <Time unit="s">
+            <TimeInstant>
+              <ISOTime>1918-11-11T11:11:11</ISOTime>
+            </TimeInstant>
+          </Time>
+          <Position2D unit="deg">
+            <Name1>RA</Name1>
+            <Name2>Dec</Name2>
+            <Value2>
+              <C1>10.0</C1>
+              <C2>10.0</C2>
+            </Value2>
+            <Error2Radius>7</Error2Radius>
+          </Position2D>
+        </AstroCoords>
+      </ObservationLocation>
+    </ObsDataLocation>
+  </WhereWhen>
+
+</voe:VOEvent>

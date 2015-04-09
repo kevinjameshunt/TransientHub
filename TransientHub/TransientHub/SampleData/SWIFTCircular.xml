@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<voe:VOEvent
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 /Users/roywilliams/Documents/VOEventLib/schema/VOEvent-v2.0.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" version="2.0"
+  ivorn="ivo://nasa.gsfc.gcn/SWIFTCircular#9928" role="observation">
+  <Description> GCN Circular about SWIFT observations </Description>
+  <Who>
+    <Author>
+      <contactName> Scott Barthelmy at NASA/GSFC </contactName>
+      <contactEmail> scott@lheamail.gsfc.nasa.gov </contactEmail>
+    </Author>
+  </Who>
+  <What>
+    <Param name="CircularID" ucd="meta.id" value="9928">
+      <Description> GCN Circular ID </Description>
+    </Param>
+    <Param name="TrigID" ucd="meta.id" value="">
+      <Description> Trigger ID </Description>
+    </Param>
+    <Param name="Subject" ucd="meta.title" value="Swift returns to normal operations">
+      <Description> Subject of Circular </Description>
+    </Param>
+    <Param name="Text" ucd="meta.note"
+      value=" Scott Barthelmy and Neil Gehrels, on behalf of the Swift Team:  As of 16:30 UT 22-Sep-2009, Swift is back to normal operations. BAT has been recovered, triggering enabled, and slewing to new bursts has been enabled.  XRT and UVOT are also taking data on planned targets are and ready for new burst targets.  ">
+      <Description> Text of Circular </Description>
+    </Param>
+  </What>
+</voe:VOEvent>

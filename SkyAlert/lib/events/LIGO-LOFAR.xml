@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voe:VOEvent
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 /Users/roywilliams/Documents/VOEventLib/schema/VOEvent-v2.0.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" version="2.0"
+  ivorn="ivo://ldas-pcdev1.ligo.caltech.edu/VOEvent#1" role="test">
+
+  <Description>Candidate galaxies for LIGO trigger event</Description>
+  <Reference uri="http://ldas-pcdev1.ligo.caltech.edju/VOEventRepository/1"/>
+  <Who>
+    <Author>
+      <title>LSCVirgo</title>
+      <contactName>Ed Daw</contactName>
+      <contactEmail>e.daw@shef.ac.uk</contactEmail>
+      <contactPhone>+44 114 268 6895</contactPhone>
+    </Author>
+  </Who>
+  <What>
+    <Param name="EVENT_ID" value="012345678" ucd="meta.id">
+      <Description>use the gps second as an event ID </Description>
+    </Param>
+    <Param name="SNR" value="2.4" ucd="stat.snr">
+      <Description>Significance of the trigger</Description>
+    </Param>
+    <Param name="UTC" value="2005-04-15T23:59:59" ucd="time.epoch">
+      <Description>Time of the trigger</Description>
+    </Param>
+    <Param name="NO_OF_GALAXIES" value="3" ucd="meta.number">
+      <Description>Number of candidate source galaxies in this VOEvent</Description>
+    </Param>
+    <Table>
+      <Description>Candidate sources for the LSC/Virgo trigger</Description>
+      <Field name="Source rank" ucd="meta.code">
+        <Description>this integer is 1 for the most likely source, 2 for 2nd, etc</Description>
+      </Field>
+      <Field name="GWGC_CATALOGUE_NUMBER" ucd="meta.number">
+        <Description>this is the integer ID of the galaxy in Darren's catalogue</Description>
+      </Field>
+      <Field name="RA" unit="deg" ucd="pos.eq.ra">
+        <Description>right ascension (degrees)</Description>
+      </Field>
+      <Field name="Dec" unit="deg" ucd="pos.eq.dec">
+        <Description>declination (degrees)</Description>
+      </Field>
+      <Data>
+        <TR>
+          <TD>1</TD>
+          <TD>666</TD>
+          <TD>22.3</TD>
+          <TD>12.5</TD>
+        </TR>
+        <TR>
+          <TD>2</TD>
+          <TD>6345</TD>
+          <TD>-13.6</TD>
+          <TD>84.3</TD>
+        </TR>
+        <TR>
+          <TD>3</TD>
+          <TD>456</TD>
+          <TD>44.9</TD>
+          <TD>-0.01</TD>
+        </TR>
+      </Data>
+    </Table>
+  </What>
+
+</voe:VOEvent>

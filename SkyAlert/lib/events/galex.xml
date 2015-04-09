@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<voe:VOEvent
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 /Users/roywilliams/Documents/VOEventLib/schema/VOEvent-v2.0.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" version="2.0" ivorn="ivo://caltech.edu/galex#1"
+  role="test">
+
+  <Description>GALEX Transient Alerts </Description>
+
+  <Citations>
+    <EventIVORN cite="followup">ivo://test#123</EventIVORN>
+    <EventIVORN cite="followup">ivo://test#124</EventIVORN>
+  </Citations>
+
+  <Who>
+    <Author>
+      <contactName>Don Neill (for the Galex Team)</contactName>
+      <contactEmail>neill@srl.caltech.edu</contactEmail>
+      <contactPhone/>
+    </Author>
+  </Who>
+
+  <What>
+
+
+    <Param name="Delta FUV" ucd="phot.mag;em.UV;stat.diff" unit="mag" dataType="float" value="1.234">
+      <Description>Far UV mag chnage from past coadd</Description>
+    </Param>
+    <Param name="Delta NUV" ucd="phot.mag;em.UV;stat.diff" unit="mag" dataType="float" value="1.234">
+      <Description>Near UV mag change from past coadd</Description>
+    </Param>
+    <Param name="Identification" ucd="meta.id" dataType="string" value="hello">
+      <Description>Galex identifier</Description>
+    </Param>
+    <Param name="Max FUV" ucd="phot.mag;em.UV" unit="mag" dataType="float" value="1.234">
+      <Description>Far UV maximum magnitude</Description>
+    </Param>
+    <Param name="Max NUV" ucd="phot.mag;em.UV" unit="mag" dataType="float" value="1.234">
+      <Description>Near UV maximum magnitude</Description>
+    </Param>
+    <Param name="Nobs FUV" ucd="meta.number" dataType="int" value="1234">
+      <Description>Number of observations FUV</Description>
+    </Param>
+    <Param name="Nobs NUV" ucd="meta.number" dataType="int" value="1234">
+      <Description>Number of Observations NUV</Description>
+    </Param>
+
+    <Group name="Archive">
+
+      <Param name="Light Curve" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description>URL for light curve</Description>
+      </Param>
+      <Param name="NUV FUV cutout" ucd="meta.ref.url" dataType="string" value="hello">
+        <Description>URL for thumbnail png cutout</Description>
+      </Param>
+    </Group>
+    <Group name="Human">
+
+      <Param name="Associated" ucd="meta.id" dataType="string" value="hello">
+        <Description>ID of a possible match (or comma-separated list)</Description>
+      </Param>
+      <Param name="Comment" ucd="meta.note" dataType="string" value="hello">
+        <Description>Classification notes</Description>
+      </Param>
+    </Group>
+
+  </What>
+  <WhereWhen>
+    <ObsDataLocation>
+      <ObservatoryLocation id="Earth orbit"/>
+      <ObservationLocation>
+        <AstroCoordSystem id="UTC-FK5-GEO"/>
+        <AstroCoords coord_system_id="UTC-FK5-GEO">
+          <Time unit="s">
+            <TimeInstant>
+              <ISOTime>1918-11-11T11:11:11</ISOTime>
+            </TimeInstant>
+          </Time>
+          <Position2D unit="deg">
+            <Name1>RA</Name1>
+            <Name2>Dec</Name2>
+            <Value2>
+              <C1>10.0</C1>
+              <C2>10.0</C2>
+            </Value2>
+            <Error2Radius>7</Error2Radius>
+          </Position2D>
+        </AstroCoords>
+      </ObservationLocation>
+    </ObsDataLocation>
+  </WhereWhen>
+
+  <How>
+    <Description>Galex satellite observatory</Description>
+  </How>
+</voe:VOEvent>

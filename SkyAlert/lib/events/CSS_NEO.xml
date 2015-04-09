@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<voe:VOEvent 
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 /Users/roywilliams/Documents/VOEventLib/schema/VOEvent-v2.0.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" version="2.0" 
+ivorn="ivo://lpl.arizona.edu/css#1" role="test">
+
+<Description>Report of a moving object found by the Catalina Sky Survey</Description>
+
+<Citations>
+ <EventIVORN cite="followup">ivo://test#123</EventIVORN> 
+ <EventIVORN cite="followup">ivo://test#124</EventIVORN> 
+ </Citations>
+
+<Who>
+  <Author>
+    <contactName>J. D. Ahern, E. C. Beshore, A. Boattini, G. J. Garradd, A. R. GibbsA. D. Grauer, R. E. Hill, R. A. Kowalski, S. M. Larson, R. H. McNaught</contactName>
+    <contactEmail>css@lpl.arizona.edu</contactEmail>
+    <contactPhone> </contactPhone>
+  </Author>
+</Who>
+
+<What> 
+
+
+<Param name="CSSobs"  value="hello">
+    <Description>The observed positions from the CSS survey</Description></Param> 
+<Param name="Decdiff" ucd="pos.eq.dec;stat.delta" unit="arcsec" dataType="float"  value="1.234">
+    <Description>Movement in Dec (last-first) detected by CSS</Description></Param> 
+<Param name="ephemeris"  value="hello">
+    <Description>The computed ephemeris from MPC (http://www.cfa.harvard.edu/iau/MPEph/NewObjEphems.html)</Description></Param> 
+<Param name="magnitude" ucd="phot.mag" unit="mag" dataType="float"  value="1.234">
+    <Description>The magnitude (brightest V-band) of the moving object</Description></Param> 
+<Param name="objid" ucd="meta.id"  value="hello">
+    <Description>The object ID assigned by the CSS survey</Description></Param> 
+<Param name="RAdiff" ucd="pos.eq.ra;stat.delta" unit="arcsec" dataType="float"  value="1.234">
+    <Description>Movement in RA (last-first) detected by CSS</Description></Param> 
+<Param name="Telcode" ucd="meta.id.observatory"  value="hello">
+    <Description>The telescope used by the CSS survey</Description></Param> 
+<Param name="Timediff" ucd="time.delta" unit="min" dataType="float"  value="1.234">
+    <Description>Time difference (last-first) for CSS observations</Description></Param> 
+
+
+</What>
+<WhereWhen>
+<ObsDataLocation>
+  <ObservatoryLocation/>
+  <ObservationLocation>
+    <AstroCoordSystem id="UTC-FK5-GEO"/>
+    <AstroCoords coord_system_id="UTC-FK5-GEO">
+      <Time unit="s">
+        <TimeInstant> <ISOTime>1918-11-11T11:11:11</ISOTime> </TimeInstant>
+      </Time>
+      <Position2D unit="deg">
+        <Name1>RA</Name1>
+        <Name2>Dec</Name2>
+        <Value2>
+          <C1>10.0</C1>
+          <C2>10.0</C2>
+        </Value2>
+        <Error2Radius>7</Error2Radius>
+       </Position2D>
+     </AstroCoords>
+    </ObservationLocation>
+  </ObsDataLocation>
+</WhereWhen>
+
+</voe:VOEvent>

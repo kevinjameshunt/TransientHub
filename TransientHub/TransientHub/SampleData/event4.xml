@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voe:VOEvent ivorn="ivo://raptor.lanl/VOEvent#235649409" role="observation" version="2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 /Users/roywilliams/Documents/VOEventLib/schema/VOEvent-v2.0.xsd">
+  <!-- xmlns:sts="http://dotastro.org/simpletimeseries" -->
+  <Description>An imaginary event report about SN 2009lw.</Description>
+  <Reference uri="http://raptor.lanl.gov/data/lightcurves/235649409"/>
+  <Who>
+    <Author>
+      <contactName>Earl of Sandwich</contactName>
+      <contactPhone>626 395 2913</contactPhone>
+      <contactEmail>earl@sandwich.org</contactEmail>
+    </Author>
+  </Who>
+
+  <What>
+    <Description>An imaginary event report about SN 2009lw.</Description>
+    <Reference uri="http://raptor.lanl.gov/data/lightcurves/235649409"/>
+
+    <Param name="seeing" value="2" unit="arcsec" ucd="instr.obsty.site.seeing"/>
+    <Group name="magnitude">
+      <Description>The time is days since the refernce time in the WhereWhen section</Description>
+      <Param name="time" value="278.02" unit="day" ucd="time.epoch"/>
+      <Param name="mag" value="19.5" unit="mag" ucd="phot.mag"/>
+      <Param name="magerr" value="0.14" unit="mag" ucd="phot.mag; stat.err"/>
+    </Group>
+
+    <Table>
+      <Description>Individually Referenced Moduli and Distances for NGC 0931 from NED</Description>
+      <Field name="(m-M)" unit="mag" ucd="phot.mag.distMod"/>
+      <Field name="err(m-M)" unit="mag" ucd="phot.mag.distMod;stat.err"/>
+      <Field name="D" unit="Mpc" ucd="pos.distance"/>
+      <Field name="REFCODE" ucd="meta.bib.bibcode"/>
+      <Data>
+        <TR>
+          <TD>33.16</TD>
+          <TD>0.38</TD>
+          <TD>42.9</TD>
+          <TD>1997ApJS..109..333W</TD>
+        </TR>
+        <TR>
+          <TD>33.32</TD>
+          <TD>0.38</TD>
+          <TD>46.1</TD>
+          <TD>1997ApJS..109..333W</TD>
+        </TR>
+        <TR>
+          <TD>33.51</TD>
+          <TD>0.48</TD>
+          <TD>50.4</TD>
+          <TD>2009ApJS..182..474S</TD>
+        </TR>
+        <TR>
+          <TD>33.55</TD>
+          <TD>0.38</TD>
+          <TD>51.3</TD>
+          <TD>1997ApJS..109..333W</TD>
+        </TR>
+        <TR>
+          <TD>33.71</TD>
+          <TD>0.43</TD>
+          <TD>55.2</TD>
+          <TD>2009ApJS..182..474S</TD>
+        </TR>
+        <TR>
+          <TD>34.01</TD>
+          <TD>0.80</TD>
+          <TD>63.3</TD>
+          <TD>1997ApJS..109..333W</TD>
+        </TR>
+      </Data>
+    </Table>
+  </What>
+
+  <WhereWhen id="Raptor-2455100">
+    <ObsDataLocation>
+      <ObservatoryLocation id="RAPTOR"/>
+      <ObservationLocation>
+        <AstroCoordSystem id="UTC-ICRS-TOPO"/>
+        <AstroCoords coord_system_id="UTC-ICRS-TOPO">
+          <Time>
+            <TimeInstant>
+              <ISOTime>2009-09-25T12:00:00</ISOTime>
+            </TimeInstant>
+            <Error>0.0</Error>
+          </Time>
+          <Position2D unit="deg">
+            <Value2>
+              <C1>37.0603169</C1>
+              <!-- RA  -->
+              <C2>31.3116578</C2>
+              <!-- Dec -->
+            </Value2>
+            <Error2Radius>0.03</Error2Radius>
+          </Position2D>
+        </AstroCoords>
+      </ObservationLocation>
+    </ObsDataLocation>
+  </WhereWhen>
+
+  <How>
+    <Description>
+      <![CDATA[This VOEvent packet resulted from observations 
+            made with <a href=http://www.raptor.lanl.gov>Raptor</a> AB at Los Alamos. ]]>
+    </Description>
+  </How>
+
+  <Citations>
+    <EventIVORN cite="followup">ivo://raptor.lanl/VOEvent#235649408</EventIVORN>
+  </Citations>
+
+  <Why>
+    <Concept>process.variation.burst;em.opt</Concept>
+    <Description>Looks like a SN</Description>
+    <Inference relation="associated" probability="0.99">
+      <Description>Could be the host galaxy</Description>
+      <Name>NGC0931</Name>
+    </Inference>
+    <Inference relation="identical">
+      <Description>More names</Description>
+      <Name>NGC 0931</Name>
+      <Name>UGC 01935</Name>
+      <Name>MRK 1040</Name>
+      <Name>KUG 0225+310</Name>
+    </Inference>
+  </Why>
+</voe:VOEvent>

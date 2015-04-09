@@ -1,0 +1,698 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Index &mdash; VOEventLib v0.1 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="VOEventLib v0.1 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="#" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="index.html">VOEventLib v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+
+   <h1 id="index">Index</h1>
+
+   <div class="genindex-jumpbox">
+   <a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#E"><strong>E</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#H"><strong>H</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#O"><strong>O</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#U"><strong>U</strong></a> | <a href="#V"><strong>V</strong></a> | <a href="#W"><strong>W</strong></a> 
+   </div>
+<h2 id="A">A</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Inference.add_Concept">add_Concept() (VOEvent.Inference method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Why.add_Concept">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Author.add_contactEmail">add_contactEmail() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.add_contactName">add_contactName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.add_contactPhone">add_contactPhone() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.add_contributor">add_contributor() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.add_Description">add_Description() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.add_Description">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.add_Description">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.add_Description">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.add_Description">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.add_Description">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.add_Description">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.add_Description">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.add_Description">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Citations.add_EventIVORN">add_EventIVORN() (VOEvent.Citations method)</a></dt>
+    <dt><a href="index.html#VOEvent.Table.add_Field">add_Field() (VOEvent.Table method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.add_Group">add_Group() (VOEvent.What method)</a></dt>
+    <dt><a href="index.html#VOEvent.Why.add_Inference">add_Inference() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.add_logoURL">add_logoURL() (VOEvent.Author method)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Inference.add_Name">add_Name() (VOEvent.Inference method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Why.add_Name">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Group.add_Param">add_Param() (VOEvent.Group method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.What.add_Param">(VOEvent.What method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Field.add_Reference">add_Reference() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.add_Reference">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.add_Reference">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.add_Reference">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.add_Reference">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.add_Reference">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.add_Reference">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.add_Reference">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.add_Reference">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Author.add_shortName">add_shortName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.add_Table">add_Table() (VOEvent.What method)</a></dt>
+    <dt><a href="index.html#VOEvent.TR.add_TD">add_TD() (VOEvent.TR method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.add_title">add_title() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Data.add_TR">add_TR() (VOEvent.Data method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoords">AstroCoords (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoordSystem">AstroCoordSystem (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Author">Author (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#Vutil.utilityTable.blankTable">blankTable() (Vutil.utilityTable method)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Citations">Citations (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Data">Data (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.EventIVORN">EventIVORN (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Field">Field (class in VOEvent)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#Vutil.findParam">findParam() (in module Vutil)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.get_all_text_">get_all_text_() (in module VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.ObservationLocation.get_AstroCoords">get_AstroCoords() (VOEvent.ObservationLocation method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.ObservatoryLocation.get_AstroCoords">(VOEvent.ObservatoryLocation method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.ObservationLocation.get_AstroCoordSystem">get_AstroCoordSystem() (VOEvent.ObservationLocation method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.ObservatoryLocation.get_AstroCoordSystem">(VOEvent.ObservatoryLocation method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Who.get_Author">get_Author() (VOEvent.Who method)</a></dt>
+    <dt><a href="index.html#VOEvent.Who.get_AuthorIVORN">get_AuthorIVORN() (VOEvent.Who method)</a></dt>
+    <dt><a href="index.html#VOEvent.Value2.get_C1">get_C1() (VOEvent.Value2 method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Value3.get_C1">(VOEvent.Value3 method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Value2.get_C2">get_C2() (VOEvent.Value2 method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Value3.get_C2">(VOEvent.Value3 method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Value3.get_C3">get_C3() (VOEvent.Value3 method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_Citations">get_Citations() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.EventIVORN.get_cite">get_cite() (VOEvent.EventIVORN method)</a></dt>
+    <dt><a href="index.html#VOEvent.Inference.get_Concept">get_Concept() (VOEvent.Inference method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Why.get_Concept">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Author.get_contactEmail">get_contactEmail() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.get_contactName">get_contactName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.get_contactPhone">get_contactPhone() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.MemberSpec_.get_container">get_container() (VOEvent.MemberSpec_ method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.get_contributor">get_contributor() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoords.get_coord_system_id">get_coord_system_id() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.Table.get_Data">get_Data() (VOEvent.Table method)</a></dt>
+    <dt><a href="index.html#VOEvent.MemberSpec_.get_data_type">get_data_type() (VOEvent.MemberSpec_ method)</a></dt>
+    <dt><a href="index.html#VOEvent.MemberSpec_.get_data_type_chain">get_data_type_chain() (VOEvent.MemberSpec_ method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.get_dataType">get_dataType() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.get_dataType">(VOEvent.Param method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Who.get_Date">get_Date() (VOEvent.Who method)</a></dt>
+    <dt><a href="index.html#VOEvent.Citations.get_Description">get_Description() (VOEvent.Citations method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Field.get_Description">(VOEvent.Field method)</a></dt>
+      <dt><a href="index.html#VOEvent.Group.get_Description">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.get_Description">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.get_Description">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.get_Description">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.get_Description">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.VOEvent.get_Description">(VOEvent.VOEvent method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.get_Description">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.get_Description">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Who.get_Description">(VOEvent.Who method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.get_Description">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Time.get_Error">get_Error() (VOEvent.Time method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position2D.get_Error2Radius">get_Error2Radius() (VOEvent.Position2D method)</a></dt>
+    <dt><a href="index.html#VOEvent.Citations.get_EventIVORN">get_EventIVORN() (VOEvent.Citations method)</a></dt>
+    <dt><a href="index.html#VOEvent.Why.get_expires">get_expires() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Table.get_Field">get_Field() (VOEvent.Table method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.get_Group">get_Group() (VOEvent.What method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_How">get_How() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoordSystem.get_id">get_id() (VOEvent.AstroCoordSystem method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.ObservatoryLocation.get_id">(VOEvent.ObservatoryLocation method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.get_id">(VOEvent.WhereWhen method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Why.get_importance">get_importance() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Why.get_Inference">get_Inference() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.TimeInstant.get_ISOTime">get_ISOTime() (VOEvent.TimeInstant method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_ivorn">get_ivorn() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.get_logoURL">get_logoURL() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.get_name">get_name() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.get_name">(VOEvent.Group method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Inference.get_Name">get_Name() (VOEvent.Inference method)</a></dt>
+    <dt><a href="index.html#VOEvent.MemberSpec_.get_name">get_name() (VOEvent.MemberSpec_ method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.get_name">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Reference.get_name">(VOEvent.Reference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.get_name">(VOEvent.Table method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Why.get_Name">get_Name() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position2D.get_Name1">get_Name1() (VOEvent.Position2D method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Position3D.get_Name1">(VOEvent.Position3D method)</a></dt>
+  </dl></dd>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Position2D.get_Name2">get_Name2() (VOEvent.Position2D method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Position3D.get_Name2">(VOEvent.Position3D method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Position3D.get_Name3">get_Name3() (VOEvent.Position3D method)</a></dt>
+    <dt><a href="index.html#VOEvent.WhereWhen.get_ObsDataLocation">get_ObsDataLocation() (VOEvent.WhereWhen method)</a></dt>
+    <dt><a href="index.html#VOEvent.ObsDataLocation.get_ObservationLocation">get_ObservationLocation() (VOEvent.ObsDataLocation method)</a></dt>
+    <dt><a href="index.html#VOEvent.ObsDataLocation.get_ObservatoryLocation">get_ObservatoryLocation() (VOEvent.ObsDataLocation method)</a></dt>
+    <dt><a href="index.html#VOEvent.Group.get_Param">get_Param() (VOEvent.Group method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.What.get_Param">(VOEvent.What method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.AstroCoords.get_Position2D">get_Position2D() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoords.get_Position3D">get_Position3D() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.Inference.get_probability">get_probability() (VOEvent.Inference method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.get_Reference">get_Reference() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.get_Reference">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.get_Reference">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.get_Reference">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.get_Reference">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.get_Reference">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.VOEvent.get_Reference">(VOEvent.VOEvent method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.get_Reference">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.get_Reference">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Who.get_Reference">(VOEvent.Who method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.get_Reference">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Inference.get_relation">get_relation() (VOEvent.Inference method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_role">get_role() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.get_root_tag">get_root_tag() (in module VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.get_shortName">get_shortName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.get_Table">get_Table() (VOEvent.What method)</a></dt>
+    <dt><a href="index.html#VOEvent.TR.get_TD">get_TD() (VOEvent.TR method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoords.get_Time">get_Time() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.Time.get_TimeInstant">get_TimeInstant() (VOEvent.Time method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.get_title">get_title() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Data.get_TR">get_TR() (VOEvent.Data method)</a></dt>
+    <dt><a href="index.html#VOEvent.Group.get_type">get_type() (VOEvent.Group method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Reference.get_type">(VOEvent.Reference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.get_type">(VOEvent.Table method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Field.get_ucd">get_ucd() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.get_ucd">(VOEvent.Param method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Field.get_unit">get_unit() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.get_unit">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Position2D.get_unit">(VOEvent.Position2D method)</a></dt>
+      <dt><a href="index.html#VOEvent.Position3D.get_unit">(VOEvent.Position3D method)</a></dt>
+      <dt><a href="index.html#VOEvent.Time.get_unit">(VOEvent.Time method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Reference.get_uri">get_uri() (VOEvent.Reference method)</a></dt>
+    <dt><a href="index.html#VOEvent.Param.get_value">get_value() (VOEvent.Param method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position2D.get_Value2">get_Value2() (VOEvent.Position2D method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position3D.get_Value3">get_Value3() (VOEvent.Position3D method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoordSystem.get_valueOf_">get_valueOf_() (VOEvent.AstroCoordSystem method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.EventIVORN.get_valueOf_">(VOEvent.EventIVORN method)</a></dt>
+      <dt><a href="index.html#VOEvent.Reference.get_valueOf_">(VOEvent.Reference method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.VOEvent.get_version">get_version() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_What">get_What() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_WhereWhen">get_WhereWhen() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_Who">get_Who() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.get_Why">get_Why() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#Vutil.utilityTable.getByCols">getByCols() (Vutil.utilityTable method)</a></dt>
+    <dt><a href="index.html#VOEvent.MixedContainer.getCategory">getCategory() (VOEvent.MixedContainer method)</a></dt>
+    <dt><a href="index.html#VOEvent.MixedContainer.getContenttype">getContenttype() (VOEvent.MixedContainer method)</a></dt>
+    <dt><a href="index.html#VOEvent.MixedContainer.getName">getName() (VOEvent.MixedContainer method)</a></dt>
+    <dt><a href="index.html#Vutil.getParamNames">getParamNames() (in module Vutil)</a></dt>
+    <dt><a href="index.html#VOEvent.MixedContainer.getValue">getValue() (VOEvent.MixedContainer method)</a></dt>
+    <dt><a href="index.html#VOEvent.Group">Group (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.How">How (class in VOEvent)</a></dt>
+    <dt><a href="index.html#Vutil.htmlList">htmlList() (in module Vutil)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#Vutil.htmlParam">htmlParam() (in module Vutil)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Inference">Inference (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Inference.insert_Concept">insert_Concept() (VOEvent.Inference method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Why.insert_Concept">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Author.insert_contactEmail">insert_contactEmail() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.insert_contactName">insert_contactName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.insert_contactPhone">insert_contactPhone() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.insert_contributor">insert_contributor() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.insert_Description">insert_Description() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.insert_Description">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.insert_Description">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.insert_Description">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.insert_Description">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.insert_Description">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.insert_Description">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.insert_Description">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.insert_Description">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Citations.insert_EventIVORN">insert_EventIVORN() (VOEvent.Citations method)</a></dt>
+    <dt><a href="index.html#VOEvent.Table.insert_Field">insert_Field() (VOEvent.Table method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.insert_Group">insert_Group() (VOEvent.What method)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Why.insert_Inference">insert_Inference() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.insert_logoURL">insert_logoURL() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Inference.insert_Name">insert_Name() (VOEvent.Inference method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Why.insert_Name">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Group.insert_Param">insert_Param() (VOEvent.Group method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.What.insert_Param">(VOEvent.What method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Field.insert_Reference">insert_Reference() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.insert_Reference">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.insert_Reference">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.insert_Reference">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.insert_Reference">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.insert_Reference">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.insert_Reference">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.insert_Reference">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.insert_Reference">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Author.insert_shortName">insert_shortName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.insert_Table">insert_Table() (VOEvent.What method)</a></dt>
+    <dt><a href="index.html#VOEvent.TR.insert_TD">insert_TD() (VOEvent.TR method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.insert_title">insert_title() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Data.insert_TR">insert_TR() (VOEvent.Data method)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.MemberSpec_">MemberSpec_ (class in VOEvent)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.MixedContainer">MixedContainer (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.ObsDataLocation">ObsDataLocation (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.ObservationLocation">ObservationLocation (class in VOEvent)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.ObservatoryLocation">ObservatoryLocation (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Param">Param (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.parse">parse() (in module VOEvent)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#Vutil.parse">(in module Vutil)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.parseLiteral">parseLiteral() (in module VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.parseString">parseString() (in module VOEvent)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.parsexml_">parsexml_() (in module VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Position2D">Position2D (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Position3D">Position3D (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Reference">Reference (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.ObservationLocation.set_AstroCoords">set_AstroCoords() (VOEvent.ObservationLocation method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.ObservatoryLocation.set_AstroCoords">(VOEvent.ObservatoryLocation method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.ObservationLocation.set_AstroCoordSystem">set_AstroCoordSystem() (VOEvent.ObservationLocation method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.ObservatoryLocation.set_AstroCoordSystem">(VOEvent.ObservatoryLocation method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Who.set_Author">set_Author() (VOEvent.Who method)</a></dt>
+    <dt><a href="index.html#VOEvent.Who.set_AuthorIVORN">set_AuthorIVORN() (VOEvent.Who method)</a></dt>
+    <dt><a href="index.html#VOEvent.Value2.set_C1">set_C1() (VOEvent.Value2 method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Value3.set_C1">(VOEvent.Value3 method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Value2.set_C2">set_C2() (VOEvent.Value2 method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Value3.set_C2">(VOEvent.Value3 method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Value3.set_C3">set_C3() (VOEvent.Value3 method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_Citations">set_Citations() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.EventIVORN.set_cite">set_cite() (VOEvent.EventIVORN method)</a></dt>
+    <dt><a href="index.html#VOEvent.Inference.set_Concept">set_Concept() (VOEvent.Inference method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Why.set_Concept">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Author.set_contactEmail">set_contactEmail() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.set_contactName">set_contactName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.set_contactPhone">set_contactPhone() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.MemberSpec_.set_container">set_container() (VOEvent.MemberSpec_ method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.set_contributor">set_contributor() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoords.set_coord_system_id">set_coord_system_id() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.Table.set_Data">set_Data() (VOEvent.Table method)</a></dt>
+    <dt><a href="index.html#VOEvent.MemberSpec_.set_data_type">set_data_type() (VOEvent.MemberSpec_ method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.set_dataType">set_dataType() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.set_dataType">(VOEvent.Param method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Who.set_Date">set_Date() (VOEvent.Who method)</a></dt>
+    <dt><a href="index.html#VOEvent.Citations.set_Description">set_Description() (VOEvent.Citations method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Field.set_Description">(VOEvent.Field method)</a></dt>
+      <dt><a href="index.html#VOEvent.Group.set_Description">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.set_Description">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.set_Description">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.set_Description">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.set_Description">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.VOEvent.set_Description">(VOEvent.VOEvent method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.set_Description">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.set_Description">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Who.set_Description">(VOEvent.Who method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.set_Description">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Time.set_Error">set_Error() (VOEvent.Time method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position2D.set_Error2Radius">set_Error2Radius() (VOEvent.Position2D method)</a></dt>
+    <dt><a href="index.html#VOEvent.Citations.set_EventIVORN">set_EventIVORN() (VOEvent.Citations method)</a></dt>
+    <dt><a href="index.html#VOEvent.Why.set_expires">set_expires() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Table.set_Field">set_Field() (VOEvent.Table method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.set_Group">set_Group() (VOEvent.What method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_How">set_How() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoordSystem.set_id">set_id() (VOEvent.AstroCoordSystem method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.ObservatoryLocation.set_id">(VOEvent.ObservatoryLocation method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.set_id">(VOEvent.WhereWhen method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Why.set_importance">set_importance() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Why.set_Inference">set_Inference() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.TimeInstant.set_ISOTime">set_ISOTime() (VOEvent.TimeInstant method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_ivorn">set_ivorn() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.set_logoURL">set_logoURL() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.set_name">set_name() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.set_name">(VOEvent.Group method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Inference.set_Name">set_Name() (VOEvent.Inference method)</a></dt>
+    <dt><a href="index.html#VOEvent.MemberSpec_.set_name">set_name() (VOEvent.MemberSpec_ method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.set_name">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Reference.set_name">(VOEvent.Reference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.set_name">(VOEvent.Table method)</a></dt>
+  </dl></dd>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Why.set_Name">set_Name() (VOEvent.Why method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position2D.set_Name1">set_Name1() (VOEvent.Position2D method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Position3D.set_Name1">(VOEvent.Position3D method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Position2D.set_Name2">set_Name2() (VOEvent.Position2D method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Position3D.set_Name2">(VOEvent.Position3D method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Position3D.set_Name3">set_Name3() (VOEvent.Position3D method)</a></dt>
+    <dt><a href="index.html#VOEvent.WhereWhen.set_ObsDataLocation">set_ObsDataLocation() (VOEvent.WhereWhen method)</a></dt>
+    <dt><a href="index.html#VOEvent.ObsDataLocation.set_ObservationLocation">set_ObservationLocation() (VOEvent.ObsDataLocation method)</a></dt>
+    <dt><a href="index.html#VOEvent.ObsDataLocation.set_ObservatoryLocation">set_ObservatoryLocation() (VOEvent.ObsDataLocation method)</a></dt>
+    <dt><a href="index.html#VOEvent.Group.set_Param">set_Param() (VOEvent.Group method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.What.set_Param">(VOEvent.What method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.AstroCoords.set_Position2D">set_Position2D() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoords.set_Position3D">set_Position3D() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.Inference.set_probability">set_probability() (VOEvent.Inference method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.set_Reference">set_Reference() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Group.set_Reference">(VOEvent.Group method)</a></dt>
+      <dt><a href="index.html#VOEvent.How.set_Reference">(VOEvent.How method)</a></dt>
+      <dt><a href="index.html#VOEvent.Inference.set_Reference">(VOEvent.Inference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Param.set_Reference">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.set_Reference">(VOEvent.Table method)</a></dt>
+      <dt><a href="index.html#VOEvent.VOEvent.set_Reference">(VOEvent.VOEvent method)</a></dt>
+      <dt><a href="index.html#VOEvent.What.set_Reference">(VOEvent.What method)</a></dt>
+      <dt><a href="index.html#VOEvent.WhereWhen.set_Reference">(VOEvent.WhereWhen method)</a></dt>
+      <dt><a href="index.html#VOEvent.Who.set_Reference">(VOEvent.Who method)</a></dt>
+      <dt><a href="index.html#VOEvent.Why.set_Reference">(VOEvent.Why method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Inference.set_relation">set_relation() (VOEvent.Inference method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_role">set_role() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.set_shortName">set_shortName() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.What.set_Table">set_Table() (VOEvent.What method)</a></dt>
+    <dt><a href="index.html#VOEvent.TR.set_TD">set_TD() (VOEvent.TR method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoords.set_Time">set_Time() (VOEvent.AstroCoords method)</a></dt>
+    <dt><a href="index.html#VOEvent.Time.set_TimeInstant">set_TimeInstant() (VOEvent.Time method)</a></dt>
+    <dt><a href="index.html#VOEvent.Author.set_title">set_title() (VOEvent.Author method)</a></dt>
+    <dt><a href="index.html#VOEvent.Data.set_TR">set_TR() (VOEvent.Data method)</a></dt>
+    <dt><a href="index.html#VOEvent.Group.set_type">set_type() (VOEvent.Group method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Reference.set_type">(VOEvent.Reference method)</a></dt>
+      <dt><a href="index.html#VOEvent.Table.set_type">(VOEvent.Table method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Field.set_ucd">set_ucd() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.set_ucd">(VOEvent.Param method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Field.set_unit">set_unit() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.set_unit">(VOEvent.Param method)</a></dt>
+      <dt><a href="index.html#VOEvent.Position2D.set_unit">(VOEvent.Position2D method)</a></dt>
+      <dt><a href="index.html#VOEvent.Position3D.set_unit">(VOEvent.Position3D method)</a></dt>
+      <dt><a href="index.html#VOEvent.Time.set_unit">(VOEvent.Time method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.Reference.set_uri">set_uri() (VOEvent.Reference method)</a></dt>
+    <dt><a href="index.html#VOEvent.Param.set_value">set_value() (VOEvent.Param method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position2D.set_Value2">set_Value2() (VOEvent.Position2D method)</a></dt>
+    <dt><a href="index.html#VOEvent.Position3D.set_Value3">set_Value3() (VOEvent.Position3D method)</a></dt>
+    <dt><a href="index.html#VOEvent.AstroCoordSystem.set_valueOf_">set_valueOf_() (VOEvent.AstroCoordSystem method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.EventIVORN.set_valueOf_">(VOEvent.EventIVORN method)</a></dt>
+      <dt><a href="index.html#VOEvent.Reference.set_valueOf_">(VOEvent.Reference method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.VOEvent.set_version">set_version() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_What">set_What() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_WhereWhen">set_WhereWhen() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_Who">set_Who() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent.set_Why">set_Why() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#Vutil.utilityTable.setValue">setValue() (Vutil.utilityTable method)</a></dt>
+    <dt><a href="index.html#VOEvent.showIndent">showIndent() (in module VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Table">Table (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Time">Time (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.TimeInstant">TimeInstant (class in VOEvent)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#Vutil.utilityTable.toString">toString() (Vutil.utilityTable method)</a></dt>
+    <dt><a href="index.html#VOEvent.TR">TR (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#Vutil.utilityTable">utilityTable (class in Vutil)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.EventIVORN.validate_citeValues">validate_citeValues() (VOEvent.EventIVORN method)</a></dt>
+    <dt><a href="index.html#VOEvent.Field.validate_dataType">validate_dataType() (VOEvent.Field method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.Param.validate_dataType">(VOEvent.Param method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.AstroCoords.validate_idValues">validate_idValues() (VOEvent.AstroCoords method)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#VOEvent.AstroCoordSystem.validate_idValues">(VOEvent.AstroCoordSystem method)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#VOEvent.VOEvent.validate_roleValues">validate_roleValues() (VOEvent.VOEvent method)</a></dt>
+    <dt><a href="index.html#VOEvent.Inference.validate_smallFloat">validate_smallFloat() (VOEvent.Inference method)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Value2">Value2 (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Value3">Value3 (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.VOEvent">VOEvent (class in VOEvent)</a></dt>
+    <dd><dl>
+      <dt><a href="index.html#module-VOEvent">(module)</a></dt>
+  </dl></dd>
+    <dt><a href="index.html#module-Vutil">Vutil (module)</a></dt>
+</dl></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table width="100%" class="indextable genindextable"><tr>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.What">What (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.WhereWhen">WhereWhen (class in VOEvent)</a></dt>
+    <dt><a href="index.html#Vutil.whereWhenDict">whereWhenDict() (in module Vutil)</a></dt>
+</dl></td>
+  <td width="33%" valign="top"><dl>
+    <dt><a href="index.html#VOEvent.Who">Who (class in VOEvent)</a></dt>
+    <dt><a href="index.html#VOEvent.Why">Why (class in VOEvent)</a></dt>
+</dl></td>
+</tr></table>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+
+   
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="#" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="index.html">VOEventLib v0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2010, Roy Williams and Dave Kuhlman.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0b2.
+    </div>
+  </body>
+</html>
