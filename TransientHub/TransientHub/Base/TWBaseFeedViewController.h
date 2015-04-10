@@ -10,4 +10,6 @@
 
 @interface TWBaseFeedViewController : TWBaseViewController
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
 @end

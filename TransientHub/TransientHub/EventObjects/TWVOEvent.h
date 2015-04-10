@@ -11,4 +11,12 @@
 
 @interface TWVOEvent : TWBaseEvent
 
+@property (nonatomic, strong) NSString * firstIVORNRef;
+@property (nonatomic, strong) NSNumber * triggerIVORN;
+@property (nonatomic, strong) NSNumber * localIVORN;
+
++(TWVOEvent *)voEventWithSavedEvent:(CDEvent *)cdEvent;
+
+- (void)updateWithSavedVOEvent:(CDEvent *)cdEvent;
+
 @end

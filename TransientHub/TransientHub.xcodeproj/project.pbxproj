@@ -13,6 +13,10 @@
 		0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0438DD9C1AD094140049AB66 /* Images.xcassets */; };
 		0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0438DD9E1AD094140049AB66 /* LaunchScreen.xib */; };
 		0438DDAC1AD094140049AB66 /* TransientHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438DDAB1AD094140049AB66 /* TransientHubTests.m */; };
+		043FB9211AD7813D00ED199F /* CDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9201AD7813D00ED199F /* CDEvent.m */; };
+		043FB9241AD7813E00ED199F /* CDEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9231AD7813E00ED199F /* CDEventFeed.m */; };
+		043FB9271AD7840B00ED199F /* TWCRTSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9261AD7840B00ED199F /* TWCRTSEvent.m */; };
+		043FB92A1AD788C000ED199F /* TWBaseEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9291AD788C000ED199F /* TWBaseEventFeed.m */; };
 		04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */; };
 		04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */; };
 		04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */; };
@@ -32,7 +36,6 @@
 		04D3FC431AD62D1000036F70 /* TWTermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC421AD62D1000036F70 /* TWTermsViewController.m */; };
 		04D3FC491AD6347E00036F70 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC471AD6347E00036F70 /* Model.xcdatamodeld */; };
 		04D3FC4D1AD6357500036F70 /* TWDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC4C1AD6357500036F70 /* TWDataManager.m */; };
-		04D3FC511AD6CB7400036F70 /* TWEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC501AD6CB7400036F70 /* TWEventFeed.m */; };
 		04D3FC551AD6CBB000036F70 /* TWVOEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC541AD6CBB000036F70 /* TWVOEvent.m */; };
 		04D3FC581AD6CBE300036F70 /* TWBaseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC571AD6CBE300036F70 /* TWBaseEvent.m */; };
 		04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5A1AD6CC2800036F70 /* TWBaseEventViewController.m */; };
@@ -41,6 +44,8 @@
 		04D3FC631AD7012800036F70 /* Raptor.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC621AD7012800036F70 /* Raptor.xml */; };
 		04D3FC661AD7065000036F70 /* CRTSsample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC641AD7065000036F70 /* CRTSsample.xml */; };
 		04D3FC671AD7065000036F70 /* SWIFT.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC651AD7065000036F70 /* SWIFT.xml */; };
+		04D3FC741AD722FE00036F70 /* TWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */; };
+		04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,14 @@
 		0438DDA51AD094140049AB66 /* TransientHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransientHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0438DDAA1AD094140049AB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0438DDAB1AD094140049AB66 /* TransientHubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransientHubTests.m; sourceTree = "<group>"; };
+		043FB91F1AD7813D00ED199F /* CDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDEvent.h; path = DataModel/ManagedObjects/CDEvent.h; sourceTree = "<group>"; };
+		043FB9201AD7813D00ED199F /* CDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDEvent.m; path = DataModel/ManagedObjects/CDEvent.m; sourceTree = "<group>"; };
+		043FB9221AD7813E00ED199F /* CDEventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDEventFeed.h; path = DataModel/ManagedObjects/CDEventFeed.h; sourceTree = "<group>"; };
+		043FB9231AD7813E00ED199F /* CDEventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDEventFeed.m; path = DataModel/ManagedObjects/CDEventFeed.m; sourceTree = "<group>"; };
+		043FB9251AD7840B00ED199F /* TWCRTSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWCRTSEvent.h; path = EventObjects/TWCRTSEvent.h; sourceTree = "<group>"; };
+		043FB9261AD7840B00ED199F /* TWCRTSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWCRTSEvent.m; path = EventObjects/TWCRTSEvent.m; sourceTree = "<group>"; };
+		043FB9281AD788C000ED199F /* TWBaseEventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseEventFeed.h; path = Base/TWBaseEventFeed.h; sourceTree = "<group>"; };
+		043FB9291AD788C000ED199F /* TWBaseEventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseEventFeed.m; path = Base/TWBaseEventFeed.m; sourceTree = "<group>"; };
 		04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
@@ -103,8 +116,6 @@
 		04D3FC481AD6347E00036F70 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		04D3FC4B1AD6357500036F70 /* TWDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWDataManager.h; path = DataModel/TWDataManager.h; sourceTree = "<group>"; };
 		04D3FC4C1AD6357500036F70 /* TWDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWDataManager.m; path = DataModel/TWDataManager.m; sourceTree = "<group>"; };
-		04D3FC4F1AD6CB7400036F70 /* TWEventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWEventFeed.h; path = EventObjects/TWEventFeed.h; sourceTree = "<group>"; };
-		04D3FC501AD6CB7400036F70 /* TWEventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWEventFeed.m; path = EventObjects/TWEventFeed.m; sourceTree = "<group>"; };
 		04D3FC531AD6CBB000036F70 /* TWVOEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWVOEvent.h; path = EventObjects/TWVOEvent.h; sourceTree = "<group>"; };
 		04D3FC541AD6CBB000036F70 /* TWVOEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWVOEvent.m; path = EventObjects/TWVOEvent.m; sourceTree = "<group>"; };
 		04D3FC561AD6CBE300036F70 /* TWBaseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseEvent.h; path = Base/TWBaseEvent.h; sourceTree = "<group>"; };
@@ -118,6 +129,9 @@
 		04D3FC621AD7012800036F70 /* Raptor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Raptor.xml; path = TransientHub/SampleData/Raptor.xml; sourceTree = "<group>"; };
 		04D3FC641AD7065000036F70 /* CRTSsample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CRTSsample.xml; path = TransientHub/SampleData/CRTSsample.xml; sourceTree = "<group>"; };
 		04D3FC651AD7065000036F70 /* SWIFT.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = SWIFT.xml; path = TransientHub/SampleData/SWIFT.xml; sourceTree = "<group>"; };
+		04D3FC711AD722FE00036F70 /* TWEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWEventTableViewCell.h; path = TransientHub/Views/EventCell/TWEventTableViewCell.h; sourceTree = "<group>"; };
+		04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWEventTableViewCell.m; path = TransientHub/Views/EventCell/TWEventTableViewCell.m; sourceTree = "<group>"; };
+		04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWEventTableViewCell.xib; path = TransientHub/Views/EventCell/TWEventTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +251,8 @@
 				04D3FC5C1AD6CC2800036F70 /* TWBaseFeedViewController.m */,
 				04D3FC561AD6CBE300036F70 /* TWBaseEvent.h */,
 				04D3FC571AD6CBE300036F70 /* TWBaseEvent.m */,
+				043FB9281AD788C000ED199F /* TWBaseEventFeed.h */,
+				043FB9291AD788C000ED199F /* TWBaseEventFeed.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -244,6 +260,7 @@
 		04D3FC361AD62C7300036F70 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
+				04D3FC761AD7230300036F70 /* Event Cell */,
 				04D3FC2A1AD627C400036F70 /* TWHomeViewController.h */,
 				04D3FC2B1AD627C400036F70 /* TWHomeViewController.m */,
 				04D3FC271AD6258D00036F70 /* TWWatchListViewController.h */,
@@ -298,6 +315,10 @@
 		04D3FC4E1AD636AA00036F70 /* Managed Objects */ = {
 			isa = PBXGroup;
 			children = (
+				043FB9221AD7813E00ED199F /* CDEventFeed.h */,
+				043FB9231AD7813E00ED199F /* CDEventFeed.m */,
+				043FB91F1AD7813D00ED199F /* CDEvent.h */,
+				043FB9201AD7813D00ED199F /* CDEvent.m */,
 			);
 			name = "Managed Objects";
 			sourceTree = "<group>";
@@ -305,12 +326,23 @@
 		04D3FC521AD6CB8500036F70 /* Event Objects */ = {
 			isa = PBXGroup;
 			children = (
-				04D3FC4F1AD6CB7400036F70 /* TWEventFeed.h */,
-				04D3FC501AD6CB7400036F70 /* TWEventFeed.m */,
 				04D3FC531AD6CBB000036F70 /* TWVOEvent.h */,
 				04D3FC541AD6CBB000036F70 /* TWVOEvent.m */,
+				043FB9251AD7840B00ED199F /* TWCRTSEvent.h */,
+				043FB9261AD7840B00ED199F /* TWCRTSEvent.m */,
 			);
 			name = "Event Objects";
+			sourceTree = "<group>";
+		};
+		04D3FC761AD7230300036F70 /* Event Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04D3FC711AD722FE00036F70 /* TWEventTableViewCell.h */,
+				04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */,
+				04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */,
+			);
+			name = "Event Cell";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +431,7 @@
 				04D3FC671AD7065000036F70 /* SWIFT.xml in Resources */,
 				0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */,
 				04D3FC661AD7065000036F70 /* CRTSsample.xml in Resources */,
+				04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +454,7 @@
 				04D3FC611AD6CC2800036F70 /* TWBaseViewController.m in Sources */,
 				04D3FC4D1AD6357500036F70 /* TWDataManager.m in Sources */,
 				04D3FC351AD62B2C00036F70 /* TWGlossaryViewController.m in Sources */,
+				04D3FC741AD722FE00036F70 /* TWEventTableViewCell.m in Sources */,
 				04D3FC3A1AD62CB900036F70 /* TWSettingsViewController.m in Sources */,
 				04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */,
 				04D3FC601AD6CC2800036F70 /* TWBaseFeedViewController.m in Sources */,
@@ -428,21 +462,24 @@
 				04D3FC1E1AD61EEA00036F70 /* TWSplitMenuViewController.m in Sources */,
 				04D3FC151AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m in Sources */,
 				04D3FC141AD61E3C00036F70 /* ECSlidingViewController.m in Sources */,
+				043FB92A1AD788C000ED199F /* TWBaseEventFeed.m in Sources */,
 				04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */,
 				0438DD8F1AD094140049AB66 /* main.m in Sources */,
+				043FB9271AD7840B00ED199F /* TWCRTSEvent.m in Sources */,
 				04D3FC1D1AD61EEA00036F70 /* TWSlidingViewController.m in Sources */,
 				04D3FC2C1AD627C400036F70 /* TWHomeViewController.m in Sources */,
 				04D3FC321AD62A6100036F70 /* TWAddFeedViewController.m in Sources */,
 				04D3FC291AD6258D00036F70 /* TWWatchListViewController.m in Sources */,
 				04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */,
-				04D3FC511AD6CB7400036F70 /* TWEventFeed.m in Sources */,
 				04D3FC131AD61E3C00036F70 /* ECSlidingSegue.m in Sources */,
+				043FB9211AD7813D00ED199F /* CDEvent.m in Sources */,
 				04D3FC581AD6CBE300036F70 /* TWBaseEvent.m in Sources */,
 				04D3FC431AD62D1000036F70 /* TWTermsViewController.m in Sources */,
 				04D3FC401AD62CF600036F70 /* TWFeedbackViewController.m in Sources */,
 				04D3FC2F1AD6296500036F70 /* TWFeedViewController.m in Sources */,
 				04D3FC3D1AD62CCB00036F70 /* TWAboutViewController.m in Sources */,
+				043FB9241AD7813E00ED199F /* CDEventFeed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

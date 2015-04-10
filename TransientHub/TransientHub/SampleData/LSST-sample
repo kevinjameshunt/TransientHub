@@ -1,0 +1,339 @@
+Sample LSST Request:
+
+http://lsst-tes.tuc.noao.edu/jsonQuery/?maxAge=60.000000&maxMagnitude=18.000000&streamNames=CRTS,CRTS2,CRTS3&resumptionToken=0&wantedClass=Mira+Variable&wantedClass=Supernova&wantedClass=Eclipsing+Variable&wantedClass=Variable&wantedClass=Nova&wantedClass=High+Proper+Motion+Star&wantedClass=Blazar+Outburst&wantedClass=Other&wantedClass=RRLyrae+Variable&wantedClass=Unknown&wantedClass=Comet&wantedClass=Asteroid&wantedClass=UV+Ceti+Variable&wantedClass=Microlensing&wantedClass=Planetary+Microlensing&wantedClass=Cataclysmic+Variable&wantedClass=Tidal+Disruption+Flare&wantedClass=Active+Galactic+Nucleus+Variability&wantedClass=Gamma+Ray+Burst+Afterglow
+
+Response:
+
+[{
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091230684110615x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684110615-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684110615-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684110615-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684110615-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/catot#1504091230684110615",
+	"objectName": [],
+	"stream": "CRTS",
+	"firstEventTime": "2015-04-09T10:32:52",
+	"triggerIVORN": "1504091230684110615",
+	"localIVORN": "1504091230684110615",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56797/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091230684110615p.html"],
+	"ingestTime": "2015-04-09T03:59:56",
+	"magnitude": "15.266300",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684110615.master.jpg"],
+	"RA": 207.00581,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091230684110615s.html"],
+	"triggerEventTime": "2015-04-09T10:32:52",
+	"Dec": 23.58017,
+	"type": "Unknown",
+	"findingChart": [
+		"http://voeventnet.caltech.edu/feeds/ATEL/CRTS/1504091230684110615.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091230684111071x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684111071-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684111071-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684111071-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684111071-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/catot#1504091230684111071",
+	"objectName": [],
+	"stream": "CRTS",
+	"firstEventTime": "2015-04-09T10:32:52",
+	"triggerIVORN": "1504091230684111071",
+	"localIVORN": "1504091230684111071",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56796/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091230684111071p.html"],
+	"ingestTime": "2015-04-09T03:59:36",
+	"magnitude": "13.448400",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091230684111071.master.jpg"],
+	"RA": 207.04908,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091230684111071s.html"],
+	"triggerEventTime": "2015-04-09T10:32:52",
+	"Dec": 23.61402,
+	"type": "Unknown",
+	"findingChart": [
+		"http://voeventnet.caltech.edu/feeds/ATEL/CRTS/1504091230684111071.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091210664127266x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091210664127266-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091210664127266-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091210664127266-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091210664127266-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/catot#1504091210664127266",
+	"objectName": [],
+	"stream": "CRTS",
+	"firstEventTime": "2015-04-09T09:10:11",
+	"triggerIVORN": "1504091210664127266",
+	"localIVORN": "1504091210664127266",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56794/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091210664127266p.html"],
+	"ingestTime": "2015-04-09T03:44:48",
+	"magnitude": "17.805901",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091210664127266.master.jpg"],
+	"RA": 195.92517,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091210664127266s.html"],
+	"triggerEventTime": "2015-04-09T09:10:11",
+	"Dec": 21.97718,
+	"type": "High Proper Motion Star",
+	"findingChart": [
+		"http://voeventnet.caltech.edu/feeds/ATEL/CRTS/1504091210664127266.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091180674129296x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180674129296-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180674129296-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180674129296-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180674129296-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/catot#1504091180674129296",
+	"objectName": [],
+	"stream": "CRTS",
+	"firstEventTime": "2015-04-09T09:10:54",
+	"triggerIVORN": "1504091180674129296",
+	"localIVORN": "1504091180674129296",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56792/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091180674129296p.html"],
+	"ingestTime": "2015-04-09T03:27:24",
+	"magnitude": "17.342501",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180674129296.master.jpg"],
+	"RA": 195.17354,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091180674129296s.html"],
+	"triggerEventTime": "2015-04-09T09:10:54",
+	"Dec": 19.20425,
+	"type": "Unknown",
+	"findingChart": [
+		"http://voeventnet.caltech.edu/feeds/ATEL/CRTS/1504091180674129296.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091180714126074x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180714126074-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180714126074-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180714126074-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180714126074-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/catot#1504091180714126074",
+	"objectName": [],
+	"stream": "CRTS",
+	"firstEventTime": "2015-04-09T09:35:41",
+	"triggerIVORN": "1504091180714126074",
+	"localIVORN": "1504091180714126074",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56791/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091180714126074p.html"],
+	"ingestTime": "2015-04-09T03:13:44",
+	"magnitude": "16.691401",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091180714126074.master.jpg"],
+	"RA": 205.16754,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091180714126074s.html"],
+	"triggerEventTime": "2015-04-09T09:35:41",
+	"Dec": 19.03616,
+	"type": "High Proper Motion Star",
+	"findingChart": [
+		"http://voeventnet.caltech.edu/feeds/ATEL/CRTS/1504091180714126074.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504090040674111857x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504090040674111857-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504090040674111857-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504090040674111857-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504090040674111857-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/catot#1504090040674111857",
+	"objectName": [],
+	"stream": "CRTS",
+	"firstEventTime": "2015-04-09T08:43:00",
+	"triggerIVORN": "1504090040674111857",
+	"localIVORN": "1504090040674111857",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56790/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504090040674111857p.html"],
+	"ingestTime": "2015-04-09T02:55:17",
+	"magnitude": "14.287000",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504090040674111857.master.jpg"],
+	"RA": 186.10687,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504090040674111857s.html"],
+	"triggerEventTime": "2015-04-09T08:43:00",
+	"Dec": -4.72957,
+	"type": "Unknown",
+	"findingChart": [
+		"http://voeventnet.caltech.edu/feeds/ATEL/CRTS/1504090040674111857.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091040684126844x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091040684126844-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091040684126844-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091040684126844-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091040684126844-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/catot#1504091040684126844",
+	"objectName": [],
+	"stream": "CRTS",
+	"firstEventTime": "2015-04-09T08:09:44",
+	"triggerIVORN": "1504091040684126844",
+	"localIVORN": "1504091040684126844",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56788/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091040684126844p.html"],
+	"ingestTime": "2015-04-09T02:37:12",
+	"magnitude": "15.939600",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/catalina/20150409/jpg/1504091040684126844.master.jpg"],
+	"RA": 188.71674,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/catalina/20150409/1504091040684126844s.html"],
+	"triggerEventTime": "2015-04-09T08:09:44",
+	"Dec": 5.06406,
+	"type": "High Proper Motion Star",
+	"findingChart": [
+		"http://voeventnet.caltech.edu/feeds/ATEL/CRTS/1504091040684126844.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504090031814109033x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090031814109033-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090031814109033-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090031814109033-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090031814109033-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/mlsot#1504090031814109033",
+	"objectName": [],
+	"stream": "CRTS2",
+	"firstEventTime": "2015-04-09T08:57:59",
+	"triggerIVORN": "1504090031814109033",
+	"localIVORN": "1504090031814109033",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56787/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504090031814109033p.html"],
+	"ingestTime": "2015-04-09T02:33:06",
+	"magnitude": "17.733200",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090031814109033.master.jpg"],
+	"RA": 196.18189,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504090031814109033s.html"],
+	"triggerEventTime": "2015-04-09T08:57:59",
+	"Dec": -3.76731,
+	"type": "Unknown",
+	"findingChart": [
+		"http://crts.caltech.edu/ATEL/MLS/1504090031814109033.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504090051804114619x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090051804114619-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090051804114619-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090051804114619-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090051804114619-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/mlsot#1504090051804114619",
+	"objectName": [],
+	"stream": "CRTS2",
+	"firstEventTime": "2015-04-09T07:00:15",
+	"triggerIVORN": "1504090051804114619",
+	"localIVORN": "1504090051804114619",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56766/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504090051804114619p.html"],
+	"ingestTime": "2015-04-09T00:57:24",
+	"magnitude": "17.497299",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504090051804114619.master.jpg"],
+	"RA": 195.39884,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504090051804114619s.html"],
+	"triggerEventTime": "2015-04-09T07:00:15",
+	"Dec": -5.49379,
+	"type": "Unknown",
+	"findingChart": [
+		"http://crts.caltech.edu/ATEL/MLS/1504090051804114619.atel.html"]
+}, {
+	"pastImgs": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504091131304109703x.html"],
+	"freshImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504091131304109703-0001.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504091131304109703-0002.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504091131304109703-0003.arch.jpg",
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504091131304109703-0004.arch.jpg"],
+	"firstIVORN": "ivo://nvo.caltech/voeventnet/mlsot#1504091131304109703",
+	"objectName": [],
+	"stream": "CRTS2",
+	"firstEventTime": "2015-04-09T04:59:06",
+	"triggerIVORN": "1504091131304109703",
+	"localIVORN": "1504091131304109703",
+	"positionalError": 0.0012,
+	"findingChartImage": [
+		""],
+	"furtherInfoURL": [
+		"http://www.skyalert.org/events/56751/"],
+	"lightCurve": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504091131304109703p.html"],
+	"ingestTime": "2015-04-09T00:23:34",
+	"magnitude": "16.166599",
+	"referenceImageURL": [
+		"http://lsst-tes.tuc.noao.edu/tesProxy/MLS/20150409/jpg/1504091131304109703.master.jpg"],
+	"RA": 143.55886,
+	"otherImgs": [
+		"http://nesssi.cacr.caltech.edu/MLS/20150409/1504091131304109703s.html"],
+	"triggerEventTime": "2015-04-09T04:59:06",
+	"Dec": 13.67007,
+	"type": "Unknown",
+	"findingChart": [
+		"http://crts.caltech.edu/ATEL/MLS/1504091131304109703.atel.html"]
+}, {
+	"resumptionToken": "63"
+}]

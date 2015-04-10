@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="CDEvent" syncable="YES">
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEventFeed" inverseName="relationship" inverseEntity="CDEventFeed" syncable="YES"/>
+    <entity name="CDEvent" representedClassName="CDEvent" syncable="YES">
+        <attribute name="alertTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dec" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="eventTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="finderChartUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="findingChartImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstIVORNRef" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lightCurveUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localIVORN" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="magnitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pastImg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ra" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="recentImgs" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="refImgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="triggerIVORN" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="viewed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="eventFeed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEventFeed" inverseName="events" inverseEntity="CDEventFeed" syncable="YES"/>
     </entity>
-    <entity name="CDEventFeed" syncable="YES">
+    <entity name="CDEventFeed" representedClassName="CDEventFeed" syncable="YES">
+        <attribute name="eventTypes" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="feedDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feedHomeUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feedId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="feedName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEvent" inverseName="relationship" inverseEntity="CDEvent" syncable="YES"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEvent" inverseName="eventFeed" inverseEntity="CDEvent" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CDEventFeed" positionX="-198" positionY="-270" width="128" height="73"/>
-        <element name="CDEvent" positionX="-54" positionY="0" width="128" height="58"/>
+        <element name="CDEvent" positionX="43" positionY="-468" width="128" height="313"/>
+        <element name="CDEventFeed" positionX="-198" positionY="-270" width="128" height="148"/>
     </elements>
 </model>
