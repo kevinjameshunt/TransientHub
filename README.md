@@ -18,3 +18,4 @@ http://integral.esac.esa.int/bexrbmonitor/webpage_oneplot.php
 http://swift.gsfc.nasa.gov/results/transients/
 http://gammaray.msfc.nasa.gov/gbm/science/pulsars.html
 http://maxi.riken.jp/top/index.php?cid=000000000001&disp_mode=source
+https://data.nasa.gov/dataset/The-BeXRB-monitor/cy6b-9h7m
