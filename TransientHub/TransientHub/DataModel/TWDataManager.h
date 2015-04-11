@@ -26,6 +26,8 @@
 // Specific TransientHub methods
 - (int)getNumberOfFeeds;
 
+- (NSArray *)initializeStandardFeeds;
+
 // Internal data manager methods
 - (void)dumpAllManagedObjects;
 - (void)dumpAllEvents;

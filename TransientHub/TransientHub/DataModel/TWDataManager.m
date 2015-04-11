@@ -7,7 +7,13 @@
 //
 
 #import "TWDataManager.h"
+#import "CDEvent.h"
+#import "CDEventFeed.h"
 
+#import "TWCRTSEvent.h"
+
+#define kCDEvent        @"CDEvent"
+#define kCDEventFeed    @"CDEventFeed"
 
 @interface TWDataManager ()
 + (NSManagedObjectModel *)managedObjectModel;
@@ -68,6 +74,83 @@ static NSManagedObjectModel *__managedObjectModel;
 - (int)getNumberOfFeeds {
     // TODO: replace this with actual logic
     return 1;
+}
+
+- (NSArray *)initializeStandardFeeds {
+    
+    [_saveLock lock];
+    
+    // TODO: Replace with code to add CRTS feed
+    // TODO: add more standard feeds
+    
+    // TODO: Remove this sample event load
+    
+    NSMutableArray *eventArray = [[NSMutableArray alloc] init];
+    
+    //get dictionary from json file
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"LSST" ofType:@"json"];
+    NSData* data = [NSData dataWithContentsOfFile:filePath];
+    
+    NSError* error = nil;
+    if (data) {
+        NSArray *lsstEvents = [NSJSONSerialization JSONObjectWithData:data
+                                                                      options:kNilOptions error:&error];
+        for (NSDictionary *eventDict in lsstEvents) {
+            CDEvent *cdEvent = [self saveLSSTEventFromDict:eventDict];
+            if (cdEvent) {
+                TWCRTSEvent *event = [TWCRTSEvent crtsEventWithSavedEvent:cdEvent];
+                if (event) {
+                    [eventArray addObject:event];
+                } else {
+                    NSLog(@"Unable to create crtsEvent from dict: %@",eventDict);
+                }
+            } else {
+                NSLog(@"Unable to create cdEvent from dict: %@",eventDict);
+            }
+        }
+    }
+    if (error || !data) {
+        NSLog(@"Error loading events");
+    }
+    
+    @try {
+        [self saveChanges:&error];
+    } @catch (NSException *e) {
+        NSLog(@"error: %@, %@", e, [e reason]);
+    } @finally {
+        // unlock record lock
+        [_saveLock unlock];
+    }
+    
+    return eventArray;
+}
+
+- (CDEvent *)saveLSSTEventFromDict:(NSDictionary *)eventDict {
+    CDEvent *cdEvent = [NSEntityDescription insertNewObjectForEntityForName:kCDEvent inManagedObjectContext:self.managedObjectContext];
+    
+    NSArray *objectNameDict = [eventDict objectForKey:@"objectName"];
+    if (objectNameDict && [objectNameDict count] > 0) {
+        cdEvent.name = [objectNameDict  objectAtIndex:0];
+    }
+    cdEvent.type = [eventDict objectForKey:@"type"];
+    cdEvent.alertTime = [eventDict objectForKey:@"triggerEventTime"];
+    cdEvent.eventFeed = [eventDict objectForKey:@"firstEventTime"];
+    cdEvent.magnitude = [eventDict objectForKey:@"magnitude"];
+    cdEvent.ra = [eventDict objectForKey:@"ra"];
+    cdEvent.dec = [eventDict objectForKey:@"dec"];
+    cdEvent.refImgUrl = [eventDict objectForKey:@"referenceImageURL"];
+    cdEvent.finderChartUrl = [eventDict objectForKey:@"findingChart"];
+    cdEvent.lightCurveUrl = [eventDict objectForKey:@"lightCurve"];
+    cdEvent.pastImg = [[eventDict objectForKey:@"pastImgs"] objectAtIndex:0];
+    cdEvent.recentImgs = [eventDict objectForKey:@"freshImageURL"];
+    cdEvent.firstIVORNRef = [eventDict objectForKey:@"firstIVORN"];
+    cdEvent.triggerIVORN = [eventDict objectForKey:@"triggerIVORN"];
+    cdEvent.localIVORN = [eventDict objectForKey:@"localIVORN"];
+    cdEvent.findingChartImage = [eventDict objectForKey:@"findingChartImage"];
+    cdEvent.viewed = [NSNumber numberWithBool:NO];
+    
+    
+    return cdEvent;
 }
 
 #pragma mark -
@@ -144,7 +227,7 @@ static NSManagedObjectModel *__managedObjectModel;
             
             NSArray *paths      = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
             NSString *basePath  = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
-            NSString *sqliteFile = [basePath stringByAppendingPathComponent:@"TransHubsqlite"];
+            NSString *sqliteFile = [basePath stringByAppendingPathComponent:@"TransHub.sqlite"];
             
             NSURL *storeUrl = [NSURL fileURLWithPath:sqliteFile];
             

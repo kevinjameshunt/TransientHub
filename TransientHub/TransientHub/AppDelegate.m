@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TWSlidingViewController.h"
+#import "TWDataManager.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -18,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    bool firstRun = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstRun"];
+    
+    if (firstRun) {
+        [[TWDataManager sharedDataManager] initializeStandardFeeds];
+    }
     
     return YES;
 }

@@ -17,6 +17,7 @@
 		043FB9241AD7813E00ED199F /* CDEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9231AD7813E00ED199F /* CDEventFeed.m */; };
 		043FB9271AD7840B00ED199F /* TWCRTSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9261AD7840B00ED199F /* TWCRTSEvent.m */; };
 		043FB92A1AD788C000ED199F /* TWBaseEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9291AD788C000ED199F /* TWBaseEventFeed.m */; };
+		043FB92C1AD8190600ED199F /* LSST.json in Resources */ = {isa = PBXBuildFile; fileRef = 043FB92B1AD8190600ED199F /* LSST.json */; };
 		04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */; };
 		04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */; };
 		04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */; };
@@ -41,9 +42,6 @@
 		04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5A1AD6CC2800036F70 /* TWBaseEventViewController.m */; };
 		04D3FC601AD6CC2800036F70 /* TWBaseFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5C1AD6CC2800036F70 /* TWBaseFeedViewController.m */; };
 		04D3FC611AD6CC2800036F70 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5E1AD6CC2800036F70 /* TWBaseViewController.m */; };
-		04D3FC631AD7012800036F70 /* Raptor.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC621AD7012800036F70 /* Raptor.xml */; };
-		04D3FC661AD7065000036F70 /* CRTSsample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC641AD7065000036F70 /* CRTSsample.xml */; };
-		04D3FC671AD7065000036F70 /* SWIFT.xml in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC651AD7065000036F70 /* SWIFT.xml */; };
 		04D3FC741AD722FE00036F70 /* TWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */; };
 		04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -78,6 +76,7 @@
 		043FB9261AD7840B00ED199F /* TWCRTSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWCRTSEvent.m; path = EventObjects/TWCRTSEvent.m; sourceTree = "<group>"; };
 		043FB9281AD788C000ED199F /* TWBaseEventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseEventFeed.h; path = Base/TWBaseEventFeed.h; sourceTree = "<group>"; };
 		043FB9291AD788C000ED199F /* TWBaseEventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseEventFeed.m; path = Base/TWBaseEventFeed.m; sourceTree = "<group>"; };
+		043FB92B1AD8190600ED199F /* LSST.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = LSST.json; path = TransientHub/SampleData/LSST.json; sourceTree = "<group>"; };
 		04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
@@ -126,9 +125,6 @@
 		04D3FC5C1AD6CC2800036F70 /* TWBaseFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseFeedViewController.m; path = Base/TWBaseFeedViewController.m; sourceTree = "<group>"; };
 		04D3FC5D1AD6CC2800036F70 /* TWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseViewController.h; path = Base/TWBaseViewController.h; sourceTree = "<group>"; };
 		04D3FC5E1AD6CC2800036F70 /* TWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseViewController.m; path = Base/TWBaseViewController.m; sourceTree = "<group>"; };
-		04D3FC621AD7012800036F70 /* Raptor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Raptor.xml; path = TransientHub/SampleData/Raptor.xml; sourceTree = "<group>"; };
-		04D3FC641AD7065000036F70 /* CRTSsample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CRTSsample.xml; path = TransientHub/SampleData/CRTSsample.xml; sourceTree = "<group>"; };
-		04D3FC651AD7065000036F70 /* SWIFT.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = SWIFT.xml; path = TransientHub/SampleData/SWIFT.xml; sourceTree = "<group>"; };
 		04D3FC711AD722FE00036F70 /* TWEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWEventTableViewCell.h; path = TransientHub/Views/EventCell/TWEventTableViewCell.h; sourceTree = "<group>"; };
 		04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWEventTableViewCell.m; path = TransientHub/Views/EventCell/TWEventTableViewCell.m; sourceTree = "<group>"; };
 		04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWEventTableViewCell.xib; path = TransientHub/Views/EventCell/TWEventTableViewCell.xib; sourceTree = "<group>"; };
@@ -293,9 +289,7 @@
 		04D3FC441AD6325200036F70 /* Sample Data */ = {
 			isa = PBXGroup;
 			children = (
-				04D3FC641AD7065000036F70 /* CRTSsample.xml */,
-				04D3FC651AD7065000036F70 /* SWIFT.xml */,
-				04D3FC621AD7012800036F70 /* Raptor.xml */,
+				043FB92B1AD8190600ED199F /* LSST.json */,
 			);
 			name = "Sample Data";
 			path = ..;
@@ -425,12 +419,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043FB92C1AD8190600ED199F /* LSST.json in Resources */,
 				0438DD9B1AD094140049AB66 /* Main.storyboard in Resources */,
 				0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */,
-				04D3FC631AD7012800036F70 /* Raptor.xml in Resources */,
-				04D3FC671AD7065000036F70 /* SWIFT.xml in Resources */,
 				0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */,
-				04D3FC661AD7065000036F70 /* CRTSsample.xml in Resources */,
 				04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
