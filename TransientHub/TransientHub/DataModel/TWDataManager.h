@@ -27,6 +27,7 @@
 - (int)getNumberOfFeeds;
 
 - (NSArray *)initializeStandardFeeds;
+- (NSArray *)getSampleFeedData;
 
 // Internal data manager methods
 - (void)dumpAllManagedObjects;

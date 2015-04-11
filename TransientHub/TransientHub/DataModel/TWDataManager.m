@@ -96,16 +96,18 @@ static NSManagedObjectModel *__managedObjectModel;
         NSArray *lsstEvents = [NSJSONSerialization JSONObjectWithData:data
                                                                       options:kNilOptions error:&error];
         for (NSDictionary *eventDict in lsstEvents) {
-            CDEvent *cdEvent = [self saveLSSTEventFromDict:eventDict];
-            if (cdEvent) {
-                TWCRTSEvent *event = [TWCRTSEvent crtsEventWithSavedEvent:cdEvent];
-                if (event) {
-                    [eventArray addObject:event];
+            if ([eventDict objectForKey:@"resumptionToken"] == nil) {
+                CDEvent *cdEvent = [self saveEventFromDict:eventDict];
+                if (cdEvent) {
+                    TWCRTSEvent *event = [TWCRTSEvent crtsEventWithSavedEvent:cdEvent];
+                    if (event) {
+                        [eventArray addObject:event];
+                    } else {
+                        NSLog(@"Unable to create crtsEvent from dict: %@",eventDict);
+                    }
                 } else {
-                    NSLog(@"Unable to create crtsEvent from dict: %@",eventDict);
+                    NSLog(@"Unable to create cdEvent from dict: %@",eventDict);
                 }
-            } else {
-                NSLog(@"Unable to create cdEvent from dict: %@",eventDict);
             }
         }
     }
@@ -115,6 +117,7 @@ static NSManagedObjectModel *__managedObjectModel;
     
     @try {
         [self saveChanges:&error];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"alreadyInitialized"];
     } @catch (NSException *e) {
         NSLog(@"error: %@, %@", e, [e reason]);
     } @finally {
@@ -125,7 +128,33 @@ static NSManagedObjectModel *__managedObjectModel;
     return eventArray;
 }
 
-- (CDEvent *)saveLSSTEventFromDict:(NSDictionary *)eventDict {
+- (NSArray *)getSampleFeedData {
+    
+    NSError *error                  = nil;
+    NSFetchRequest *fetchRequest    = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity     = [NSEntityDescription entityForName:kCDEvent inManagedObjectContext:self.managedObjectContext];
+    
+    [fetchRequest setEntity:entity];
+    
+    NSArray *results = [self fetchData:fetchRequest withError:&error];
+    
+    
+    if(error) {
+        NSLog(@"Error getting sample data %@", error.description);
+    }
+    
+    if(results) {
+        return results;
+    } else {
+        NSLog(@"No results");
+        return nil;
+    }
+}
+
+- (CDEvent *)saveEventFromDict:(NSDictionary *)eventDict {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss"];
+    
     CDEvent *cdEvent = [NSEntityDescription insertNewObjectForEntityForName:kCDEvent inManagedObjectContext:self.managedObjectContext];
     
     NSArray *objectNameDict = [eventDict objectForKey:@"objectName"];
@@ -133,22 +162,49 @@ static NSManagedObjectModel *__managedObjectModel;
         cdEvent.name = [objectNameDict  objectAtIndex:0];
     }
     cdEvent.type = [eventDict objectForKey:@"type"];
-    cdEvent.alertTime = [eventDict objectForKey:@"triggerEventTime"];
-    cdEvent.eventFeed = [eventDict objectForKey:@"firstEventTime"];
-    cdEvent.magnitude = [eventDict objectForKey:@"magnitude"];
-    cdEvent.ra = [eventDict objectForKey:@"ra"];
-    cdEvent.dec = [eventDict objectForKey:@"dec"];
-    cdEvent.refImgUrl = [eventDict objectForKey:@"referenceImageURL"];
-    cdEvent.finderChartUrl = [eventDict objectForKey:@"findingChart"];
-    cdEvent.lightCurveUrl = [eventDict objectForKey:@"lightCurve"];
-    cdEvent.pastImg = [[eventDict objectForKey:@"pastImgs"] objectAtIndex:0];
+    
+    NSString *alertTimeString = [eventDict objectForKey:@"triggerEventTime"];
+    cdEvent.alertTime = [dateFormatter dateFromString:alertTimeString];
+    
+    NSString *eventTimeString = [eventDict objectForKey:@"firstEventTime"];
+    cdEvent.eventTime = [dateFormatter dateFromString:eventTimeString];
+
+    cdEvent.magnitude = [NSNumber numberWithFloat:[[eventDict objectForKey:@"magnitude"] floatValue]];
+    cdEvent.ra = [NSNumber numberWithFloat:[[eventDict objectForKey:@"ra"] floatValue]];
+    cdEvent.dec = [NSNumber numberWithFloat:[[eventDict objectForKey:@"dec"] floatValue]];
+    
+    NSArray *referenceImageURLDict = [eventDict objectForKey:@"referenceImageURL"];
+    if (referenceImageURLDict && [referenceImageURLDict count] > 0) {
+        cdEvent.refImgUrl = [referenceImageURLDict  objectAtIndex:0];
+    }
+    
+    NSArray *findingChartDict = [eventDict objectForKey:@"findingChart"];
+    if (findingChartDict && [findingChartDict count] > 0) {
+        cdEvent.finderChartUrl = [findingChartDict  objectAtIndex:0];
+    }
+    
+    NSArray *lightCurveDict = [eventDict objectForKey:@"lightCurve"];
+    if (lightCurveDict && [lightCurveDict count] > 0) {
+        cdEvent.lightCurveUrl = [lightCurveDict  objectAtIndex:0];
+    }
+    
+    NSArray *pastImgsDict = [eventDict objectForKey:@"pastImgs"];
+    if (pastImgsDict && [pastImgsDict count] > 0) {
+        cdEvent.pastImg = [pastImgsDict  objectAtIndex:0];
+    }
+    
     cdEvent.recentImgs = [eventDict objectForKey:@"freshImageURL"];
+    
     cdEvent.firstIVORNRef = [eventDict objectForKey:@"firstIVORN"];
     cdEvent.triggerIVORN = [eventDict objectForKey:@"triggerIVORN"];
     cdEvent.localIVORN = [eventDict objectForKey:@"localIVORN"];
-    cdEvent.findingChartImage = [eventDict objectForKey:@"findingChartImage"];
-    cdEvent.viewed = [NSNumber numberWithBool:NO];
     
+    NSArray *findingChartImageDict = [eventDict objectForKey:@"findingChartImage"];
+    if (findingChartImageDict && [findingChartImageDict count] > 0) {
+        cdEvent.findingChartImage = [findingChartImageDict  objectAtIndex:0];
+    }
+    
+    cdEvent.viewed = [NSNumber numberWithFloat:[[NSNumber numberWithBool:NO] boolValue]];
     
     return cdEvent;
 }

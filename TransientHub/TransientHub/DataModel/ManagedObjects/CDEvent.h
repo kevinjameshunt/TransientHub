@@ -26,8 +26,8 @@
 @property (nonatomic, retain) NSString * pastImg;
 @property (nonatomic, retain) NSSet * recentImgs;
 @property (nonatomic, retain) NSString * firstIVORNRef;
-@property (nonatomic, retain) NSNumber * triggerIVORN;
-@property (nonatomic, retain) NSNumber * localIVORN;
+@property (nonatomic, retain) NSString * triggerIVORN;
+@property (nonatomic, retain) NSString * localIVORN;
 @property (nonatomic, retain) NSString * findingChartImage;
 @property (nonatomic, retain) NSNumber * viewed;
 @property (nonatomic, retain) CDEventFeed *eventFeed;

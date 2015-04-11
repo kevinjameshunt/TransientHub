@@ -2,20 +2,20 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CDEvent" representedClassName="CDEvent" syncable="YES">
         <attribute name="alertTime" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="dec" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dec" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="eventTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="finderChartUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="findingChartImage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstIVORNRef" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lightCurveUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="localIVORN" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="magnitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="localIVORN" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magnitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="pastImg" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="ra" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ra" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="recentImgs" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="refImgUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="triggerIVORN" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="triggerIVORN" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="viewed" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="eventFeed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEventFeed" inverseName="events" inverseEntity="CDEventFeed" syncable="YES"/>

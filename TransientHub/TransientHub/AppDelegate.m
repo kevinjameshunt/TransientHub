@@ -20,11 +20,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    bool firstRun = [[NSUserDefaults standardUserDefaults] objectForKey:@"firstRun"];
-    
-    if (firstRun) {
-        [[TWDataManager sharedDataManager] initializeStandardFeeds];
+    bool alreadyInitialized = [[[NSUserDefaults standardUserDefaults] objectForKey:@"alreadyInitialized"] boolValue];
+    NSArray *eventArray;
+    if (!alreadyInitialized) {
+        eventArray = [[TWDataManager sharedDataManager] initializeStandardFeeds];
+    } else {
+        eventArray = [[TWDataManager sharedDataManager] getSampleFeedData];
     }
+    NSLog(@"eventArray count: %lu", (unsigned long)[eventArray count]);
     
     return YES;
 }

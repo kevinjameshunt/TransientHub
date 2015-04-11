@@ -268,7 +268,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="underLeftViewControllerStoryboardId" value="TWSplitMenuViewController"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="topViewControllerStoryboardId" value="HomeNavigationController"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="topViewControllerStoryboardId" value="WatchListNavigationController"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5E-ax-2M4" userLabel="First Responder" sceneMemberID="firstResponder"/>
