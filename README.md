@@ -1,4 +1,7 @@
 # TransientHub
+Mindmap:
+
+https://app.wisemapping.com/c/maps/290414/public
 
 Sources:
 
