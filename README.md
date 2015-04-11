@@ -11,6 +11,7 @@ http://wiki.ivoa.net/twiki/bin/view/IVOA/IvoaVOEvent
 Data Sources:
 
 http://gcn.gsfc.nasa.gov/burst_info.html
+http://gcn.gsfc.nasa.gov/burst_info.html
 http://integral.esac.esa.int/bexrbmonitor/webpage_oneplot.php
 http://swift.gsfc.nasa.gov/results/transients/
 http://gammaray.msfc.nasa.gov/gbm/science/pulsars.html
