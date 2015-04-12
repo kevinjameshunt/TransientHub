@@ -7,8 +7,6 @@
 //
 
 #import "TWSettingsViewController.h"
-#import <PebbleKit/PebbleKit.h>
-#import "TWPebbleCommunicator.h"
 
 @interface TWSettingsViewController ()
 
@@ -24,11 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)sendMessage {
-    
-    [[TWPebbleCommunicator sharedPebbleCommunicator] notify:@"HELLO" :@"WORLD"];
 }
 
 /*

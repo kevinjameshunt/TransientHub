@@ -7,8 +7,13 @@
 //
 
 #import "TWFeedViewController.h"
+#import "TWBaseEventViewController.h"
 
-@interface TWFeedViewController ()
+@interface TWFeedViewController () {
+    int _imgCount;
+    NSArray *_imgDict;
+    NSArray *_eventDict;
+}
 
 @end
 

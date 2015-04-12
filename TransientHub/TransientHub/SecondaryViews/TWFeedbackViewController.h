@@ -7,7 +7,12 @@
 //
 
 #import "TWBaseViewController.h"
+#import <PebbleKit/PebbleKit.h>
+#import "TWPebbleCommunicator.h"
+
 
 @interface TWFeedbackViewController : TWBaseViewController
+
+- (IBAction)sendMessage;
 
 @end

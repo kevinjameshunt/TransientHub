@@ -35,7 +35,7 @@
     _eventDict = [NSArray arrayWithObjects:@"2CG121+04", @"NGC253", @"OAO1657", @"PSRJ0007+7303", @"PSRJ0007p7303", @"J045106.8-694803", @"TXS0141+268", @"Vela X-1", nil];
     
     _imgCount = 0;
-    int sampleHeight = 468;
+    int sampleHeight = 432;
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
     self.scrollView.scrollEnabled = YES;
     self.scrollView = [self createSampleLayout:self.scrollView andOffset:sampleHeight*0];
@@ -57,8 +57,8 @@
     int cellWidthDouble = cellWidthSingle *2 + buffer;
     int cellWidthFull = (cellWidthSingle * 4) + 3 * buffer;
     int cellHeightSingle = 70;
-    int cellHeightDouble = cellHeightSingle * 2 + buffer;
-    int rowDif = buffer + cellHeightSingle;;
+    int cellHeightDouble = 100;
+    int rowDif = buffer + cellHeightDouble;
     
     // Row 4 - 1 double-double, 2 singles x 2 singles
     UIView *view1_1 = [self createSampleDoubleDoubleCellWithFrame:CGRectMake(buffer, buffer+offset, cellWidthDouble, cellHeightDouble)];
@@ -89,34 +89,32 @@
 }
 
 - (UIView *)createSampleDoubleDoubleCellWithFrame:(CGRect)frame {
-    int fromNumber = 2;
-    int toNumber = 19;
-    int randomNumber = (arc4random()%(toNumber-fromNumber))+fromNumber;
     
     UIView *theView = [[UIView alloc] initWithFrame:frame];
     theView.layer.borderColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f].CGColor;
     theView.layer.borderWidth = 3.0f;
     theView.backgroundColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,frame.size.width, (frame.size.height-8)/2)];
-    imageView.image = [UIImage imageNamed:@"1-out.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,frame.size.width, frame.size.height-30)];
+    imageView.image = [UIImage imageNamed:[_imgDict objectAtIndex:_imgCount]];
     
     [theView addSubview:imageView];
     
-    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width-45, (frame.size.height-8)/2-30, 45, 30)];
-    magLabel.text = [NSString stringWithFormat:@"+%d",randomNumber];
-    magLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:18];
-    magLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
-    
-    [theView addSubview:magLabel];
-    
-    UILabel *typeLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, (frame.size.height-8)/2+8, frame.size.width-16, (frame.size.height-8)/2-8)];
+    UILabel *typeLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, frame.size.height-28, frame.size.width-16, 20)];
     typeLabel.textColor = [UIColor whiteColor];
     typeLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:16];
     typeLabel.numberOfLines = 4;
-    typeLabel.text = @"Active galactic nucleus variability";
+    typeLabel.text = [_eventDict objectAtIndex:_imgCount];
+    typeLabel.adjustsFontSizeToFitWidth = YES;
+    typeLabel.textAlignment = NSTextAlignmentCenter;
+    
     
     [theView addSubview:typeLabel];
+    
+    _imgCount ++;
+    if (_imgCount > 7) {
+        _imgCount = 0;
+    }
     
     return theView;
 }
@@ -125,8 +123,8 @@
 - (void)singleTapGestureCaptured:(UITapGestureRecognizer *)gesture
 {
     NSLog(@"Touch detected");
-    TWBaseEventViewController *eventViewController = [[TWBaseEventViewController alloc] init];
-    [self.navigationController pushViewController:eventViewController animated:YES];
+    //TWBaseEventViewController *eventViewController = [[TWBaseEventViewController alloc] init];
+    //[self.navigationController pushViewController:eventViewController animated:YES];
 }
 
 /*
