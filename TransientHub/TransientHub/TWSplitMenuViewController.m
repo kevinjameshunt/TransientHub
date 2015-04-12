@@ -68,7 +68,7 @@
             return 2;
             break;
         case 1:
-            return 1 + [[TWDataManager sharedDataManager] getNumberOfFeeds];
+            return 7;
             break;
         case 2:
             return 5;
@@ -96,8 +96,18 @@
         }
         case 1: {
             if (row ==0) {
-                cell = [tableView dequeueReusableCellWithIdentifier:@"FeedCell"];
+                cell = [tableView dequeueReusableCellWithIdentifier:@"GCNFeedCell"];
             } else if (row ==1) {
+                cell = [tableView dequeueReusableCellWithIdentifier:@"SwiftFeedCell"];
+            } else if (row ==2) {
+                cell = [tableView dequeueReusableCellWithIdentifier:@"CRTSFeedCell"];
+            } else if (row ==3) {
+                cell = [tableView dequeueReusableCellWithIdentifier:@"ESAFeedCell"];
+            } else if (row ==4) {
+                cell = [tableView dequeueReusableCellWithIdentifier:@"IAUFeedCell"];
+            } else if (row ==5) {
+                cell = [tableView dequeueReusableCellWithIdentifier:@"AFeedCell"];
+            } else if (row ==6) {
                 cell = [tableView dequeueReusableCellWithIdentifier:@"AddFeedCell"];
             }
             break;
