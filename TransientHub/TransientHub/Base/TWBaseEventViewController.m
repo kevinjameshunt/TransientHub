@@ -11,6 +11,8 @@
 
 @interface TWBaseEventViewController () {
     UIImageView *_newImageCompView;
+    UILabel *_newImageLabel;
+    int _imgIndex;
 }
 
 @end
@@ -68,10 +70,10 @@
     
     
     // Reference image and new image views
-    UIView *view3_1 = [self createSampleDoubleDoubleCellWithFrame:CGRectMake(buffer, buffer+rowDif, cellWidthDouble, cellHeightDouble) andImageName:@"1504091230684110615.master.jpg" andTitle:@"Reference Image"];
+    UIView *view3_1 = [self createSampleDoubleDoubleCellWithFrame:CGRectMake(buffer, buffer+rowDif, cellWidthDouble, cellHeightDouble) andImageName:@"1504091230684110615.master.jpg" isReference:YES];
     [scrollView addSubview:view3_1];
     
-    UIView *view3_2 = [self createSampleDoubleDoubleCellWithFrame:CGRectMake(buffer*3+cellWidthSingle*2, buffer+rowDif, cellWidthDouble, cellHeightDouble) andImageName:@"1504091230684110615-0001.arch.jpg" andTitle:@"New Image 1"];
+    UIView *view3_2 = [self createSampleDoubleDoubleCellWithFrame:CGRectMake(buffer*3+cellWidthSingle*2, buffer+rowDif, cellWidthDouble, cellHeightDouble) andImageName:@"1504091230684110615-0001.arch.jpg" isReference:NO];
     [scrollView addSubview:view3_2];
     
     // Details View
@@ -86,9 +88,6 @@
 }
 
 - (UIView *)createSampleSingleCellWithFrame:(CGRect)frame andImageName:(NSString *)imageName {
-    int fromNumber = 2;
-    int toNumber = 19;
-    int randomNumber = (arc4random()%(toNumber-fromNumber))+fromNumber;
     
     UIView *theView = [[UIView alloc] initWithFrame:frame];
     theView.layer.borderColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f].CGColor;
@@ -106,7 +105,7 @@
     return theView;
 }
 
-- (UIView *)createSampleDoubleDoubleCellWithFrame:(CGRect)frame andImageName:(NSString *)imageName andTitle:(NSString *)title {
+- (UIView *)createSampleDoubleDoubleCellWithFrame:(CGRect)frame andImageName:(NSString *)imageName isReference:(BOOL)isReference {
     
     UIView *theView = [[UIView alloc] initWithFrame:frame];
     theView.layer.borderColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f].CGColor;
@@ -116,7 +115,7 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,frame.size.width, frame.size.height-30)];
     imageView.image = [UIImage imageNamed:imageName];
     
-    [theView addSubview:imageView];
+    NSString *title;
     
     UILabel *typeLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, frame.size.height-28 , frame.size.width-16, 20)];
     typeLabel.textColor = [UIColor whiteColor];
@@ -125,7 +124,18 @@
     typeLabel.textAlignment = NSTextAlignmentCenter;
     typeLabel.text = title;
     
-    [theView addSubview:typeLabel];
+    if (isReference) {
+        title  =@"Reference Image";
+        [theView addSubview:imageView];
+        [theView addSubview:typeLabel];
+    } else {
+        _newImageCompView = imageView;
+        _newImageLabel = typeLabel;
+        title  =@"New Image 1";
+        [theView addSubview:_newImageCompView];
+        [theView addSubview:_newImageLabel];
+    }
+    
     
     return theView;
 }
