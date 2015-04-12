@@ -10,6 +10,10 @@
 #import "TWEventBaseCell.h"
 #import "TWEventCollectionLayout.h"
 #import "AppDelegate.h"
+#import "TWDataManager.h"
+#import "TWCRTSEvent.h"
+
+static NSString * const kEventReusableCellIdentifier          = @"EventCell";
 
 @interface TWWatchListViewController ()
 
@@ -22,6 +26,31 @@ NSUInteger const kNumberOfTilesForVerticalLayoutForiPhone = 3;
 
 @implementation TWWatchListViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (id)init {
+    if (self = [super init]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    [self commonInit];
+}
+
+- (void)commonInit {
+    [self.collectionView registerNib:[UINib nibWithNibName:@"TWEventBaseCell" bundle:nil] forCellWithReuseIdentifier:kEventReusableCellIdentifier];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,6 +70,9 @@ NSUInteger const kNumberOfTilesForVerticalLayoutForiPhone = 3;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    _eventItems = [[TWDataManager sharedDataManager] getSampleFeedData];
+    
     [self configureLayoutForOrientation:self.interfaceOrientation];
 }
 
@@ -86,22 +118,35 @@ NSUInteger const kNumberOfTilesForVerticalLayoutForiPhone = 3;
     [self.collectionView reloadData];
 }
 
+- (TWEventBaseCell *)configureItemCellAtIndexPath:(NSIndexPath *)indexPath forCollectionView:(UICollectionView *)collectionView {
+    TWEventBaseCell *cell = (TWEventBaseCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kEventReusableCellIdentifier forIndexPath:indexPath];
+    
+    TWCRTSEvent *event = _eventItems[indexPath.row];
+    
+    [cell setImageURL:event.refImgUrl];
+    
+    return cell;
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    if (_contentItems) {
-        return [[_contentItems objectAtIndex:section] count];
+    if (_eventItems) {
+        return [_eventItems count];
     } else {
         return 0;
     }
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return [_contentItems count];
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    TWEventBaseCell *cell = nil;
+    cell = [self configureItemCellAtIndexPath:indexPath forCollectionView:collectionView];
+    
+    return cell;
 }
 
 #pragma mark - UICollectionViewDelegate

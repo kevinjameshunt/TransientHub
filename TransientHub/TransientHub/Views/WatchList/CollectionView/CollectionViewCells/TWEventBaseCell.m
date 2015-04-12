@@ -23,4 +23,10 @@
     [super prepareForReuse];
 }
 
+- (void)setImageURL:(NSString *)url {
+    NSURL * imageURL = [NSURL URLWithString:url];
+    NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
+    self.imageView.image = [UIImage imageWithData:imageData];
+}
+
 @end

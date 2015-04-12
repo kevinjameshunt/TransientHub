@@ -24,7 +24,7 @@ extern NSUInteger const kNumberOfTilesForVerticalLayoutForiPhone;
 @interface TWWatchListViewController : TWBaseFeedViewController <UICollectionViewDataSource, UICollectionViewDelegate, TWEventCollectionLayoutDelegate>
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
-@property (nonatomic, strong) NSMutableArray *contentItems;
+@property (nonatomic, strong) NSArray *eventItems;
 @property (nonatomic, strong) NSMutableDictionary *sectionHeaders;
 @property (nonatomic, assign) UICollectionViewScrollDirection scrollDirectionForLandscapeOrientation;
 @property (nonatomic, assign) UICollectionViewScrollDirection scrollDirectionForPortraitOrientation;
