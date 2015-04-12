@@ -29,7 +29,6 @@ static TWDataManager *_sharedDataManager;
 static NSPersistentStoreCoordinator *__persistentStoreCoordinator;
 static NSManagedObjectModel *__managedObjectModel;
 
-
 + (TWDataManager *)sharedDataManager {
     @synchronized([TWDataManager class]) {
         if(!_sharedDataManager) {

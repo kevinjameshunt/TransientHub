@@ -44,6 +44,15 @@
 		04D3FC611AD6CC2800036F70 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5E1AD6CC2800036F70 /* TWBaseViewController.m */; };
 		04D3FC741AD722FE00036F70 /* TWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */; };
 		04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */; };
+		1C309C9A1AD988930041D2AC /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C991AD988930041D2AC /* PebbleVendor.framework */; };
+		1C309C9C1AD988E50041D2AC /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C9B1AD988E50041D2AC /* PebbleKit.framework */; };
+		1C309C9E1AD989000041D2AC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C9D1AD989000041D2AC /* ExternalAccessory.framework */; };
+		1C309CA01AD9890F0041D2AC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C9F1AD9890F0041D2AC /* libz.dylib */; };
+		1C309CA21AD989160041D2AC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309CA11AD989160041D2AC /* CoreBluetooth.framework */; };
+		1C309CA41AD989200041D2AC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309CA31AD9891F0041D2AC /* CoreMotion.framework */; };
+		1C309CA61AD989280041D2AC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309CA51AD989280041D2AC /* CFNetwork.framework */; };
+		1C309CA81AD9892E0041D2AC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309CA71AD9892E0041D2AC /* MessageUI.framework */; };
+		1C309D681AD9ED520041D2AC /* TWPebbleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C309D671AD9ED520041D2AC /* TWPebbleCommunicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +137,17 @@
 		04D3FC711AD722FE00036F70 /* TWEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWEventTableViewCell.h; path = TransientHub/Views/EventCell/TWEventTableViewCell.h; sourceTree = "<group>"; };
 		04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWEventTableViewCell.m; path = TransientHub/Views/EventCell/TWEventTableViewCell.m; sourceTree = "<group>"; };
 		04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWEventTableViewCell.xib; path = TransientHub/Views/EventCell/TWEventTableViewCell.xib; sourceTree = "<group>"; };
+		1C309C991AD988930041D2AC /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = "../../../../pebble/pebble-ios-sdk/PebbleVendor.framework"; sourceTree = "<group>"; };
+		1C309C9B1AD988E50041D2AC /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../../../../pebble/pebble-ios-sdk/PebbleKit.framework"; sourceTree = "<group>"; };
+		1C309C9D1AD989000041D2AC /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		1C309C9F1AD9890F0041D2AC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1C309CA11AD989160041D2AC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1C309CA31AD9891F0041D2AC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1C309CA51AD989280041D2AC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1C309CA71AD9892E0041D2AC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1C309D671AD9ED520041D2AC /* TWPebbleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWPebbleCommunicator.m; path = Base/TWPebbleCommunicator.m; sourceTree = "<group>"; };
+		1C309D691AD9ED660041D2AC /* TWPebbleCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TWPebbleCommunicator.h; path = Base/TWPebbleCommunicator.h; sourceTree = "<group>"; };
+		1C5212991AD9FD7A00A19660 /* TWPebbleInfoListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TWPebbleInfoListener.h; path = Base/TWPebbleInfoListener.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +155,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C309CA81AD9892E0041D2AC /* MessageUI.framework in Frameworks */,
+				1C309CA61AD989280041D2AC /* CFNetwork.framework in Frameworks */,
+				1C309CA41AD989200041D2AC /* CoreMotion.framework in Frameworks */,
+				1C309CA21AD989160041D2AC /* CoreBluetooth.framework in Frameworks */,
+				1C309CA01AD9890F0041D2AC /* libz.dylib in Frameworks */,
+				1C309C9E1AD989000041D2AC /* ExternalAccessory.framework in Frameworks */,
+				1C309C9C1AD988E50041D2AC /* PebbleKit.framework in Frameworks */,
+				1C309C9A1AD988930041D2AC /* PebbleVendor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,9 +179,17 @@
 		0438DD801AD094140049AB66 = {
 			isa = PBXGroup;
 			children = (
+				1C309CA71AD9892E0041D2AC /* MessageUI.framework */,
+				1C309CA51AD989280041D2AC /* CFNetwork.framework */,
+				1C309CA31AD9891F0041D2AC /* CoreMotion.framework */,
+				1C309CA11AD989160041D2AC /* CoreBluetooth.framework */,
+				1C309C9F1AD9890F0041D2AC /* libz.dylib */,
+				1C309C9D1AD989000041D2AC /* ExternalAccessory.framework */,
+				1C309C9B1AD988E50041D2AC /* PebbleKit.framework */,
 				0438DD8B1AD094140049AB66 /* TransientHub */,
 				0438DDA81AD094140049AB66 /* TransientHubTests */,
 				0438DD8A1AD094140049AB66 /* Products */,
+				1C309C991AD988930041D2AC /* PebbleVendor.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,6 +285,9 @@
 				04D3FC571AD6CBE300036F70 /* TWBaseEvent.m */,
 				043FB9281AD788C000ED199F /* TWBaseEventFeed.h */,
 				043FB9291AD788C000ED199F /* TWBaseEventFeed.m */,
+				1C309D671AD9ED520041D2AC /* TWPebbleCommunicator.m */,
+				1C309D691AD9ED660041D2AC /* TWPebbleCommunicator.h */,
+				1C5212991AD9FD7A00A19660 /* TWPebbleInfoListener.h */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -464,6 +503,7 @@
 				04D3FC291AD6258D00036F70 /* TWWatchListViewController.m in Sources */,
 				04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */,
+				1C309D681AD9ED520041D2AC /* TWPebbleCommunicator.m in Sources */,
 				04D3FC131AD61E3C00036F70 /* ECSlidingSegue.m in Sources */,
 				043FB9211AD7813D00ED199F /* CDEvent.m in Sources */,
 				04D3FC581AD6CBE300036F70 /* TWBaseEvent.m in Sources */,
@@ -595,8 +635,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/stephendiadamo/Desktop/pebble/pebble-ios-sdk",
+				);
 				INFOPLIST_FILE = TransientHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -605,8 +650,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/stephendiadamo/Desktop/pebble/pebble-ios-sdk",
+				);
 				INFOPLIST_FILE = TransientHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
