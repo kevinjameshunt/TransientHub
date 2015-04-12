@@ -41,7 +41,7 @@ static TWPebbleCommunicator *pebbleCommunicator = nil;
         [[PBPebbleCentral defaultCentral] setAppUUID:[NSData dataWithBytes:appUUIDbytes length:16]];
         
         [self.watch appMessagesAddReceiveUpdateHandler:^BOOL(PBWatch *watch, NSDictionary *update) {
-             NSLog(@"Received message: %@", update);
+            [self onReceive:watch :update];
              return YES;
         }];
     }
@@ -49,7 +49,7 @@ static TWPebbleCommunicator *pebbleCommunicator = nil;
 }
 
 - (void)onReceive:(PBWatch *)watch :(NSDictionary *) dict {
-    if ([[dict objectForKey:0]intValue] == 1) {
+    if ([[dict objectForKey:@(0)]intValue] == 1) {
         NSDictionary *update = @{ @(1): self.cTitle,
                                   @(2): self.cInfo };
         
@@ -61,7 +61,7 @@ static TWPebbleCommunicator *pebbleCommunicator = nil;
             }
         }];
         self.watchAppRunning = true;
-    } else if ([[dict objectForKey:0]intValue] == 2) {
+    } else if ([[dict objectForKey:@(0)]intValue] == 2) {
         if (self.infoListener != nil) {
             [self.infoListener displayInfo:self.cTitle];
         }
