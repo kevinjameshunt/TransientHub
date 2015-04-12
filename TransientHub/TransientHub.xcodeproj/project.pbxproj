@@ -30,6 +30,14 @@
 		0491E43D1ADA546300B8EFFB /* 3-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E4381ADA546300B8EFFB /* 3-out.jpg */; };
 		0491E43E1ADA546300B8EFFB /* 4-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E4391ADA546300B8EFFB /* 4-out.jpg */; };
 		0491E43F1ADA546300B8EFFB /* 5-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E43A1ADA546300B8EFFB /* 5-out.jpg */; };
+		0491E4441ADAAFEF00B8EFFB /* InternalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E4431ADAAFEF00B8EFFB /* InternalWebViewController.m */; };
+		04B9F5F41ADAB33200A0910D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B9F5F21ADAB33200A0910D /* back.png */; };
+		04B9F5F51ADAB33200A0910D /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B9F5F31ADAB33200A0910D /* forward.png */; };
+		04B9F5FC1ADAB89300A0910D /* 1504091230684110615-0001.arch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B9F5F71ADAB89300A0910D /* 1504091230684110615-0001.arch.jpg */; };
+		04B9F5FD1ADAB89300A0910D /* 1504091230684110615-0002.arch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B9F5F81ADAB89300A0910D /* 1504091230684110615-0002.arch.jpg */; };
+		04B9F5FE1ADAB89300A0910D /* 1504091230684110615-0003.arch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B9F5F91ADAB89300A0910D /* 1504091230684110615-0003.arch.jpg */; };
+		04B9F5FF1ADAB89300A0910D /* 1504091230684110615-0004.arch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B9F5FA1ADAB89300A0910D /* 1504091230684110615-0004.arch.jpg */; };
+		04B9F6001ADAB89300A0910D /* 1504091230684110615.master.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04B9F5FB1ADAB89300A0910D /* 1504091230684110615.master.jpg */; };
 		04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */; };
 		04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */; };
 		04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */; };
@@ -110,6 +118,15 @@
 		0491E4381ADA546300B8EFFB /* 3-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "3-out.jpg"; path = "../../../Downloads/3-out.jpg"; sourceTree = "<group>"; };
 		0491E4391ADA546300B8EFFB /* 4-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "4-out.jpg"; path = "../../../Downloads/4-out.jpg"; sourceTree = "<group>"; };
 		0491E43A1ADA546300B8EFFB /* 5-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "5-out.jpg"; path = "../../../Downloads/5-out.jpg"; sourceTree = "<group>"; };
+		0491E4421ADAAFEF00B8EFFB /* InternalWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InternalWebViewController.h; path = SecondaryViews/InternalWebViewController.h; sourceTree = "<group>"; };
+		0491E4431ADAAFEF00B8EFFB /* InternalWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InternalWebViewController.m; path = SecondaryViews/InternalWebViewController.m; sourceTree = "<group>"; };
+		04B9F5F21ADAB33200A0910D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = images/back.png; sourceTree = "<group>"; };
+		04B9F5F31ADAB33200A0910D /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forward.png; path = images/forward.png; sourceTree = "<group>"; };
+		04B9F5F71ADAB89300A0910D /* 1504091230684110615-0001.arch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1504091230684110615-0001.arch.jpg"; path = "../../../Downloads/SampleImages/1504091230684110615-0001.arch.jpg"; sourceTree = "<group>"; };
+		04B9F5F81ADAB89300A0910D /* 1504091230684110615-0002.arch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1504091230684110615-0002.arch.jpg"; path = "../../../Downloads/SampleImages/1504091230684110615-0002.arch.jpg"; sourceTree = "<group>"; };
+		04B9F5F91ADAB89300A0910D /* 1504091230684110615-0003.arch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1504091230684110615-0003.arch.jpg"; path = "../../../Downloads/SampleImages/1504091230684110615-0003.arch.jpg"; sourceTree = "<group>"; };
+		04B9F5FA1ADAB89300A0910D /* 1504091230684110615-0004.arch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1504091230684110615-0004.arch.jpg"; path = "../../../Downloads/SampleImages/1504091230684110615-0004.arch.jpg"; sourceTree = "<group>"; };
+		04B9F5FB1ADAB89300A0910D /* 1504091230684110615.master.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1504091230684110615.master.jpg; path = ../../../Downloads/SampleImages/1504091230684110615.master.jpg; sourceTree = "<group>"; };
 		04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
@@ -236,6 +253,7 @@
 				0438DD9E1AD094140049AB66 /* LaunchScreen.xib */,
 				04D3FC441AD6325200036F70 /* Sample Data */,
 				0491E4351ADA544900B8EFFB /* Sample Images */,
+				04B9F5F61ADAB33900A0910D /* Images */,
 				0438DD8C1AD094140049AB66 /* Supporting Files */,
 				043FB94E1ADA1D8500ED199F /* Frameworks */,
 			);
@@ -317,6 +335,11 @@
 		0491E4351ADA544900B8EFFB /* Sample Images */ = {
 			isa = PBXGroup;
 			children = (
+				04B9F5F71ADAB89300A0910D /* 1504091230684110615-0001.arch.jpg */,
+				04B9F5F81ADAB89300A0910D /* 1504091230684110615-0002.arch.jpg */,
+				04B9F5F91ADAB89300A0910D /* 1504091230684110615-0003.arch.jpg */,
+				04B9F5FA1ADAB89300A0910D /* 1504091230684110615-0004.arch.jpg */,
+				04B9F5FB1ADAB89300A0910D /* 1504091230684110615.master.jpg */,
 				0491E4361ADA546300B8EFFB /* 1-out.jpg */,
 				0491E4371ADA546300B8EFFB /* 2-out.jpg */,
 				0491E4381ADA546300B8EFFB /* 3-out.jpg */,
@@ -325,6 +348,15 @@
 			);
 			name = "Sample Images";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		04B9F5F61ADAB33900A0910D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04B9F5F21ADAB33200A0910D /* back.png */,
+				04B9F5F31ADAB33200A0910D /* forward.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		04D3FC021AD61E3C00036F70 /* ECSlidingViewController */ = {
@@ -385,6 +417,8 @@
 		04D3FC371AD62C9900036F70 /* Secondary Views */ = {
 			isa = PBXGroup;
 			children = (
+				0491E4421ADAAFEF00B8EFFB /* InternalWebViewController.h */,
+				0491E4431ADAAFEF00B8EFFB /* InternalWebViewController.m */,
 				04D3FC331AD62B2C00036F70 /* TWGlossaryViewController.h */,
 				04D3FC341AD62B2C00036F70 /* TWGlossaryViewController.m */,
 				04D3FC381AD62CB900036F70 /* TWSettingsViewController.h */,
@@ -533,16 +567,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				043FB92C1AD8190600ED199F /* LSST.json in Resources */,
+				04B9F5FC1ADAB89300A0910D /* 1504091230684110615-0001.arch.jpg in Resources */,
 				043FB9431AD9AE3200ED199F /* TWEventBaseCell.xib in Resources */,
 				0491E43D1ADA546300B8EFFB /* 3-out.jpg in Resources */,
 				0491E43B1ADA546300B8EFFB /* 1-out.jpg in Resources */,
+				04B9F5FD1ADAB89300A0910D /* 1504091230684110615-0002.arch.jpg in Resources */,
+				04B9F5F51ADAB33200A0910D /* forward.png in Resources */,
 				0438DD9B1AD094140049AB66 /* Main.storyboard in Resources */,
 				0491E43E1ADA546300B8EFFB /* 4-out.jpg in Resources */,
 				0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */,
 				0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */,
+				04B9F5F41ADAB33200A0910D /* back.png in Resources */,
 				04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */,
+				04B9F5FF1ADAB89300A0910D /* 1504091230684110615-0004.arch.jpg in Resources */,
 				0491E43C1ADA546300B8EFFB /* 2-out.jpg in Resources */,
 				0491E43F1ADA546300B8EFFB /* 5-out.jpg in Resources */,
+				04B9F6001ADAB89300A0910D /* 1504091230684110615.master.jpg in Resources */,
+				04B9F5FE1ADAB89300A0910D /* 1504091230684110615-0003.arch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +627,7 @@
 				04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */,
 				1C309D681AD9ED520041D2AC /* TWPebbleCommunicator.m in Sources */,
+				0491E4441ADAAFEF00B8EFFB /* InternalWebViewController.m in Sources */,
 				04D3FC131AD61E3C00036F70 /* ECSlidingSegue.m in Sources */,
 				043FB9211AD7813D00ED199F /* CDEvent.m in Sources */,
 				04D3FC581AD6CBE300036F70 /* TWBaseEvent.m in Sources */,

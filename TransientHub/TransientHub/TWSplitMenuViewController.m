@@ -128,8 +128,8 @@
             break;
     }
     
-    cell.backgroundColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
-    cell.textLabel.tintColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor whiteColor];
+    cell.textLabel.tintColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
 
     return cell;
 }

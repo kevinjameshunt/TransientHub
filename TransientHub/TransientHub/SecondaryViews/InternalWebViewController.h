@@ -1,8 +1,5 @@
 
-#import "pgcAppDelegate.h"
 #import <UIKit/UIKit.h>
-
-@class BreezeViewController;
 
 @interface InternalWebViewController : UIViewController <UIWebViewDelegate, UIActionSheetDelegate> {
 	UIWebView *webView;
@@ -17,8 +14,8 @@
     BOOL isModal;
 }
 
-@property (nonatomic, retain) IBOutlet UIWebView *webView;
-@property (nonatomic, retain) IBOutlet id delegate;
+@property (nonatomic, retain) UIWebView *webView;
+@property (nonatomic, retain) id delegate;
 @property (nonatomic, retain) UISegmentedControl *segControl;
 @property (nonatomic, retain) NSURLRequest *urlRequest;
 @property (nonatomic, retain) NSURLRequest *urlLastRequest;

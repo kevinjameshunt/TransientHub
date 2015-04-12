@@ -1,6 +1,6 @@
 
-#import "Flurry.h"
 #import "InternalWebViewController.h"
+#import "AppDelegate.h"
 
 @implementation InternalWebViewController
 
@@ -46,6 +46,8 @@
 	webView.autoresizesSubviews = YES;
 	webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 	webView.scalesPageToFit = YES;
+    
+    [self.view addSubview:webView];
 
 	// wire handler for web view URL changes
 	webView.delegate = self;
@@ -107,7 +109,7 @@
 #pragma mark - UIActionSheet Delegate
 
 -(void)handleBrowserButton:(id)sender {
-    pgcAppDelegate* appDel = (pgcAppDelegate *)[[UIApplication sharedApplication] delegate];
+    AppDelegate* appDel = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
 	UIActionSheet *popupQuery = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Open in Safari" otherButtonTitles:nil];
 	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
@@ -118,13 +120,12 @@
     NSString *resultString;
 	if (buttonIndex == 0) {
 		resultString = @"Safari Button Clicked";
-        [Flurry logEvent:resultString];
         [[UIApplication sharedApplication] openURL:[urlLastRequest URL]];
         return;
 	} else if (buttonIndex == 1) {
 		resultString = @"Cancel Button Clicked";
 	}
-    DLog(@"%@",resultString);
+    NSLog(@"%@",resultString);
 }
 
 #pragma mark - UIWebView
@@ -164,8 +165,7 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error 
 {
-    DLog(@"WebView Error: %@",[error description]);
-    [Flurry logEvent:[NSString stringWithFormat:@"WebView Error: %@",[error description]]];
+    NSLog(@"WebView Error: %@",[error description]);
     
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
@@ -196,12 +196,9 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [Flurry logEvent:@"Internal web page"];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    pgcAppDelegate *appDelegate = (pgcAppDelegate *)[[UIApplication sharedApplication] delegate];
-    appDelegate.currentViewController = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated

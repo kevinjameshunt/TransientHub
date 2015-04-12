@@ -40,18 +40,18 @@
 - (void)populateSampleViews {
     
     int sampleHeight = 468;
-    _scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-    _scrollView.scrollEnabled = YES;
-    _scrollView = [self createSampleLayout:_scrollView andOffset:sampleHeight*0];
-    _scrollView = [self createSampleLayout:_scrollView andOffset:sampleHeight*1];
-    _scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1100);
+    self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    self.scrollView.scrollEnabled = YES;
+    self.scrollView = [self createSampleLayout:self.scrollView andOffset:sampleHeight*0];
+    self.scrollView = [self createSampleLayout:self.scrollView andOffset:sampleHeight*1];
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1100);
     
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGestureCaptured:)];
     //Default value for cancelsTouchesInView is YES, which will prevent buttons to be clicked
     singleTap.cancelsTouchesInView = NO;
-    [_scrollView addGestureRecognizer:singleTap];
+    [self.scrollView addGestureRecognizer:singleTap];
     
-    [self.view addSubview:_scrollView];
+    [self.view addSubview:self.scrollView];
 }
 
 - (UIScrollView *)createSampleLayout:(UIScrollView *)scrollView andOffset:(int)offset {
@@ -229,7 +229,6 @@
 
 - (void)singleTapGestureCaptured:(UITapGestureRecognizer *)gesture
 {
-    CGPoint touchPoint=[gesture locationInView:_scrollView];
     NSLog(@"Touch detected");
     TWBaseEventViewController *eventViewController = [[TWBaseEventViewController alloc] init];
     [self.navigationController pushViewController:eventViewController animated:YES];
