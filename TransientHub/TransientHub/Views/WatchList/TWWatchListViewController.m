@@ -13,7 +13,7 @@
 #import "TWDataManager.h"
 #import "TWCRTSEvent.h"
 
-static NSString * const kEventReusableCellIdentifier          = @"EventCell";
+static NSString * const kEventReusableCellIdentifier          = @"TWEventBaseCell";
 
 @interface TWWatchListViewController ()
 
