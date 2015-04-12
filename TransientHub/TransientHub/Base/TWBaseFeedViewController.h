@@ -11,5 +11,6 @@
 @interface TWBaseFeedViewController : TWBaseViewController
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UIScrollView *scrollView;
 
 @end

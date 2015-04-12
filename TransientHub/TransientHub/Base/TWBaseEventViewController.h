@@ -10,4 +10,6 @@
 
 @interface TWBaseEventViewController : TWBaseViewController
 
+@property (nonatomic, strong) UIScrollView *scrollView;
+
 @end
