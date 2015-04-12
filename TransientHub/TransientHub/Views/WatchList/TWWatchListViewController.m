@@ -50,6 +50,7 @@ NSUInteger const kNumberOfTilesForVerticalLayoutForiPhone = 3;
 
 - (void)commonInit {
     [self.collectionView registerNib:[UINib nibWithNibName:@"TWEventBaseCell" bundle:nil] forCellWithReuseIdentifier:kEventReusableCellIdentifier];
+    [self.collectionView registerClass:[TWEventBaseCell class] forCellWithReuseIdentifier:kEventReusableCellIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -124,6 +125,7 @@ NSUInteger const kNumberOfTilesForVerticalLayoutForiPhone = 3;
     TWCRTSEvent *event = _eventItems[indexPath.row];
     
     [cell setImageURL:event.refImgUrl];
+    cell.title.text = [NSString stringWithFormat:@"%f",event.magnitude];
     
     return cell;
 }

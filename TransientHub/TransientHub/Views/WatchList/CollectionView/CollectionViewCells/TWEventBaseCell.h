@@ -9,6 +9,7 @@
 
 @interface TWEventBaseCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UILabel *title;
 
 - (void)setImageURL:(NSString *)url;
 @end
