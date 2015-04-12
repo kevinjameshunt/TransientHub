@@ -7,7 +7,11 @@
 //
 
 #import "TWBaseViewController.h"
+#include <PebbleKit/PebbleKit.h>
 
-@interface TWSettingsViewController : TWBaseViewController <UITableViewDataSource, UITableViewDelegate>
+
+@interface TWSettingsViewController : TWBaseViewController
+
+- (IBAction)sendMessage;
 
 @end
