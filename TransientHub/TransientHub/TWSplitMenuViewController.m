@@ -23,7 +23,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    self.view.backgroundColor = [UIColor blackColor];
+    self.view.tintColor = [UIColor whiteColor];
+    
+    self.tableView.backgroundColor = [UIColor blackColor];
+    self.tableView.tintColor = [UIColor whiteColor];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -123,6 +127,9 @@
         default:
             break;
     }
+    
+    cell.backgroundColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
+    cell.textLabel.tintColor = [UIColor whiteColor];
 
     return cell;
 }

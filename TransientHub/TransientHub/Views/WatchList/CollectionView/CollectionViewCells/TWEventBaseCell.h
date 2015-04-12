@@ -8,8 +8,10 @@
 #import <UIKit/UIKit.h>
 
 @interface TWEventBaseCell : UICollectionViewCell
-@property (nonatomic, weak) IBOutlet UIImageView *imageView;
-@property (nonatomic, weak) IBOutlet UILabel *title;
+
+@property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) IBOutlet UILabel *title;
 
 - (void)setImageURL:(NSString *)url;
+
 @end

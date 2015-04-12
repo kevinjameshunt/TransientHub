@@ -24,6 +24,12 @@
 		043FB9471AD9AE3200ED199F /* TWEventCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB93D1AD9AE3200ED199F /* TWEventCollectionLayout.m */; };
 		043FB94C1ADA0EDC00ED199F /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043FB94A1ADA0EDC00ED199F /* PebbleKit.framework */; };
 		043FB94D1ADA0EDC00ED199F /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043FB94B1ADA0EDC00ED199F /* PebbleVendor.framework */; };
+		043FB9501ADA52ED00ED199F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043FB94F1ADA52ED00ED199F /* QuartzCore.framework */; };
+		0491E43B1ADA546300B8EFFB /* 1-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E4361ADA546300B8EFFB /* 1-out.jpg */; };
+		0491E43C1ADA546300B8EFFB /* 2-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E4371ADA546300B8EFFB /* 2-out.jpg */; };
+		0491E43D1ADA546300B8EFFB /* 3-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E4381ADA546300B8EFFB /* 3-out.jpg */; };
+		0491E43E1ADA546300B8EFFB /* 4-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E4391ADA546300B8EFFB /* 4-out.jpg */; };
+		0491E43F1ADA546300B8EFFB /* 5-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0491E43A1ADA546300B8EFFB /* 5-out.jpg */; };
 		04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */; };
 		04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */; };
 		04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */; };
@@ -98,6 +104,12 @@
 		043FB93D1AD9AE3200ED199F /* TWEventCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWEventCollectionLayout.m; sourceTree = "<group>"; };
 		043FB94A1ADA0EDC00ED199F /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = ../PebbleKit.framework; sourceTree = "<group>"; };
 		043FB94B1ADA0EDC00ED199F /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = ../PebbleVendor.framework; sourceTree = "<group>"; };
+		043FB94F1ADA52ED00ED199F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0491E4361ADA546300B8EFFB /* 1-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1-out.jpg"; path = "../../../Downloads/1-out.jpg"; sourceTree = "<group>"; };
+		0491E4371ADA546300B8EFFB /* 2-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "2-out.jpg"; path = "../../../Downloads/2-out.jpg"; sourceTree = "<group>"; };
+		0491E4381ADA546300B8EFFB /* 3-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "3-out.jpg"; path = "../../../Downloads/3-out.jpg"; sourceTree = "<group>"; };
+		0491E4391ADA546300B8EFFB /* 4-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "4-out.jpg"; path = "../../../Downloads/4-out.jpg"; sourceTree = "<group>"; };
+		0491E43A1ADA546300B8EFFB /* 5-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "5-out.jpg"; path = "../../../Downloads/5-out.jpg"; sourceTree = "<group>"; };
 		04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
@@ -163,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043FB9501ADA52ED00ED199F /* QuartzCore.framework in Frameworks */,
 				1C309CA81AD9892E0041D2AC /* MessageUI.framework in Frameworks */,
 				1C309CA61AD989280041D2AC /* CFNetwork.framework in Frameworks */,
 				1C309CA41AD989200041D2AC /* CoreMotion.framework in Frameworks */,
@@ -187,6 +200,7 @@
 		0438DD801AD094140049AB66 = {
 			isa = PBXGroup;
 			children = (
+				043FB94F1ADA52ED00ED199F /* QuartzCore.framework */,
 				0438DD8B1AD094140049AB66 /* TransientHub */,
 				0438DDA81AD094140049AB66 /* TransientHubTests */,
 				0438DD8A1AD094140049AB66 /* Products */,
@@ -221,6 +235,7 @@
 				0438DD9C1AD094140049AB66 /* Images.xcassets */,
 				0438DD9E1AD094140049AB66 /* LaunchScreen.xib */,
 				04D3FC441AD6325200036F70 /* Sample Data */,
+				0491E4351ADA544900B8EFFB /* Sample Images */,
 				0438DD8C1AD094140049AB66 /* Supporting Files */,
 				043FB94E1ADA1D8500ED199F /* Frameworks */,
 			);
@@ -297,6 +312,19 @@
 				1C309C9D1AD989000041D2AC /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0491E4351ADA544900B8EFFB /* Sample Images */ = {
+			isa = PBXGroup;
+			children = (
+				0491E4361ADA546300B8EFFB /* 1-out.jpg */,
+				0491E4371ADA546300B8EFFB /* 2-out.jpg */,
+				0491E4381ADA546300B8EFFB /* 3-out.jpg */,
+				0491E4391ADA546300B8EFFB /* 4-out.jpg */,
+				0491E43A1ADA546300B8EFFB /* 5-out.jpg */,
+			);
+			name = "Sample Images";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		04D3FC021AD61E3C00036F70 /* ECSlidingViewController */ = {
@@ -506,10 +534,15 @@
 			files = (
 				043FB92C1AD8190600ED199F /* LSST.json in Resources */,
 				043FB9431AD9AE3200ED199F /* TWEventBaseCell.xib in Resources */,
+				0491E43D1ADA546300B8EFFB /* 3-out.jpg in Resources */,
+				0491E43B1ADA546300B8EFFB /* 1-out.jpg in Resources */,
 				0438DD9B1AD094140049AB66 /* Main.storyboard in Resources */,
+				0491E43E1ADA546300B8EFFB /* 4-out.jpg in Resources */,
 				0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */,
 				0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */,
 				04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */,
+				0491E43C1ADA546300B8EFFB /* 2-out.jpg in Resources */,
+				0491E43F1ADA546300B8EFFB /* 5-out.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
