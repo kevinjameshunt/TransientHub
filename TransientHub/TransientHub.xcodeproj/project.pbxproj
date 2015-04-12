@@ -18,6 +18,8 @@
 		043FB9271AD7840B00ED199F /* TWCRTSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9261AD7840B00ED199F /* TWCRTSEvent.m */; };
 		043FB92A1AD788C000ED199F /* TWBaseEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9291AD788C000ED199F /* TWBaseEventFeed.m */; };
 		043FB92C1AD8190600ED199F /* LSST.json in Resources */ = {isa = PBXBuildFile; fileRef = 043FB92B1AD8190600ED199F /* LSST.json */; };
+		043FB94C1ADA0EDC00ED199F /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043FB94A1ADA0EDC00ED199F /* PebbleKit.framework */; };
+		043FB94D1ADA0EDC00ED199F /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043FB94B1ADA0EDC00ED199F /* PebbleVendor.framework */; };
 		04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */; };
 		04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */; };
 		04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */; };
@@ -44,8 +46,6 @@
 		04D3FC611AD6CC2800036F70 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC5E1AD6CC2800036F70 /* TWBaseViewController.m */; };
 		04D3FC741AD722FE00036F70 /* TWEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */; };
 		04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */; };
-		1C309C9A1AD988930041D2AC /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C991AD988930041D2AC /* PebbleVendor.framework */; };
-		1C309C9C1AD988E50041D2AC /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C9B1AD988E50041D2AC /* PebbleKit.framework */; };
 		1C309C9E1AD989000041D2AC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C9D1AD989000041D2AC /* ExternalAccessory.framework */; };
 		1C309CA01AD9890F0041D2AC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309C9F1AD9890F0041D2AC /* libz.dylib */; };
 		1C309CA21AD989160041D2AC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309CA11AD989160041D2AC /* CoreBluetooth.framework */; };
@@ -86,6 +86,8 @@
 		043FB9281AD788C000ED199F /* TWBaseEventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseEventFeed.h; path = Base/TWBaseEventFeed.h; sourceTree = "<group>"; };
 		043FB9291AD788C000ED199F /* TWBaseEventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseEventFeed.m; path = Base/TWBaseEventFeed.m; sourceTree = "<group>"; };
 		043FB92B1AD8190600ED199F /* LSST.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = LSST.json; path = TransientHub/SampleData/LSST.json; sourceTree = "<group>"; };
+		043FB94A1ADA0EDC00ED199F /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
+		043FB94B1ADA0EDC00ED199F /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleVendor.framework; sourceTree = "<group>"; };
 		04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
@@ -137,8 +139,6 @@
 		04D3FC711AD722FE00036F70 /* TWEventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWEventTableViewCell.h; path = TransientHub/Views/EventCell/TWEventTableViewCell.h; sourceTree = "<group>"; };
 		04D3FC721AD722FE00036F70 /* TWEventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWEventTableViewCell.m; path = TransientHub/Views/EventCell/TWEventTableViewCell.m; sourceTree = "<group>"; };
 		04D3FC731AD722FE00036F70 /* TWEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWEventTableViewCell.xib; path = TransientHub/Views/EventCell/TWEventTableViewCell.xib; sourceTree = "<group>"; };
-		1C309C991AD988930041D2AC /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = "../../../../pebble/pebble-ios-sdk/PebbleVendor.framework"; sourceTree = "<group>"; };
-		1C309C9B1AD988E50041D2AC /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../../../../pebble/pebble-ios-sdk/PebbleKit.framework"; sourceTree = "<group>"; };
 		1C309C9D1AD989000041D2AC /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		1C309C9F1AD9890F0041D2AC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		1C309CA11AD989160041D2AC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -161,8 +161,8 @@
 				1C309CA21AD989160041D2AC /* CoreBluetooth.framework in Frameworks */,
 				1C309CA01AD9890F0041D2AC /* libz.dylib in Frameworks */,
 				1C309C9E1AD989000041D2AC /* ExternalAccessory.framework in Frameworks */,
-				1C309C9C1AD988E50041D2AC /* PebbleKit.framework in Frameworks */,
-				1C309C9A1AD988930041D2AC /* PebbleVendor.framework in Frameworks */,
+				043FB94D1ADA0EDC00ED199F /* PebbleVendor.framework in Frameworks */,
+				043FB94C1ADA0EDC00ED199F /* PebbleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,11 +185,11 @@
 				1C309CA11AD989160041D2AC /* CoreBluetooth.framework */,
 				1C309C9F1AD9890F0041D2AC /* libz.dylib */,
 				1C309C9D1AD989000041D2AC /* ExternalAccessory.framework */,
-				1C309C9B1AD988E50041D2AC /* PebbleKit.framework */,
 				0438DD8B1AD094140049AB66 /* TransientHub */,
 				0438DDA81AD094140049AB66 /* TransientHubTests */,
 				0438DD8A1AD094140049AB66 /* Products */,
-				1C309C991AD988930041D2AC /* PebbleVendor.framework */,
+				043FB94A1ADA0EDC00ED199F /* PebbleKit.framework */,
+				043FB94B1ADA0EDC00ED199F /* PebbleVendor.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,8 +285,8 @@
 				04D3FC571AD6CBE300036F70 /* TWBaseEvent.m */,
 				043FB9281AD788C000ED199F /* TWBaseEventFeed.h */,
 				043FB9291AD788C000ED199F /* TWBaseEventFeed.m */,
-				1C309D671AD9ED520041D2AC /* TWPebbleCommunicator.m */,
 				1C309D691AD9ED660041D2AC /* TWPebbleCommunicator.h */,
+				1C309D671AD9ED520041D2AC /* TWPebbleCommunicator.m */,
 				1C5212991AD9FD7A00A19660 /* TWPebbleInfoListener.h */,
 			);
 			name = Base;
@@ -638,6 +638,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/stephendiadamo/Desktop/pebble/pebble-ios-sdk",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TransientHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -653,6 +654,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/stephendiadamo/Desktop/pebble/pebble-ios-sdk",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TransientHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
