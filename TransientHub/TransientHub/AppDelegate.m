@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     bool alreadyInitialized = [[[NSUserDefaults standardUserDefaults] objectForKey:@"alreadyInitialized"] boolValue];
     NSArray *eventArray;
