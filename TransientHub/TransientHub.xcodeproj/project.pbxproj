@@ -79,6 +79,12 @@
 		1C309CA61AD989280041D2AC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309CA51AD989280041D2AC /* CFNetwork.framework */; };
 		1C309CA81AD9892E0041D2AC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C309CA71AD9892E0041D2AC /* MessageUI.framework */; };
 		1C309D681AD9ED520041D2AC /* TWPebbleCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C309D671AD9ED520041D2AC /* TWPebbleCommunicator.m */; };
+		EA8BFDC21ADAD09200E8083A /* lookup-RSS1.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8BFDBC1ADAD09200E8083A /* lookup-RSS1.png */; };
+		EA8BFDC31ADAD09200E8083A /* lookup-RSS2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8BFDBD1ADAD09200E8083A /* lookup-RSS2.png */; };
+		EA8BFDC41ADAD09200E8083A /* lookup-RSS3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8BFDBE1ADAD09200E8083A /* lookup-RSS3.png */; };
+		EA8BFDC51ADAD09200E8083A /* lookup-RSS4.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8BFDBF1ADAD09200E8083A /* lookup-RSS4.png */; };
+		EA8BFDC61ADAD09200E8083A /* lookup-RSS5.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8BFDC01ADAD09200E8083A /* lookup-RSS5.png */; };
+		EA8BFDC71ADAD09200E8083A /* lookup-RSS6.png in Resources */ = {isa = PBXBuildFile; fileRef = EA8BFDC11ADAD09200E8083A /* lookup-RSS6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +210,12 @@
 		1C309D671AD9ED520041D2AC /* TWPebbleCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWPebbleCommunicator.m; path = Base/TWPebbleCommunicator.m; sourceTree = "<group>"; };
 		1C309D691AD9ED660041D2AC /* TWPebbleCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TWPebbleCommunicator.h; path = Base/TWPebbleCommunicator.h; sourceTree = "<group>"; };
 		1C5212991AD9FD7A00A19660 /* TWPebbleInfoListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TWPebbleInfoListener.h; path = Base/TWPebbleInfoListener.h; sourceTree = "<group>"; };
+		EA8BFDBC1ADAD09200E8083A /* lookup-RSS1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lookup-RSS1.png"; sourceTree = "<group>"; };
+		EA8BFDBD1ADAD09200E8083A /* lookup-RSS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lookup-RSS2.png"; sourceTree = "<group>"; };
+		EA8BFDBE1ADAD09200E8083A /* lookup-RSS3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lookup-RSS3.png"; sourceTree = "<group>"; };
+		EA8BFDBF1ADAD09200E8083A /* lookup-RSS4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lookup-RSS4.png"; sourceTree = "<group>"; };
+		EA8BFDC01ADAD09200E8083A /* lookup-RSS5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lookup-RSS5.png"; sourceTree = "<group>"; };
+		EA8BFDC11ADAD09200E8083A /* lookup-RSS6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lookup-RSS6.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +366,7 @@
 		0491E4351ADA544900B8EFFB /* Sample Images */ = {
 			isa = PBXGroup;
 			children = (
+				EA8BFDBB1ADAD09200E8083A /* FeedLogos */,
 				04B9F6121ADACB9700A0910D /* 1-out.jpg */,
 				04B9F6131ADACB9700A0910D /* 2-out.jpg */,
 				04B9F6151ADACB9700A0910D /* 3-out.jpg */,
@@ -515,6 +528,20 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		EA8BFDBB1ADAD09200E8083A /* FeedLogos */ = {
+			isa = PBXGroup;
+			children = (
+				EA8BFDBC1ADAD09200E8083A /* lookup-RSS1.png */,
+				EA8BFDBD1ADAD09200E8083A /* lookup-RSS2.png */,
+				EA8BFDBE1ADAD09200E8083A /* lookup-RSS3.png */,
+				EA8BFDBF1ADAD09200E8083A /* lookup-RSS4.png */,
+				EA8BFDC01ADAD09200E8083A /* lookup-RSS5.png */,
+				EA8BFDC11ADAD09200E8083A /* lookup-RSS6.png */,
+			);
+			name = FeedLogos;
+			path = TransientHub/SampleImages/FeedLogos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -597,7 +624,10 @@
 			files = (
 				04B9F6331ADACB9700A0910D /* SwiftJ045106.8-694803.orbit.png in Resources */,
 				043FB92C1AD8190600ED199F /* LSST.json in Resources */,
+				EA8BFDC41ADAD09200E8083A /* lookup-RSS3.png in Resources */,
+				EA8BFDC51ADAD09200E8083A /* lookup-RSS4.png in Resources */,
 				04B9F6251ADACB9700A0910D /* 2-out.jpg in Resources */,
+				EA8BFDC31ADAD09200E8083A /* lookup-RSS2.png in Resources */,
 				04B9F6291ADACB9700A0910D /* 5-out.jpg in Resources */,
 				04B9F6311ADACB9700A0910D /* PSRJ0007p7303.mission.png in Resources */,
 				04B9F6341ADACB9700A0910D /* TXS0141p268.png in Resources */,
@@ -615,11 +645,14 @@
 				0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */,
 				04B9F6271ADACB9700A0910D /* 3-out.jpg in Resources */,
 				04B9F62B1ADACB9700A0910D /* 1504091230684110615-0002.arch.jpg in Resources */,
+				EA8BFDC71ADAD09200E8083A /* lookup-RSS6.png in Resources */,
 				0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */,
+				EA8BFDC21ADAD09200E8083A /* lookup-RSS1.png in Resources */,
 				04B9F5F41ADAB33200A0910D /* back.png in Resources */,
 				04B9F62D1ADACB9700A0910D /* 1504091230684110615-0004.arch.jpg in Resources */,
 				04B9F62E1ADACB9700A0910D /* 1504091230684110615.master.jpg in Resources */,
 				04D3FC751AD722FE00036F70 /* TWEventTableViewCell.xib in Resources */,
+				EA8BFDC61ADAD09200E8083A /* lookup-RSS5.png in Resources */,
 				04B9F6351ADACB9700A0910D /* velax1_fig1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
