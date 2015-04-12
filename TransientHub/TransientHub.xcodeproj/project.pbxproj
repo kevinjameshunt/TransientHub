@@ -179,6 +179,8 @@
 		0438DD801AD094140049AB66 = {
 			isa = PBXGroup;
 			children = (
+				043FB94A1ADA0EDC00ED199F /* PebbleKit.framework */,
+				043FB94B1ADA0EDC00ED199F /* PebbleVendor.framework */,
 				1C309CA71AD9892E0041D2AC /* MessageUI.framework */,
 				1C309CA51AD989280041D2AC /* CFNetwork.framework */,
 				1C309CA31AD9891F0041D2AC /* CoreMotion.framework */,
@@ -188,8 +190,6 @@
 				0438DD8B1AD094140049AB66 /* TransientHub */,
 				0438DDA81AD094140049AB66 /* TransientHubTests */,
 				0438DD8A1AD094140049AB66 /* Products */,
-				043FB94A1ADA0EDC00ED199F /* PebbleKit.framework */,
-				043FB94B1ADA0EDC00ED199F /* PebbleVendor.framework */,
 			);
 			sourceTree = "<group>";
 		};
