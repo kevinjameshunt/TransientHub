@@ -52,6 +52,8 @@
     int cellHeightDouble = cellHeightSingle * 2 + buffer;
     int rowDif = 0;
     
+    _imgIndex = 1;
+    
     // Row 1 - 2 singles, 1 double
     UIView *view1_1 = [self createSampleSingleCellWithFrame:CGRectMake(buffer, buffer, cellWidthSingle, cellHeightSingle) andImageName:@"1504091230684110615-0001.arch.jpg"];
     [scrollView addSubview:view1_1];
@@ -122,13 +124,14 @@
     typeLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:12];
     typeLabel.numberOfLines = 1;
     typeLabel.textAlignment = NSTextAlignmentCenter;
-    typeLabel.text = title;
     
     if (isReference) {
         title  =@"Reference Image";
+        typeLabel.text = title;
         [theView addSubview:imageView];
         [theView addSubview:typeLabel];
     } else {
+        typeLabel.text = title;
         _newImageCompView = imageView;
         _newImageLabel = typeLabel;
         title  =@"New Image 1";
@@ -213,15 +216,12 @@
 
 - (void)singleTapGestureCaptured:(UITapGestureRecognizer *)gesture
 {
-    CGPoint touchPoint=[gesture locationInView:self.scrollView];
     NSLog(@"Touch detected");
-    
-//    if (CGRectContainsPoint(self.dataTableView.frame, touchPoint)) {
-//        return NO;
-//    }
-//    return YES;
-    TWBaseEventViewController *eventViewController = [[TWBaseEventViewController alloc] init];
-    [self.navigationController pushViewController:eventViewController animated:YES];
+    _imgIndex ++;
+    if (_imgIndex > 4) {
+        _imgIndex = 1;
+    }
+    _newImageCompView.image = [UIImage imageNamed:[NSString stringWithFormat:@"1504091230684110615-000%d.arch.jpg", _imgIndex]];
 }
 
 /*

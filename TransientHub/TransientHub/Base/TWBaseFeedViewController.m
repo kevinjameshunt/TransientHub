@@ -44,7 +44,8 @@
     self.scrollView.scrollEnabled = YES;
     self.scrollView = [self createSampleLayout:self.scrollView andOffset:sampleHeight*0];
     self.scrollView = [self createSampleLayout:self.scrollView andOffset:sampleHeight*1];
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1100);
+    self.scrollView = [self createSampleLayout:self.scrollView andOffset:sampleHeight*2];
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1600);
     
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGestureCaptured:)];
     //Default value for cancelsTouchesInView is YES, which will prevent buttons to be clicked
@@ -127,10 +128,11 @@
     
     [theView addSubview:imageView];
     
-    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width-40, frame.size.height-30, 40, 30)];
+    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width-45, frame.size.height-30, 40, 30)];
     magLabel.text = [NSString stringWithFormat:@"+%d",randomNumber];
     magLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:16];
     magLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
+    magLabel.textAlignment = NSTextAlignmentRight;
     
     [theView addSubview:magLabel];
     
@@ -151,11 +153,11 @@
     
     [theView addSubview:imageView];
     
-    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width-45, frame.size.height-30, 45, 30)];
+    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width-50, frame.size.height-30, 45, 30)];
     magLabel.text = [NSString stringWithFormat:@"+%d",randomNumber];
     magLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:18];
     magLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
-    
+    magLabel.textAlignment = NSTextAlignmentRight;
     [theView addSubview:magLabel];
     
     return theView;
@@ -176,11 +178,11 @@
     
     [theView addSubview:imageView];
     
-    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width-45, (frame.size.height-8)/2-30, 45, 30)];
+    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width-50, (frame.size.height-8)/2-30, 45, 30)];
     magLabel.text = [NSString stringWithFormat:@"+%d",randomNumber];
     magLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:18];
     magLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
-    
+    magLabel.textAlignment = NSTextAlignmentRight;
     [theView addSubview:magLabel];
     
     UILabel *typeLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, (frame.size.height-8)/2+8, frame.size.width-16, (frame.size.height-8)/2-8)];
@@ -209,11 +211,11 @@
     
     [theView addSubview:imageView];
     
-    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake((frame.size.width-8)/2-45, frame.size.height-30, 45, 30)];
+    UILabel *magLabel = [[UILabel alloc] initWithFrame:CGRectMake((frame.size.width-8)/2-50, frame.size.height-30, 45, 30)];
     magLabel.text = [NSString stringWithFormat:@"+%d",randomNumber];
     magLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:18];
     magLabel.textColor = [UIColor colorWithRed:0.0f/255.0f green:161.0f/255.0f blue:196.0f/255.0f alpha:1.0f];
-    
+    magLabel.textAlignment = NSTextAlignmentRight;
     [theView addSubview:magLabel];
     
     UILabel *typeLabel = [[UILabel alloc] initWithFrame:CGRectMake((frame.size.width-8)/2+8, 8, (frame.size.width-16)/2, frame.size.height-16)];
