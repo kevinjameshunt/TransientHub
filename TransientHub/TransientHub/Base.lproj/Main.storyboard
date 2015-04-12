@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -302,7 +303,37 @@
                     <view key="view" contentMode="scaleToFill" id="FSH-d1-wfv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-GU-ky0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="3Hg-VQ-XwZ"/>
+                                    <constraint firstAttribute="height" constant="536" id="Fuu-we-PqH"/>
+                                    <constraint firstAttribute="width" secondItem="wJT-GU-ky0" secondAttribute="height" multiplier="75:67" id="YB7-Kk-vtz"/>
+                                </constraints>
+                                <collectionViewLayout key="collectionViewLayout" id="OuA-KU-Ulj" customClass="TWEventCollectionLayout">
+                                    <connections>
+                                        <outlet property="delegate" destination="4em-ls-ypx" id="Dwg-DZ-9LN"/>
+                                    </connections>
+                                </collectionViewLayout>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Hg-VQ-XwZ"/>
+                                        <exclude reference="Fuu-we-PqH"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="4em-ls-ypx" id="vSa-o2-if5"/>
+                                    <outlet property="delegate" destination="4em-ls-ypx" id="fKc-Md-CKL"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wJT-GU-ky0" firstAttribute="bottom" secondItem="Bvn-Ja-oFH" secondAttribute="top" id="4NS-Ha-VJ4"/>
+                            <constraint firstItem="wJT-GU-ky0" firstAttribute="top" secondItem="dGB-YK-g0Q" secondAttribute="bottom" id="Aht-1Y-x2c"/>
+                            <constraint firstItem="wJT-GU-ky0" firstAttribute="leading" secondItem="FSH-d1-wfv" secondAttribute="leading" id="m1S-vX-dMi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Watchlist" id="FPD-Mm-1Fj">
                         <barButtonItem key="leftBarButtonItem" image="NavMenuButton" id="DUE-vw-nFS" userLabel="HamburgerMenu">
@@ -312,6 +343,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="wJT-GU-ky0" id="3O6-9L-ayP"/>
                         <segue destination="5RK-bl-QeF" kind="unwind" identifier="unwindToSidePanelMenuSegue" unwindAction="unwindToSidePanelMenuViewController:" id="5Qh-KJ-Jw2"/>
                     </connections>
                 </viewController>

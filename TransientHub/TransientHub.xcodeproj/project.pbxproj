@@ -18,6 +18,10 @@
 		043FB9271AD7840B00ED199F /* TWCRTSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9261AD7840B00ED199F /* TWCRTSEvent.m */; };
 		043FB92A1AD788C000ED199F /* TWBaseEventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9291AD788C000ED199F /* TWBaseEventFeed.m */; };
 		043FB92C1AD8190600ED199F /* LSST.json in Resources */ = {isa = PBXBuildFile; fileRef = 043FB92B1AD8190600ED199F /* LSST.json */; };
+		043FB9321AD9AE2A00ED199F /* TWWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9311AD9AE2A00ED199F /* TWWatchListViewController.m */; };
+		043FB9421AD9AE3200ED199F /* TWEventBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB9361AD9AE3200ED199F /* TWEventBaseCell.m */; };
+		043FB9431AD9AE3200ED199F /* TWEventBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043FB9371AD9AE3200ED199F /* TWEventBaseCell.xib */; };
+		043FB9471AD9AE3200ED199F /* TWEventCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FB93D1AD9AE3200ED199F /* TWEventCollectionLayout.m */; };
 		04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */; };
 		04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC061AD61E3C00036F70 /* ECSlidingAnimationController.m */; };
 		04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC091AD61E3C00036F70 /* ECSlidingInteractiveTransition.m */; };
@@ -26,7 +30,6 @@
 		04D3FC151AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC0F1AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m */; };
 		04D3FC1D1AD61EEA00036F70 /* TWSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC191AD61EEA00036F70 /* TWSlidingViewController.m */; };
 		04D3FC1E1AD61EEA00036F70 /* TWSplitMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC1B1AD61EEA00036F70 /* TWSplitMenuViewController.m */; };
-		04D3FC291AD6258D00036F70 /* TWWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC281AD6258D00036F70 /* TWWatchListViewController.m */; };
 		04D3FC2C1AD627C400036F70 /* TWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC2B1AD627C400036F70 /* TWHomeViewController.m */; };
 		04D3FC2F1AD6296500036F70 /* TWFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC2E1AD6296500036F70 /* TWFeedViewController.m */; };
 		04D3FC321AD62A6100036F70 /* TWAddFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3FC311AD62A6100036F70 /* TWAddFeedViewController.m */; };
@@ -77,6 +80,13 @@
 		043FB9281AD788C000ED199F /* TWBaseEventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBaseEventFeed.h; path = Base/TWBaseEventFeed.h; sourceTree = "<group>"; };
 		043FB9291AD788C000ED199F /* TWBaseEventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBaseEventFeed.m; path = Base/TWBaseEventFeed.m; sourceTree = "<group>"; };
 		043FB92B1AD8190600ED199F /* LSST.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = LSST.json; path = TransientHub/SampleData/LSST.json; sourceTree = "<group>"; };
+		043FB9301AD9AE2A00ED199F /* TWWatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWWatchListViewController.h; path = Views/WatchList/TWWatchListViewController.h; sourceTree = "<group>"; };
+		043FB9311AD9AE2A00ED199F /* TWWatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWWatchListViewController.m; path = Views/WatchList/TWWatchListViewController.m; sourceTree = "<group>"; };
+		043FB9351AD9AE3200ED199F /* TWEventBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEventBaseCell.h; sourceTree = "<group>"; };
+		043FB9361AD9AE3200ED199F /* TWEventBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWEventBaseCell.m; sourceTree = "<group>"; };
+		043FB9371AD9AE3200ED199F /* TWEventBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWEventBaseCell.xib; sourceTree = "<group>"; };
+		043FB93C1AD9AE3200ED199F /* TWEventCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEventCollectionLayout.h; sourceTree = "<group>"; };
+		043FB93D1AD9AE3200ED199F /* TWEventCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWEventCollectionLayout.m; sourceTree = "<group>"; };
 		04D3FC031AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		04D3FC041AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		04D3FC051AD61E3C00036F70 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
@@ -94,8 +104,6 @@
 		04D3FC191AD61EEA00036F70 /* TWSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSlidingViewController.m; sourceTree = "<group>"; };
 		04D3FC1A1AD61EEA00036F70 /* TWSplitMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSplitMenuViewController.h; sourceTree = "<group>"; };
 		04D3FC1B1AD61EEA00036F70 /* TWSplitMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSplitMenuViewController.m; sourceTree = "<group>"; };
-		04D3FC271AD6258D00036F70 /* TWWatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWWatchListViewController.h; path = Views/TWWatchListViewController.h; sourceTree = "<group>"; };
-		04D3FC281AD6258D00036F70 /* TWWatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWWatchListViewController.m; path = Views/TWWatchListViewController.m; sourceTree = "<group>"; };
 		04D3FC2A1AD627C400036F70 /* TWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWHomeViewController.h; path = Views/TWHomeViewController.h; sourceTree = "<group>"; };
 		04D3FC2B1AD627C400036F70 /* TWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWHomeViewController.m; path = Views/TWHomeViewController.m; sourceTree = "<group>"; };
 		04D3FC2D1AD6296500036F70 /* TWFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWFeedViewController.h; path = Views/TWFeedViewController.h; sourceTree = "<group>"; };
@@ -216,6 +224,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		043FB92F1AD9AE0700ED199F /* WatchList */ = {
+			isa = PBXGroup;
+			children = (
+				043FB9301AD9AE2A00ED199F /* TWWatchListViewController.h */,
+				043FB9311AD9AE2A00ED199F /* TWWatchListViewController.m */,
+				043FB9331AD9AE3200ED199F /* CollectionView */,
+			);
+			name = WatchList;
+			sourceTree = "<group>";
+		};
+		043FB9331AD9AE3200ED199F /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				043FB9341AD9AE3200ED199F /* CollectionViewCells */,
+				043FB93C1AD9AE3200ED199F /* TWEventCollectionLayout.h */,
+				043FB93D1AD9AE3200ED199F /* TWEventCollectionLayout.m */,
+			);
+			name = CollectionView;
+			path = Views/WatchList/CollectionView;
+			sourceTree = "<group>";
+		};
+		043FB9341AD9AE3200ED199F /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				043FB9351AD9AE3200ED199F /* TWEventBaseCell.h */,
+				043FB9361AD9AE3200ED199F /* TWEventBaseCell.m */,
+				043FB9371AD9AE3200ED199F /* TWEventBaseCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		04D3FC021AD61E3C00036F70 /* ECSlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,8 +298,7 @@
 				04D3FC761AD7230300036F70 /* Event Cell */,
 				04D3FC2A1AD627C400036F70 /* TWHomeViewController.h */,
 				04D3FC2B1AD627C400036F70 /* TWHomeViewController.m */,
-				04D3FC271AD6258D00036F70 /* TWWatchListViewController.h */,
-				04D3FC281AD6258D00036F70 /* TWWatchListViewController.m */,
+				043FB92F1AD9AE0700ED199F /* WatchList */,
 				04D3FC2D1AD6296500036F70 /* TWFeedViewController.h */,
 				04D3FC2E1AD6296500036F70 /* TWFeedViewController.m */,
 				04D3FC301AD62A6100036F70 /* TWAddFeedViewController.h */,
@@ -420,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043FB92C1AD8190600ED199F /* LSST.json in Resources */,
+				043FB9431AD9AE3200ED199F /* TWEventBaseCell.xib in Resources */,
 				0438DD9B1AD094140049AB66 /* Main.storyboard in Resources */,
 				0438DDA01AD094140049AB66 /* LaunchScreen.xib in Resources */,
 				0438DD9D1AD094140049AB66 /* Images.xcassets in Resources */,
@@ -443,9 +482,11 @@
 			files = (
 				0438DD921AD094140049AB66 /* AppDelegate.m in Sources */,
 				04D3FC491AD6347E00036F70 /* Model.xcdatamodeld in Sources */,
+				043FB9471AD9AE3200ED199F /* TWEventCollectionLayout.m in Sources */,
 				04D3FC611AD6CC2800036F70 /* TWBaseViewController.m in Sources */,
 				04D3FC4D1AD6357500036F70 /* TWDataManager.m in Sources */,
 				04D3FC351AD62B2C00036F70 /* TWGlossaryViewController.m in Sources */,
+				043FB9421AD9AE3200ED199F /* TWEventBaseCell.m in Sources */,
 				04D3FC741AD722FE00036F70 /* TWEventTableViewCell.m in Sources */,
 				04D3FC3A1AD62CB900036F70 /* TWSettingsViewController.m in Sources */,
 				04D3FC111AD61E3C00036F70 /* ECSlidingAnimationController.m in Sources */,
@@ -453,6 +494,7 @@
 				04D3FC551AD6CBB000036F70 /* TWVOEvent.m in Sources */,
 				04D3FC1E1AD61EEA00036F70 /* TWSplitMenuViewController.m in Sources */,
 				04D3FC151AD61E3C00036F70 /* UIViewController+ECSlidingViewController.m in Sources */,
+				043FB9321AD9AE2A00ED199F /* TWWatchListViewController.m in Sources */,
 				04D3FC141AD61E3C00036F70 /* ECSlidingViewController.m in Sources */,
 				043FB92A1AD788C000ED199F /* TWBaseEventFeed.m in Sources */,
 				04D3FC121AD61E3C00036F70 /* ECSlidingInteractiveTransition.m in Sources */,
@@ -461,7 +503,6 @@
 				04D3FC1D1AD61EEA00036F70 /* TWSlidingViewController.m in Sources */,
 				04D3FC2C1AD627C400036F70 /* TWHomeViewController.m in Sources */,
 				04D3FC321AD62A6100036F70 /* TWAddFeedViewController.m in Sources */,
-				04D3FC291AD6258D00036F70 /* TWWatchListViewController.m in Sources */,
 				04D3FC101AD61E3C00036F70 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				04D3FC5F1AD6CC2800036F70 /* TWBaseEventViewController.m in Sources */,
 				04D3FC131AD61E3C00036F70 /* ECSlidingSegue.m in Sources */,

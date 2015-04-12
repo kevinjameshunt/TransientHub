@@ -12,11 +12,6 @@
 
 #import "ECSlidingViewController.h"
 
-/**
- * The purpose of this class is to override the default view
- * controller behavior and lock orientation for all child view controllers
- * with the exception of the TVX player view controller.
- */
 @interface TWSlidingViewController : ECSlidingViewController
 
 @end
