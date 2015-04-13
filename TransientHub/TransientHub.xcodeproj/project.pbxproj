@@ -551,9 +551,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0438DD881AD094140049AB66 /* TransientHub */ = {
+		0438DD881AD094140049AB66 /* LookUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0438DDAF1AD094140049AB66 /* Build configuration list for PBXNativeTarget "TransientHub" */;
+			buildConfigurationList = 0438DDAF1AD094140049AB66 /* Build configuration list for PBXNativeTarget "LookUp" */;
 			buildPhases = (
 				0438DD851AD094140049AB66 /* Sources */,
 				0438DD861AD094140049AB66 /* Frameworks */,
@@ -563,7 +563,7 @@
 			);
 			dependencies = (
 			);
-			name = TransientHub;
+			name = LookUp;
 			productName = TransientHub;
 			productReference = 0438DD891AD094140049AB66 /* TransientHub.app */;
 			productType = "com.apple.product-type.application";
@@ -617,7 +617,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0438DD881AD094140049AB66 /* TransientHub */,
+				0438DD881AD094140049AB66 /* LookUp */,
 				0438DDA41AD094140049AB66 /* TransientHubTests */,
 			);
 		};
@@ -731,7 +731,7 @@
 /* Begin PBXTargetDependency section */
 		0438DDA71AD094140049AB66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0438DD881AD094140049AB66 /* TransientHub */;
+			target = 0438DD881AD094140049AB66 /* LookUp */;
 			targetProxy = 0438DDA61AD094140049AB66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -912,7 +912,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0438DDAF1AD094140049AB66 /* Build configuration list for PBXNativeTarget "TransientHub" */ = {
+		0438DDAF1AD094140049AB66 /* Build configuration list for PBXNativeTarget "LookUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0438DDB01AD094140049AB66 /* Debug */,
